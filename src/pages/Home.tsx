@@ -12,7 +12,7 @@ import {
   Gem,
 } from "lucide-react";
 import { MOCK_LEVELS, MOCK_LEADERBOARD } from "../data/mockData";
-import LeaderboardCard from "../components/UI/level_part/LeaderboardCard";
+import LeaderboardCard from "@/components/UI/leader_board/LeaderboardCard";
 import { useCustomContext } from "../hooks/use-context";
 import AboutMe from "../components/UI/AboutMe";
 
