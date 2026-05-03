@@ -8,13 +8,17 @@ interface UserReviewPanelProps {
   totalScore: number;
 }
 
-export default function UserReviewPanel({ userData, points, totalScore }: UserReviewPanelProps) {
+export default function UserReviewPanel({
+  userData,
+  points,
+  totalScore,
+}: UserReviewPanelProps) {
   const percent = (points / totalScore) * 100;
 
   const navigate = useNavigate();
 
   return (
-    <div className="w-full md:w-[320px] rounded-2xl p-5 bg-gradient-to-b from-[#1a1510] to-[#181818] border border-white/10 shadow-xl">
+    <div className="w-full md:w-[320px] rounded-2xl p-5 bg-gradient-to-b from-[#1a1510] to-[#181818] border border-white/10 shadow-xl relative">
       {/* Avatar + Info */}
       <div className="flex items-center gap-3">
         <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-white font-bold">
@@ -22,8 +26,12 @@ export default function UserReviewPanel({ userData, points, totalScore }: UserRe
         </div>
 
         <div className="min-w-0">
-          <p className="text-white font-semibold truncate">{userData.studentName}</p>
-          <p className="text-white/60 text-sm">{userData.studentClass} • {userData.schoolName}</p>
+          <p className="text-white font-semibold truncate">
+            {userData.studentName}
+          </p>
+          <p className="text-white/60 text-sm">
+            {userData.studentClass} • {userData.schoolName}
+          </p>
         </div>
       </div>
 
@@ -64,12 +72,16 @@ export default function UserReviewPanel({ userData, points, totalScore }: UserRe
 
         {/* Emoji state */}
         <div className="flex justify-between mt-4 text-lg">
-          <span className={points < totalScore/2 ? "scale-[2]" : "opacity-40 scale-150"}>
+          <span
+            className={
+              points < totalScore / 2 ? "scale-[2]" : "opacity-40 scale-150"
+            }
+          >
             😢
           </span>
           <span
             className={
-              points >= totalScore/2 && points < totalScore
+              points >= totalScore / 2 && points < totalScore
                 ? "scale-[2]"
                 : "opacity-40 scale-150"
             }
@@ -77,7 +89,9 @@ export default function UserReviewPanel({ userData, points, totalScore }: UserRe
             😐
           </span>
           <span
-            className={points === totalScore ? "scale-[2]" : "opacity-40 scale-150"}
+            className={
+              points === totalScore ? "scale-[2]" : "opacity-40 scale-150"
+            }
           >
             😄
           </span>
@@ -86,11 +100,13 @@ export default function UserReviewPanel({ userData, points, totalScore }: UserRe
 
       {/* Button */}
 
-      <Button className="hover:bg-devotion-gold/90 bg-transparent border text-white mt-6 w-full relative overflow-hidden rounded-xl py-4" onClick={() => 
-        {
-          navigate("/leaderboard"); 
+      <Button
+        className="hover:bg-devotion-gold/90 bg-transparent border text-white mt-6 w-full relative overflow-hidden rounded-xl py-4 hidden md:block"
+        onClick={() => {
+          navigate("/leaderboard");
           localStorage.clear();
-        }} >
+        }}
+      >
         {/* glow animation */}
         <span className="absolute inset-0 bg-white/20 blur-xl opacity-0 hover:opacity-100 transition" />
 
