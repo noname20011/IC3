@@ -78,13 +78,9 @@ const Header = (props: HeaderProps) => {
                 className="flex items-center gap-1.5 px-3 py-1.5 bg-[#1a1510] border border-[#2e2418] rounded-lg text-xs font-semibold text-[#7a6b55] hover:text-[#c8a46e] hover:border-[#3e3020] transition-all"
               >
                 <LayoutList size={13} />
-                <span className="hidden sm:inline">Questions</span>
+                <span className="inline">All Questions</span>
               </button>
             )}
-            {/* Avatar */}
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#c8a46e] to-[#9a7040] flex items-center justify-center text-xs font-bold text-[#0f0d0a]">
-              JE
-            </div>
           </div>
         </div>
       </header>
