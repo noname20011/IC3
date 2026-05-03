@@ -1,0 +1,6 @@
+[
+  { "id": 1, "levelId": 1, "name": "Part A", "description": "Basic computing test" },
+  { "id": 2, "levelId": 1, "name": "Part B", "description": "Digital literacy test" },
+  { "id": 3, "levelId": 2, "name": "Part A", "description": "Office applications" },
+  { "id": 4, "levelId": 3, "name": "Part A", "description": "Advanced tools" }
+]
