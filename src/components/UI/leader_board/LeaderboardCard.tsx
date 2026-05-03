@@ -84,7 +84,7 @@ const LeaderboardCard = (props: LeaderboardCard) => {
                       {/* Background Glow */}
                       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-devotion-gold/5 blur-[120px] pointer-events-none" />
                       <div className="flex items-center gap-8 z-10 pt-6 md:pt-0 relative">
-                        <div className="text-6xl lg:mb-1.5 text-center absolute z-10 lg:-top-[60%] lg:left-[5%] md:-top-[60%] md:left-[4%] -top-[4%] left-[5%]">
+                        <div className="text-6xl lg:mb-1.5 text-center absolute z-10 lg:-top-[60%] lg:left-[5%] md:-top-[60%] md:left-[4%] -top-[4%] left-[7%]">
                           👑
                         </div>
                         <div className="relative">

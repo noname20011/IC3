@@ -20,6 +20,8 @@ import { useState } from "react";
 import QuestionAnswerListDrawer from "./QuestionReviewListDrawer";
 import { useCustomContext } from "../../../hooks/use-context";
 import UserReviewPanel from "./UserReviewPanel";
+import { Button } from "@/components/core/buttons/MainButton";
+import { useNavigate } from "react-router";
 
 interface TestViewScreenProps {
   questions: QuestionTypeEntity[];
@@ -157,13 +159,12 @@ function scoreQuestion(
 const TestReviewScreen = ({
   questions,
   answers,
-  flagged,
-  onClose,
+  flagged
 }: TestViewScreenProps) => {
   // get saved state from localStorage
-  const userSaved = JSON.parse(localStorage.getItem("student") || "{}");
-  const [userData, setUserData] = useState<FormData>(userSaved);
+  const userData = JSON.parse(localStorage.getItem("student") || "{}");
 
+  const navigate = useNavigate();
   const {showList, setShowList } = useCustomContext();
   const [answerListReview, setAnswerListReview] = useState<AnswerListReview[]>(
     questions
@@ -193,7 +194,7 @@ const TestReviewScreen = ({
 }
 
   return (
-    <div className="flex min-h-screen bg-[#13100d]">
+    <div className="flex min-h-screen bg-[#13100d] relative">
       <main className="flex-1 min-h-screen px-6 lg:px-8 py-6 max-w-6xl mx-auto grid items-start grid-cols-1 md:grid-cols-5 gap-6">
 
         <div className="md:col-span-4 col-span-1">
@@ -341,6 +342,22 @@ const TestReviewScreen = ({
           <UserReviewPanel userData={userData} points={answerListReview.filter((q) => q.isCorrect).length * 10} totalScore={answerListReview.length * 10} />
         </div>
       </main>
+        
+        
+      {/* Button */}
+      <Button className="bg-devotion-gold/80 border text-white w-9/12 rounded-xl py-4 
+      block md:hidden fixed bottom-4 left-10 right-10 mx-auto h-14 overflow-y-auto" 
+      onClick={() => 
+        {
+          navigate("/leaderboard"); 
+          localStorage.clear();
+        }} >
+        {/* glow animation */}
+        <span className="absolute inset-0 bg-white/20 blur-xl opacity-0 hover:opacity-100 transition" />
+
+        <span className="relative z-10">Go to Leaderboard →</span>
+      </Button>
+
     </div>
   );
 };

@@ -96,6 +96,7 @@ export default function PartsPage() {
             setShowPopup={() => setShowPopup(true)}
             setChoosePart={setChoosePart}
             index={index}
+            key={part.id}
           />
         ))}
       </div>

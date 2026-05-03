@@ -3,13 +3,13 @@ import { useCustomContext } from "../../hooks/use-context";
 import { useLocation } from "react-router-dom";
 
 interface HeaderProps {
-    onBack: () => void
+  onBack: () => void;
+  locationPath: string;
 }
 const Header = (props: HeaderProps) => {
-    const { onBack } = props;
-    const { setShowList } = useCustomContext();
+  const { onBack, locationPath } = props;
+  const { setShowList } = useCustomContext();
 
-    const location = useLocation();
   return (
     <>
       {/* ── Sticky header ── */}
@@ -51,11 +51,11 @@ const Header = (props: HeaderProps) => {
                   strokeLinecap="round"
                 />
               </svg>
-              {
-                location.pathname === "/quiz" && <span className="text-xs font-mono font-semibold text-[#c8a46e]">
-                12:45
-              </span>
-              }
+              {locationPath.includes("/quiz") && (
+                <span className="text-xs font-mono font-semibold text-[#c8a46e]">
+                  12:45
+                </span>
+              )}
             </div>
             {/* Score */}
             <div className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-[#1a1510] border border-[#2e2418] rounded-lg">
@@ -65,20 +65,22 @@ const Header = (props: HeaderProps) => {
                   fill="#c8a46e"
                 />
               </svg>
-              {
-                location.pathname === "/quiz" && <span className="text-xs font-semibold text-[#c8a46e]">
+              {locationPath.includes("/quiz") && (
+                <span className="text-xs font-semibold text-[#c8a46e]">
                   {450} pts
                 </span>
-              }
+              )}
             </div>
             {/* All Questions button */}
-            <button
-              onClick={() => setShowList(true)}
-              className="flex items-center gap-1.5 px-3 py-1.5 bg-[#1a1510] border border-[#2e2418] rounded-lg text-xs font-semibold text-[#7a6b55] hover:text-[#c8a46e] hover:border-[#3e3020] transition-all"
-            >
-              <LayoutList size={13} />
-              <span className="hidden sm:inline">Questions</span>
-            </button>
+            {locationPath.includes("/quiz") && (
+              <button
+                onClick={() => setShowList(true)}
+                className="flex items-center gap-1.5 px-3 py-1.5 bg-[#1a1510] border border-[#2e2418] rounded-lg text-xs font-semibold text-[#7a6b55] hover:text-[#c8a46e] hover:border-[#3e3020] transition-all"
+              >
+                <LayoutList size={13} />
+                <span className="hidden sm:inline">Questions</span>
+              </button>
+            )}
             {/* Avatar */}
             <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#c8a46e] to-[#9a7040] flex items-center justify-center text-xs font-bold text-[#0f0d0a]">
               JE

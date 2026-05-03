@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import PartPage from "./pages/PartPage";
 import DailyDevotion from "./pages/UI_Sample/DailyDevotion";
 import QuizPage from "./pages/QuizPage";
@@ -15,13 +15,18 @@ import ScrollToTop from "./components/core/ScrollToTop";
 import Footer from "./components/UI/Footer";
 
 export default function App() {
+  const location = useLocation();
+  const locationPath = location.pathname;
+
+  console.log(locationPath);
+  
   return (
-    <BrowserRouter>
+    <>
       <ScrollToTop />
       <div className="bg-background py-2 px-2 relative">
         <LoadingProvider>
           {/* Header */}
-          <Header onBack={() => window.history.back()}/>
+          <Header locationPath={locationPath} onBack={() => window.history.back()}/>
             
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -38,11 +43,11 @@ export default function App() {
           </Routes>
 
           {/* side bar */}
-          <NavigationBar/>
+          {!locationPath.startsWith("/quiz") && <NavigationBar />}
         </LoadingProvider>
         <Toaster/>
         <Footer/>
       </div>
-    </BrowserRouter>
+    </>
   );
 }
