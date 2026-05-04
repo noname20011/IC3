@@ -9,6 +9,7 @@ interface BaseQuestion {
   id: number,
   type: string,
   text: string,
+  imageUrl?: string,
   explanation?: string, 
   difficulty?: string,
   tags?: string[],
@@ -55,6 +56,11 @@ export interface MatchEntity extends BaseQuestion {
 }
 
 export type QuestionTypeEntity = SingleChoiceEntity | MultipleChoiceEntity | TrueFalseEntity | SortEntity | MatchEntity | HotSpotEntity;
+
+export interface QuizData {
+  id: string;
+  questions: QuestionTypeEntity[];
+}
 
 
 export type QuestionType =

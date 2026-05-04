@@ -4,47 +4,47 @@ Format Question Data
   {
     "id": 1,
     "type": "single",
-    "text": "HTML là viết tắt của?",
+    "text": "",
     "options": [
-      { "id": 1, "value": "Hyper Text Markup Language", "isCorrect": true },
-      { "id": 2, "value": "High Tech Modern Language", "isCorrect": false },
-      { "id": 3, "value": "Home Tool Markup Language", "isCorrect": false }
+      { "id": 1, "value": "", "isCorrect": true },
+      { "id": 2, "value": "", "isCorrect": false },
+      { "id": 3, "value": "", "isCorrect": false },
+      { "id": 4, "value": "", "isCorrect": false }
     ]
   },
     {
       "id": 2,
       "type": "multiple",
-      "text": "Chọn các thẻ HTML hợp lệ:",
+      "text": "",
       "options": [
-        { "id": 1, "value": "<div>", "isCorrect": true },
-        { "id": 2, "value": "<span>", "isCorrect": true },
-        { "id": 3, "value": "<section>", "isCorrect": true },
-        { "id": 4, "value": "<invalid>", "isCorrect": false }
+        { "id": 1, "value": "", "isCorrect": true },
+        { "id": 2, "value": "", "isCorrect": true },
+        { "id": 3, "value": "", "isCorrect": true },
+        { "id": 4, "value": "", "isCorrect": false }
       ]
     },
   {
     "id": 6,
     "type": "truefalse",
-    "text": "Bạn cần thêm một tác phẩm nghệ thuật vào bài trình chiếu cho lớp học. Bạn không có thời gian xin giấy phép. Với mỗi phát biểu, hãy chọn Có nếu hợp pháp, Không nếu không.",
+    "text": "",
     "optionsOfTrueFalseType": ["Có", "Không"],
     "statements": [
       {
         "id": 1,
-        "value": "Tác giả là người quen của bạn",
+        "value": "",
         "isCorrect": false
       },
       {
         "id": 2,
-        "value": "Các tác phẩm nghệ thuật được bản quyền bảo vệ",
+        "value": "",
         "isCorrect": false
       },
       {
         "id": 3,
-        "value": "Chủ sở hữu bản quyền đã chuyển tác phẩm nghệ thuật sang phạm vi công cộng",
+        "value": "",
         "isCorrect": true
       }
-    ],
-    "explanation": "Chỉ khi tác phẩm đã được đưa vào phạm vi công cộng thì mới có thể sử dụng hợp pháp mà không cần giấy phép."
+    ]
   },
   {
     "id": 3,

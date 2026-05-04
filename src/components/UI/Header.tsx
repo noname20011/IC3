@@ -1,6 +1,8 @@
 import { ChevronLeft, LayoutList } from "lucide-react";
 import { useCustomContext } from "../../hooks/use-context";
-import { useLocation } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
+import { useEffect } from "react";
+import { convertTime } from "@/utils/convertTime";
 
 interface HeaderProps {
   onBack: () => void;
@@ -8,7 +10,27 @@ interface HeaderProps {
 }
 const Header = (props: HeaderProps) => {
   const { onBack, locationPath } = props;
-  const { setShowList } = useCustomContext();
+
+  const [searchParams] = useSearchParams();
+  const timeParam = Number(searchParams.get("time")) || 0;
+  const { setShowList, setTimeCountDown, timeCountDown, setTimeDoTest, completeQuiz } = useCustomContext();
+
+    useEffect(() => {
+
+      setTimeCountDown(timeParam);
+      setTimeDoTest(timeParam);
+
+      const id = setInterval(() => {
+        setTimeCountDown((prev: number) => {
+          if (prev <= 1) {
+            clearInterval(id);
+            return 0;
+          }
+          return prev - 1;
+        });
+    }, 1000);
+    return () => clearInterval(id);
+    }, [timeParam]);
 
   return (
     <>
@@ -53,7 +75,7 @@ const Header = (props: HeaderProps) => {
               </svg>
               {locationPath.includes("/quiz") && (
                 <span className="text-xs font-mono font-semibold text-[#c8a46e]">
-                  12:45
+                  {completeQuiz ? convertTime(Number(localStorage.getItem("timedDoTest") ?? 0)) : `${Math.floor(timeCountDown / 60)}:${String(timeCountDown % 60).padStart(2, "0")}`}
                 </span>
               )}
             </div>

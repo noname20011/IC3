@@ -17,8 +17,6 @@ import Footer from "./components/UI/Footer";
 export default function App() {
   const location = useLocation();
   const locationPath = location.pathname;
-
-  console.log(locationPath);
   
   return (
     <>

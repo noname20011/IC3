@@ -163,17 +163,15 @@ const TestReviewScreen = ({
 }: TestViewScreenProps) => {
   // get saved state from localStorage
   const userData = JSON.parse(localStorage.getItem("student") || "{}");
-
   const navigate = useNavigate();
   const {showList, setShowList } = useCustomContext();
-  const [answerListReview, setAnswerListReview] = useState<AnswerListReview[]>(
+  const answerListReview: AnswerListReview[] =
     questions
       .map((q) => scoreQuestion(q, answers))
       .map((answer) => ({
         qId: answer.questionId,
         isCorrect: answer.isCorrect,
-      })),
-  );
+      }));
 
   const scores = questions.map((q) => scoreQuestion(q, answers));
 
@@ -195,9 +193,9 @@ const TestReviewScreen = ({
 
   return (
     <div className="flex min-h-screen bg-[#13100d] relative">
-      <main className="flex-1 min-h-screen px-6 lg:px-8 py-6 max-w-6xl mx-auto grid items-start grid-cols-1 md:grid-cols-5 gap-6">
+      <main className="flex-1 min-h-screen px-4 lg:px-8 py-6 max-w-6xl mx-auto grid items-start grid-cols-1 lg:grid-cols-6 xl:grid-cols-5 gap-6">
 
-        <div className="md:col-span-4 col-span-1">
+        <div className="lg:col-span-4 col-span-1">
           {/* Legend */}
           <div className="flex items-center gap-4 mb-6 flex-wrap">
             <div className="flex items-center gap-1.5">
@@ -314,7 +312,7 @@ const TestReviewScreen = ({
                         {sc.earned}/{sc.max}
                       </div>
                     </div>
-                    <p className="text-sm font-semibold text-white leading-relaxed">
+                    <p className="text-base font-bold text-[#b1ada4] leading-relaxed">
                       {q.text}
                     </p>
                   </div>

@@ -41,6 +41,7 @@ export default function PartsPage() {
     schoolName: "",
   });
 
+  
   const [isSelectOpen, setIsSelectOpen] = useState(false);
   const selectRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
@@ -56,6 +57,7 @@ export default function PartsPage() {
       return;
     }
     
+
     localStorage.clear();
     const studentInfo = {
       studentName: formData.studentName,
@@ -65,7 +67,7 @@ export default function PartsPage() {
     };
 
     localStorage.setItem("student", JSON.stringify(studentInfo));
-    navigate(`/quiz/${levelId}/${choosePart}`);
+    navigate(`/quiz/${levelId}/${choosePart}?time=${MOCK_LEVELS.find(l => l.id === levelId)?.parts.find(p => p.id === choosePart)?.duration}`);
   };
 
   return (
@@ -123,6 +125,7 @@ export default function PartsPage() {
                 />
                 <input
                   type="text"
+                  required
                   placeholder="Nhập họ và tên của bạn"
                   className="w-full bg-white/5 border border-white/10 rounded-2xl py-3 pl-12 pr-4 focus:outline-none focus:border-devotion-gold/50 transition-colors"
                   onChange={(e) => setFormData({...formData, studentName: e.target.value})}
@@ -141,6 +144,7 @@ export default function PartsPage() {
                 />
                 <input
                   type="text"
+                  required
                   placeholder="Nhập lớp của bạn"
                   className="w-full bg-white/5 border border-white/10 rounded-2xl py-3 pl-12 pr-4 focus:outline-none focus:border-devotion-gold/50 transition-colors"
                   onChange={(e) => setFormData({...formData, studentClass: e.target.value})}
@@ -228,6 +232,7 @@ export default function PartsPage() {
                 <input
                   type={showPassword ? "text" : "password"}
                   placeholder="••••••••"
+                  required
                   className="w-full bg-white/5 border border-white/10 rounded-2xl py-3 pl-12 pr-4 focus:outline-none focus:border-devotion-gold/50 transition-colors"
                   onChange={(e) => setFormData({...formData, password: e.target.value})}
                 />

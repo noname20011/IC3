@@ -3,7 +3,7 @@ import { ChevronRight, Facebook, Github, Instagram, LayoutDashboard, Youtube } f
 
 function Footer() {
   return (
-    <footer className="mt-20 border-t border-white/5 pt-16 pb-32 px-6 relative overflow-hidden">
+    <footer className="mt-20 border-t border-white/5 pt-16 pb-1 px-6 relative overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-devotion-gold/50 to-transparent" />
       
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">

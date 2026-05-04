@@ -5,9 +5,10 @@ interface PopUpProps {
   showPopup: boolean;
   setShowPopup: (popup: boolean) => void;
   children?: React.ReactNode;
+  className?: string;
 }
 
-const PopUp = ({ showPopup, setShowPopup, children }: PopUpProps) => {
+const PopUp = ({ showPopup, setShowPopup, children, className }: PopUpProps) => {
   return (
     <AnimatePresence>
         {showPopup && (
@@ -23,8 +24,7 @@ const PopUp = ({ showPopup, setShowPopup, children }: PopUpProps) => {
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="glass-card w-full max-w-md p-8 relative z-10 space-y-2 md:space-y-6 -mt-[120px] md:-mt-[112px]"
-            >
+              className={`glass-card w-full max-w-md p-8 relative z-10 space-y-2 md:space-y-6 -mt-[120px] md:-mt-[112px] ${className}`}>
               <button 
                 onClick={() => setShowPopup(false)}
                 className="absolute top-4 right-4 text-slate-400 hover:text-white"

@@ -18,7 +18,7 @@ const TrueFalseTypeReview = (props: TrueFalseTypeReviewProps) => {
         {question.optionsOfTrueFalseType?.map((opt, i) => (
           <span
             key={i}
-            className={`text-[10px] font-semibold ${i === 1 ? "text-emerald-400" : "text-red-400"} uppercase tracking-widest text-center`}
+            className={`text-[12px] font-semibold ${i === 1 ? "text-emerald-400" : "text-red-400"} uppercase tracking-widest text-center`}
           >
             {opt}
           </span>
@@ -55,7 +55,7 @@ const TrueFalseTypeReview = (props: TrueFalseTypeReviewProps) => {
               ) : !isRowCorrect && userAns ? (
                 <X size={20} className="text-red-400 shrink-0" />
               ) : <X size={20} className="text-red-400 shrink-0" />}
-              <p className="text-xs text-[#9a8878] leading-snug">
+              <p className="text-sm text-[#9a8878] leading-snug">
                 {stmt.value}
               </p>
             </div>

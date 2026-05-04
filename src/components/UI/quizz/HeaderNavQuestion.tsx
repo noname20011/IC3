@@ -15,6 +15,7 @@ interface HeaderNavQuestionProps {
   setCurrent: (c: any) => void;
   submitted: boolean;
   setSubmitted: (i: boolean) => void;
+  timedDoTest: number;
 }
 
 const HeaderNavQuestion = (props: HeaderNavQuestionProps) => {
@@ -25,6 +26,7 @@ const HeaderNavQuestion = (props: HeaderNavQuestionProps) => {
     flagged,
     setCurrent,
     setSubmitted,
+    timedDoTest
   } = props;
 
   const hasAnswer = (id: number) => {
@@ -97,7 +99,10 @@ const HeaderNavQuestion = (props: HeaderNavQuestionProps) => {
             </button>
           ) : (
             <button
-              onClick={() => setSubmitted(true)}
+              onClick={() => {
+                setSubmitted(true);
+                localStorage.setItem("timedDoTest", timedDoTest.toString());
+              }}
               className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#c8a46e] text-sm font-bold text-[#13100d] hover:bg-[#d4b47e] active:scale-[0.97] transition-all duration-150 shadow-lg shadow-[#c8a46e]/20"
             >
               <Send size={13} />

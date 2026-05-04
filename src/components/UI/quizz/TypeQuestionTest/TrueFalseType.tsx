@@ -27,7 +27,7 @@ export default function TrueFalse(props: TrueFalseQuestionProps) {
         {q.optionsOfTrueFalseType?.map((opt, i) => (
           <span
           key={i}
-            className={`text-[10px] font-semibold ${i === 0 ? "text-emerald-400" : "text-red-400"} uppercase tracking-widest text-center`}
+            className={`text-[12px] font-semibold ${i === 0 ? "text-emerald-400" : "text-red-400"} uppercase tracking-widest text-center`}
           >
             {opt}
           </span>

@@ -11,6 +11,7 @@ import {
 import { useState } from "react";
 import { MOCK_LEADERBOARD } from "@/data/mockData";
 import PodiumCard from "@/components/UI/leader_board/PodiumCard";
+import { convertTime } from "@/utils/convertTime";
 
 /* ─── Trend icon based on value ─────────────────────────────── */
 function TrendIcon({ trend }: { trend: string | number }) {
@@ -43,10 +44,10 @@ export default function Leaderboard() {
             </div>
             <div>
               <h1 className="text-2xl font-bold text-foreground">
-                Bảng xếp hạng
+                Leaderboard
               </h1>
               <p className="text-muted-foreground text-sm">
-                Top thí sinh xuất sắc
+                Top elite students
               </p>
             </div>
           </div>
@@ -54,10 +55,10 @@ export default function Leaderboard() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6">
             {[
-              { icon: Users, label: "Thí sinh", value: 7 },
-              { icon: School, label: "Trường", value: 5 },
-              { icon: TrendingUp, label: "Điểm TB", value: "7.5" },
-              { icon: Target, label: "Điểm cao nhất", value: "950" },
+              { icon: Users, label: "Students", value: 50 },
+              { icon: School, label: "Schools", value: 4 },
+              { icon: TrendingUp, label: "Average Score", value: "430" },
+              { icon: Target, label: "Highest Score", value: "450" },
             ].map((stat) => {
               const Icon = stat.icon;
               return (
@@ -87,7 +88,7 @@ export default function Leaderboard() {
         {MOCK_LEADERBOARD.length >= 3 && (
           <div className="mb-10">
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-5">
-              🏆 Top 3 Xuất sắc
+              🏆 Top 3 the most outstanding students
             </p>
             {/* Cards: 2nd | 1st | 3rd  — 1st is taller and centered */}
             <div className="grid grid-cols-3 items-end gap-3 sm:gap-5 justify-center md:px-10">
@@ -111,20 +112,20 @@ export default function Leaderboard() {
         <div className="bg-card border border-card-border rounded-xl overflow-hidden">
           <div className="p-4 border-b border-border flex items-center justify-between">
             <h3 className="font-semibold text-foreground text-sm">
-              Bảng xếp hạng đầy đủ
+              Full Leaderboard
             </h3>
             <span className="text-xs text-muted-foreground">
-              {MOCK_LEADERBOARD.length} thí sinh
+              {MOCK_LEADERBOARD.length} students
             </span>
           </div>
           {MOCK_LEADERBOARD.length === 0 ? (
             <div className="p-8 text-center text-muted-foreground">
-              Đang tải...
+              Loading...
             </div>
           ) : MOCK_LEADERBOARD.length === 0 ? (
             <div className="p-12 text-center text-muted-foreground">
               <Trophy className="w-10 h-10 mx-auto mb-3 opacity-40" />
-              Chưa có kết quả
+              No results yet
             </div>
           ) : (
             <div className="divide-y divide-border">
@@ -168,7 +169,7 @@ export default function Leaderboard() {
                       {entry.score}
                     </p>
                     <p className="text-xs text-muted-foreground">
-                      1m20s
+                      {convertTime(entry.time)}
                     </p>
                   </div>
                   <div className="flex items-center gap-1 mr-1">

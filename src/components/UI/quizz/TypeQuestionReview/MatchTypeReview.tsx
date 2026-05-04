@@ -29,7 +29,7 @@ const MatchTypeReview = (props: MatchTypeReviewProps) => {
             >
               {i + 1}
             </div>
-            <span className="text-xs text-[#7a6b55] min-w-[90px]">
+            <span className="text-sm text-[#7a6b55] min-w-[90px]">
               {leftItem}
             </span>
             </div>
@@ -72,7 +72,7 @@ const MatchTypeReview = (props: MatchTypeReviewProps) => {
                       strokeLinejoin="round"
                     />
                   </svg>
-                  { correctMatch.trim() !== "" ? <span className="text-xs text-emerald-400">
+                  { correctMatch.trim() !== "" ? <span className="text-sm text-emerald-400">
                     {correctMatch}
                   </span> : null}
                 </div>
