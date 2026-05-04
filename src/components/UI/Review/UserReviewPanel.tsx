@@ -1,6 +1,7 @@
 import { Button } from "@/components/core/buttons/MainButton";
 import { FormData } from "./TestViewScreen";
 import { useNavigate } from "react-router-dom";
+import { convertTime } from "@/utils/convertTime";
 
 interface UserReviewPanelProps {
   userData: FormData;
@@ -38,7 +39,7 @@ export default function UserReviewPanel({
       {/* Stats */}
       <div className="flex justify-between mt-4 text-sm">
         <span className="text-white/60">Time</span>
-        <span className="text-white">--</span>
+        <span className="text-white">{convertTime(Number(localStorage.getItem("timedDoTest") ?? 0))}</span>
       </div>
 
       <div className="flex justify-between items-baseline mt-2 text-sm">

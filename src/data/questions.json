@@ -1,333 +1,1527 @@
 [
   {
-    "id": 1,
-    "type": "truefalse",
-    "text": "Phát biểu nào đúng về Hệ Điều Hành Android?",
-    "optionsOfTrueFalseType": ["Đúng", "Sai"],
-    "statements": [
+    "levelId": "l1",
+    "partId": 1,
+    "questions": [
       {
         "id": 1,
-        "value": "Android là phần mềm mã nguồn mở",
-        "isCorrect": true
+        "type": "truefalse",
+        "text": "Phát biểu nào đúng về Hệ Điều Hành Android?",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Android là phần mềm mã nguồn mở",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Android là hệ điều hành máy tính để bàn",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Cần phải có cửa hàng Google (Google App Store) để cài đặt ứng dụng.",
+            "isCorrect": false
+          }
+        ]
       },
       {
         "id": 2,
-        "value": "Android là hệ điều hành máy tính để bàn",
-        "isCorrect": false
+        "type": "match",
+        "text": "Dạng 2: Nối các lựa chọn với nhau?",
+        "pairs": [
+          {
+            "left": { "id": 4, "value": "AI" },
+            "right": {
+              "id": 5,
+              "value": "Trí tuệ như con người / Để tạo ra các nội dung mới như văn bản, hình ảnh, âm nhạc"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "id": 6, "value": "API" },
+            "right": {
+              "id": 7,
+              "value": "Tập hợp các quy tắc cho phép phần mềm và ứng dụng giao tiếp với nhau"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "id": 8, "value": "Chatbot" },
+            "right": {
+              "id": 9,
+              "value": "Mô phỏng cuộc trò chuyện như con người"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "id": 10, "value": "Deep Learning" },
+            "right": {
+              "id": 11,
+              "value": "Mô hình học máy sử dụng mạng nơ-ron nhân tạo để học tập dữ liệu"
+            },
+            "isCorrect": true
+          }
+        ]
       },
       {
         "id": 3,
-        "value": "Cần phải có cửa hàng Google (Google App Store) để cài đặt ứng dụng.",
-        "isCorrect": false
+        "type": "single",
+        "text": "Bạn đang có một công thức nấu ăn bao gồm danh sách các nguyên liệu, các bước thực hiện cụ thể và nhiều hình ảnh minh họa cho từng công đoạn. Khi chuẩn bị đăng bài lên mạng xã hội, yếu tố nào sau đây sẽ có ảnh hưởng lớn nhất đến việc đăng bài viết?",
+        "options": [
+          {
+            "id": 12,
+            "value": "Một số trang mạng xã hội hạn chế số lượng ký tự và hình ảnh.",
+            "isCorrect": true
+          },
+          {
+            "id": 13,
+            "value": "Một số trang mạng xã hội không cho đăng clip nấu ăn.",
+            "isCorrect": false
+          },
+          {
+            "id": 14,
+            "value": "Một số trang mạng xã hội giới hạn video khi đăng.",
+            "isCorrect": false
+          },
+          {
+            "id": 15,
+            "value": "Một số trang mạng xã hội không cho phép đăng hình ảnh.",
+            "isCorrect": false
+          },
+          {
+            "id": 16,
+            "value": "Bạn có quyền được đăng ở trang mạng xã hội đó.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "type": "single",
+        "text": "Dạng 1: Đâu là điểm khác biệt giữa Chatbot và AI?",
+        "options": [
+          {
+            "id": 17,
+            "value": "Cả Chatbot và AI đều tập trung tạo cuộc trò chuyện, nhưng AI không được đào tạo để trả lời các câu hỏi đào tạo trước / chuẩn bị trước",
+            "isCorrect": false
+          },
+          {
+            "id": 18,
+            "value": "Chatbot để tạo ra nội dung mới, trong khi AI tập trung vào trò chuyện với người dùng",
+            "isCorrect": false
+          },
+          {
+            "id": 19,
+            "value": "Chatbot và AI là 2 khái niệm chung để chỉ một thuật ngữ trong công nghệ",
+            "isCorrect": false
+          },
+          {
+            "id": 20,
+            "value": "AI dùng để tạo ra các nội dung mới, trong khi Chatbot để giao tiếp với người dùng",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "type": "single",
+        "text": "Dạng 2: Đâu là điểm khác biệt giữa Chatbot và AI?",
+        "options": [
+          {
+            "id": 21,
+            "value": "AI tạo sinh tập trung vào tạo nội dung, chatbot mô phỏng trò chuyện con người.",
+            "isCorrect": true
+          },
+          {
+            "id": 22,
+            "value": "AI tạo sinh tập trung mô phỏng trò chuyện, chatbot tập trung vào tạo nội dung",
+            "isCorrect": false
+          },
+          {
+            "id": 23,
+            "value": "Cả hai đều giống nhau, chỉ khác cách gọi",
+            "isCorrect": false
+          },
+          {
+            "id": 24,
+            "value": "AI và Chatbot đều giỏi về mô phỏng trò chuyện, nhưng AI chỉ trả lời theo những gì có sẵn.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "type": "single",
+        "text": "Tập tin “.exe” chạy được trên Hệ điều hành nào?",
+        "options": [
+          { "id": 25, "value": "Linux", "isCorrect": false },
+          { "id": 26, "value": "macOS", "isCorrect": false },
+          { "id": 27, "value": "Windows", "isCorrect": true },
+          { "id": 28, "value": "Android", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 7,
+        "type": "truefalse",
+        "text": "Chọn đúng hoặc sai:",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 29,
+            "value": "Bạn phải đăng ký bản quyền tại cơ quan bản quyền để bảo vệ bản quyền",
+            "isCorrect": true
+          },
+          {
+            "id": 30,
+            "value": "Luật bản quyền bảo vệ quyền sao chép tác phẩm có bản quyền",
+            "isCorrect": true
+          },
+          {
+            "id": 31,
+            "value": "Luật bản quyền chỉ bảo vệ các tác phẩm nghệ thuật, chẳng hạn như tranh vẽ và tác phẩm điêu khắc",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Chỉ khi tác phẩm đã được đưa vào phạm vi công cộng thì mới có thể sử dụng hợp pháp mà không cần giấy phép."
+      },
+      {
+        "id": 8,
+        "type": "truefalse",
+        "text": "Đối với mỗi câu phát biểu sau về các loại hoạt động trên các nền tảng mạng xã hội, hãy chọn Có nếu hoạt động đó có thể thực hiện trên hầu hết các mạng xã hội, chọn Không nếu có thể không được thực hiện trên hầu hết các nền tảng mạng xã hội",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 32,
+            "value": "Giả danh tính của một người dùng thật",
+            "isCorrect": false
+          },
+          {
+            "id": 33,
+            "value": "Đăng tải bình luận tiêu cực về sản phẩm và dịch vụ",
+            "isCorrect": true
+          },
+          {
+            "id": 34,
+            "value": "Đăng tải nội dung do chính mình tạo ra",
+            "isCorrect": true
+          },
+          {
+            "id": 35,
+            "value": "Chia sẻ tác phẩm thuộc quyền sở hữu trí tuệ của người khác",
+            "isCorrect": false
+          }
+        ],
+        "explanation": "Một số hoạt động có thể bị hạn chế hoặc cấm trên các nền tảng mạng xã hội, chẳng hạn như giả danh tính và chia sẻ nội dung vi phạm bản quyền."
+      },
+      {
+        "id": 9,
+        "type": "match",
+        "text": "Nối các lựa chọn với nhau?",
+        "pairs": [
+          {
+            "left": { "id": 36, "value": "Giao tiếp không đồng bộ" },
+            "right": {
+              "id": 37,
+              "value": "A thì viết câu chuyện, còn B thi vẽ tranh. A và B thường xuyên trao đổi gửi tin nhắn qua email để trao đổi câu hỏi và cập nhật qua lại"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "id": 38, "value": "Giao tiếp đồng bộ" },
+            "right": {
+              "id": 39,
+              "value": "A và B trò chuyện video với nhau để thảo luận trực tiếp về chủ đề"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "id": 40, "value": "Đồng tác giả" },
+            "right": {
+              "id": 41,
+              "value": "A và B cùng đăng tải tác phẩm truyện tranh lên mạng xã hội và gắn thẻ nhau để đăng tải cùng nội dung"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "id": 42, "value": "Lặp lại" },
+            "right": { "id": 43, "value": "" },
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "type": "single",
+        "text": "Chấn thương nào bạn có thể gặp do sử dụng máy tính và thiết bị trong thời gian dài?",
+        "options": [
+          { "id": 44, "value": "Tăng đau lưng", "isCorrect": true },
+          { "id": 45, "value": "Tăng săn chắc cơ bắp", "isCorrect": false },
+          { "id": 46, "value": "Tăng thị lực", "isCorrect": false },
+          { "id": 47, "value": "Tăng khả năng đi lại", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 11,
+        "type": "single",
+        "text": "Dạng 1: Bạn đang tham gia làm bài tập nhóm và có 1 người bạn trong nhóm tự ý sửa đổi nội dung mà không thảo luận với nhóm. Mình nên làm gì trong tình huống này?",
+        "options": [
+          {
+            "id": 48,
+            "value": "Thu hồi quyền chỉnh sửa nội dung với người đó",
+            "isCorrect": false
+          },
+          { "id": 49, "value": "Xóa nội dung đã sửa đổi", "isCorrect": false },
+          {
+            "id": 50,
+            "value": "Tiếp tục làm phần nội dung của mình",
+            "isCorrect": false
+          },
+          {
+            "id": 51,
+            "value": "Họp nhóm để bàn lại cách làm việc",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "type": "single",
+        "text": "Dạng 2: Một bạn tự ý chỉnh sửa tài liệu của nhóm, thì các bạn làm gì (Câu này phân tích và xử lý tình huống theo hướng tích cực)?",
+        "options": [
+          {
+            "id": 52,
+            "value": "Thảo luận với nhóm về cách chỉnh sửa",
+            "isCorrect": true
+          },
+          {
+            "id": 53,
+            "value": "Tước quyền chỉnh sửa của bạn",
+            "isCorrect": false
+          },
+          {
+            "id": 54,
+            "value": "Kệ bạn và làm việc của mình",
+            "isCorrect": false
+          },
+          {
+            "id": 55,
+            "value": "Xóa chỉnh sửa của bạn đó và quay về ban đầu",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "type": "single",
+        "text": "Dạng 1: Bạn thấy một bài báo xuất hiện trên tạp chí. Yếu tố nào là quan trọng nhất để đánh giá độ uy tín (hay một từ ngữ diễn tả tương đương)?",
+        "options": [
+          {
+            "id": 56,
+            "value": "Số lượt thích và tương tác (hoặc đánh giá gì đó)",
+            "isCorrect": false
+          },
+          {
+            "id": 57,
+            "value": "Độ dài và nội dung được cập nhật",
+            "isCorrect": false
+          },
+          {
+            "id": 58,
+            "value": "Số hình ảnh nhắc tới nội dung đó (đại loại như vậy)",
+            "isCorrect": false
+          },
+          {
+            "id": 59,
+            "value": "Danh tiếng và độ nổi tiếng của tờ báo (Nói chung nói tới danh tiếng tờ báo!)",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "type": "single",
+        "text": "Dạng 2: Đề bài: Làm cách nào để nhận biết bài đăng trên mạng xã hội là uy tín?",
+        "options": [
+          { "id": 60, "value": "Lượt thích", "isCorrect": false },
+          { "id": 61, "value": "Lượt xem", "isCorrect": false },
+          {
+            "id": 62,
+            "value": "Tổ chức đăng bài /(nói chung là xem cái nhóm cái cty đó có uy tính không – VD: VTV3)",
+            "isCorrect": true
+          },
+          {
+            "id": 63,
+            "value": "Người đăng bài là người nổi tiếng",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "type": "single",
+        "text": "Dạng 3: Đề bài:Xác minh bài đăng có uy tín không dựa vào?",
+        "options": [
+          { "id": 64, "value": "Độ dài bài viết", "isCorrect": false },
+          {
+            "id": 65,
+            "value": "Số lượng hình ảnh có trong bài viết",
+            "isCorrect": false
+          },
+          {
+            "id": 66,
+            "value": "Số lượt xem và thích của bài viết",
+            "isCorrect": false
+          },
+          { "id": 67, "value": "Danh tiếng của tổ chức", "isCorrect": true }
+        ]
+      },
+      {
+        "id": 17,
+        "type": "single",
+        "text": "Dạng 4: Đề bài: Làm cách nào để kiểm tra thông tin trên web là đúng sự thật?",
+        "options": [
+          { "id": 68, "value": "Lượt thích", "isCorrect": false },
+          { "id": 69, "value": "Lượt xem", "isCorrect": false },
+          {
+            "id": 70,
+            "value": "Kiểm tra url, ngày truy cập,…",
+            "isCorrect": true
+          },
+          {
+            "id": 71,
+            "value": "Người đăng bài là người nổi tiếng",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "type": "single",
+        "text": "Bộ nhớ nào của thiết bị máy tính dùng để lưu trữ dữ liệu tạm thời?",
+        "options": [
+          { "id": 72, "value": "SSD", "isCorrect": false },
+          { "id": 73, "value": "RAM", "isCorrect": true },
+          { "id": 74, "value": "HDD", "isCorrect": false },
+          { "id": 75, "value": "USB Flash Driver", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 19,
+        "type": "single",
+        "text": "Mia chia sẻ lại bài đăng của người bạn và không muốn mọi người bàn tán về nội dung đó. Mia nên làm gì?",
+        "options": [
+          {
+            "id": 76,
+            "value": "Tùy chỉnh cài đặt quyền riêng tư (để hạn chế ai có thể xem)",
+            "isCorrect": true
+          },
+          {
+            "id": 77,
+            "value": "Chỉ gửi cho bạn bè và mong họ giữ bí mật không chia sẻ cho ai",
+            "isCorrect": false
+          },
+          {
+            "id": 78,
+            "value": "Công khai cho tất cả mọi người cùng xem",
+            "isCorrect": false
+          },
+          {
+            "id": 79,
+            "value": "Không chia sẻ thông tin số điện thoại và địa chỉ trong phần giới thiệu của nền tảng mạng xã hội",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "type": "single",
+        "text": "Tiêu chuẩn để được một mật khẩu mạnh?",
+        "options": [
+          { "id": 80, "value": "Số", "isCorrect": false },
+          { "id": 81, "value": "Tên bạn", "isCorrect": false },
+          {
+            "id": 82,
+            "value": "Một số mật khẩu dễ nhớ như “123456”, hoặc (pa$$word)",
+            "isCorrect": false
+          },
+          {
+            "id": 83,
+            "value": "Bao gồm ký hiệu,số, chữ viết hoa",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "type": "single",
+        "text": "Đâu là nội dung đúng nhất khi nói về giấy phép CC (Creative Commons)?",
+        "options": [
+          {
+            "id": 84,
+            "value": "Giấy phép CC là nơi mọi người chia sẽ nguồn miễn phí và phải thỏa một số điều kiện.",
+            "isCorrect": true
+          },
+          {
+            "id": 85,
+            "value": "Giấy phép CC là nơi thương mại hóa.",
+            "isCorrect": false
+          },
+          {
+            "id": 86,
+            "value": "Giấy phép CC thuộc tổ chức của một công ty.",
+            "isCorrect": false
+          },
+          {
+            "id": 87,
+            "value": "Giấy phép CC cho phép nhà sáng tạo từ bỏ quyền đối với sản phẩm…",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "type": "single",
+        "text": "Cô Juviiian thích chụp ảnh và đâu là giải pháp tốt nhất để lưu trữ dữ liệu, để cô juvilian xóa hình ảnh trong thư mục mỗi ngày?",
+        "options": [
+          {
+            "id": 88,
+            "value": "Sử dụng dịch vụ lưu trữ đám mây (cloud storage)",
+            "isCorrect": true
+          },
+          { "id": 89, "value": "Sử dụng USB", "isCorrect": false },
+          {
+            "id": 90,
+            "value": "Gửi ảnh qua email giáo viên",
+            "isCorrect": false
+          },
+          {
+            "id": 91,
+            "value": "Chỉ xoá những ảnh bạn không muốn sử dụng",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "type": "truefalse",
+        "text": "Đối với mỗi câu phát biểu sau, câu nào là có khả năng lừa đảo khi mở email. Dấu hiệu nào sau đây là tín nhắn lừa đảo – chọn Đúng/Sai?",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 92,
+            "value": "Nội dung có lời lẽ đe dọa",
+            "isCorrect": true
+          },
+          {
+            "id": 93,
+            "value": "Nội dung có lời chào chung chung",
+            "isCorrect": false
+          },
+          {
+            "id": 94,
+            "value": "Nội dung yêu cầu cung cấp thông tin cá nhân",
+            "isCorrect": true
+          }
+        ]
       }
     ]
   },
   {
-    "id": 2,
-    "type": "match",
-    "text": "Dạng 2: Nối các lựa chọn với nhau?",
-    "pairs": [
-      
+    "levelId": "l1",
+    "partId": 3,
+    "questions": [
       {
-        "left": { "id": 4, "value": "AI" },
-        "right": { "id": 5, "value": "Trí tuệ như con người / Để tạo ra các nội dung mới như văn bản, hình ảnh, âm nhạc" },
-        "isCorrect": true
+        "id": 1,
+        "type": "single",
+        "text": "Đâu là hành động phù hợp để bảo vệ danh tiếng kỹ thuật số của bạn?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Tuân thủ các điều khoản trong chính sách sử dụng được chấp nhận khi sử dụng wifi của nhà trường.",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Sử dụng hình ảnh thuộc phạm vi công cộng cho trang web của công ty bạn.",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Đưa phiên bản đầy đủ của bài hát yêu thích vào hồ sơ cá nhân trên mạng xã hội.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Cải thiện phần kinh nghiệm làm việc trong sơ yếu lý lịch trực tuyến bằng cách liệt kê các nhiệm vụ bạn dự định hoàn thành.",
+            "isCorrect": false
+          }
+        ]
       },
       {
-        "left": { "id": 6, "value": "API" },
-        "right": { "id": 7, "value": "Tập hợp các quy tắc cho phép phần mềm và ứng dụng giao tiếp với nhau" },
-        "isCorrect": true
+        "id": 2,
+        "type": "multiple",
+        "text": "Bạn đang thu thập thông tin trực tuyến cho một bài nghiên cứu. Bạn cần thu thập thông tin về từng nguồn để có thể tạo danh sách tham khảo sau này. Đây là 3 thông tin về mỗi trang web mà bạn cần lưu? (Chọn 3)",
+        "options": [
+          { "id": 1, "value": "Tác giả, nếu có.", "isCorrect": true },
+          { "id": 2, "value": "URL.", "isCorrect": true },
+          { "id": 3, "value": "Nguồn nội dung trang.", "isCorrect": false },
+          { "id": 4, "value": "Tiêu đề trang.", "isCorrect": true },
+          { "id": 5, "value": "Mục đích của thông tin.", "isCorrect": false },
+          {
+            "id": 6,
+            "value": "Những nhận xét hỗ trợ tính xác thực của nội dung trang.",
+            "isCorrect": false
+          }
+        ]
       },
       {
-        "left": { "id": 8, "value": "Chatbot" },
-        "right": { "id": 9, "value": "Mô phỏng cuộc trò chuyện như con người" },
-        "isCorrect": true
+        "id": 3,
+        "type": "single",
+        "text": "Bạn đăng tải một bức ảnh hài hước và đắng xấu hổ của bạn bè lên mạng xã hội. Những thông tin đó sẽ tồn tại trên mạng internet trong vòng bao lâu?",
+        "options": [
+          { "id": 1, "value": "24 giờ", "isCorrect": false },
+          { "id": 2, "value": "07 năm", "isCorrect": false },
+          {
+            "id": 3,
+            "value": "Vĩnh viễn, ngay cả sau khi bạn đã xóa thông tin",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Cho đến khi bạn của bạn xóa thông tin",
+            "isCorrect": false
+          }
+        ]
       },
       {
-        "left": { "id": 10, "value": "Deep Learning" },
-        "right": { "id": 11, "value": "Mô hình học máy sử dụng mạng nơ-ron nhân tạo để học tập dữ liệu" },
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "type": "single",
-    "text": "Bạn đang có một công thức nấu ăn bao gồm danh sách các nguyên liệu, các bước thực hiện cụ thể và nhiều hình ảnh minh họa cho từng công đoạn. Khi chuẩn bị đăng bài lên mạng xã hội, yếu tố nào sau đây sẽ có ảnh hưởng lớn nhất đến việc đăng bài viết?",
-    "options": [
-      { "id": 12, "value": "Một số trang mạng xã hội hạn chế số lượng ký tự và hình ảnh.", "isCorrect": true },
-      { "id": 13, "value": "Một số trang mạng xã hội không cho đăng clip nấu ăn.", "isCorrect": false },
-      { "id": 14, "value": "Một số trang mạng xã hội giới hạn video khi đăng.", "isCorrect": false },
-      { "id": 15, "value": "Một số trang mạng xã hội không cho phép đăng hình ảnh.", "isCorrect": false },
-      { "id": 16, "value": "Bạn có quyền được đăng ở trang mạng xã hội đó.", "isCorrect": false }
-    ]
-  },
-  {
-    "id": 4,
-    "type": "single",
-    "text": "Dạng 1: Đâu là điểm khác biệt giữa Chatbot và AI?",
-    "options": [
-      { "id": 17, "value": "Cả Chatbot và AI đều tập trung tạo cuộc trò chuyện, nhưng AI không được đào tạo để trả lời các câu hỏi đào tạo trước / chuẩn bị trước", "isCorrect": false },
-      { "id": 18, "value": "Chatbot để tạo ra nội dung mới, trong khi AI tập trung vào trò chuyện với người dùng", "isCorrect": false },
-      { "id": 19, "value": "Chatbot và AI là 2 khái niệm chung để chỉ một thuật ngữ trong công nghệ", "isCorrect": false },
-      { "id": 20, "value": "AI dùng để tạo ra các nội dung mới, trong khi Chatbot để giao tiếp với người dùng", "isCorrect": true }
-    ]
-  },
-  {
-    "id": 5,
-    "type": "single",
-    "text": "Dạng 2: Đâu là điểm khác biệt giữa Chatbot và AI?",
-    "options": [
-      { "id": 21, "value": "AI tạo sinh tập trung vào tạo nội dung, chatbot mô phỏng trò chuyện con người.", "isCorrect": true },
-      { "id": 22, "value": "AI tạo sinh tập trung mô phỏng trò chuyện, chatbot tập trung vào tạo nội dung", "isCorrect": false },
-      { "id": 23, "value": "Cả hai đều giống nhau, chỉ khác cách gọi", "isCorrect": false },
-      { "id": 24, "value": "AI và Chatbot đều giỏi về mô phỏng trò chuyện, nhưng AI chỉ trả lời theo những gì có sẵn.", "isCorrect": false }
-    ]
-  },
-  {
-    "id": 6,
-    "type": "single",
-    "text": "Tập tin “.exe” chạy được trên Hệ điều hành nào?",
-    "options": [
-      { "id": 25, "value": "Linux", "isCorrect": false },
-      { "id": 26, "value": "macOS", "isCorrect": false },
-      { "id": 27, "value": "Windows", "isCorrect": true },
-      { "id": 28, "value": "Android", "isCorrect": false }
-    ]
-  },
-  {
-    "id": 7,
-    "type": "truefalse",
-    "text": "Chọn đúng hoặc sai:",
-    "optionsOfTrueFalseType": ["Đúng", "Sai"],
-    "statements": [
+        "id": 4,
+        "type": "multiple",
+        "text": "Hai hoạt động nào là ví dụ về bắt nạt trên mạng? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Tạo trang web để chế nhạo ai đó",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Đăng video đáng xấu hổ về một người nào đó",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Hủy kết bạn với một người trên mạng xã hội sau khi họ đăng điều gì đó mà bạn không đồng tình",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Báo cáo người nào đó bạn không thích vì đăng tải nội dung không phù hợp",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "type": "single",
+        "text": "Đe doạ trực tuyến xảy ra khi một người hoặc nhiều người sử dụng từ ngữ hoặc hình ảnh có hại để làm tổn thương, xấu hổ hoặc __________ người khác một cách cố ý, trực tuyến.",
+        "options": [
+          { "id": 1, "value": "Khuyến khích (Encourage)", "isCorrect": false },
+          { "id": 2, "value": "Nâng cao (Uplift)", "isCorrect": false },
+          { "id": 3, "value": "Thỏa mãn (Satisfy)", "isCorrect": false },
+          { "id": 4, "value": "Doạ nạt (Intimidate)", "isCorrect": true }
+        ]
+      },
+      {
+        "id": 6,
+        "type": "single",
+        "text": "Trời đã về khuya. Bạn cảm thấy khó ngủ và quyết định lướt xem các bài đăng của bạn bè trên mạng xã hội. Một học sinh cùng trường với bạn vừa đăng bài thông báo rằng trường học đã bị phá hoại và giờ học sẽ bị lùi lại hai tiếng vào hôm sau. Bạn cần phải xác định xem liệu thông tin đó có chính xác hay không. Bạn nên làm gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Nhắn mẹ của bạn kiểm tra vấn đề này và đặt báo thức muộn hơn hai tiếng so với ngày thường",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Kiểm tra trang web của nhà trường và các trang web tin tức địa phương để biết thông tin chính thức",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Trả lời bài đăng gốc và hỏi người bạn đó về nguồn tin",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Đăng lại thông tin, gắn thẻ bạn bè của bạn và hỏi xem có ai khác biết về việc giờ học bị lùi lại hay không",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "type": "truefalse",
+        "text": "Bạn hãy chọn “Đúng” hoặc “Sai” với các công cụ có thể bảo vệ quyền riêng tư kỹ thuật số  của mình?",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Trình chống phân mảnh đĩa",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Chương trình quản lý mật khẩu",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Tiện ích bổ sung chống theo dõi của trình duyệt",
+            "isCorrect": true
+          }
+        ],
+        "explanation": ""
+      },
+      {
+        "id": 8,
+        "type": "single",
+        "text": "Đâu là nhân tố đóng góp chính vào danh tính số của bạn?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Thông tin bạn đăng tải trên các trang mạng xã hội, blog và diễn đàn",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Dữ liệu được lưu trữ trên máy tính của bạn cho phép bạn đăng nhập vào một trang web bảo mật thông qua một tài khoản bảo mật",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Tài liệu được lưu trữ trên máy tính của bạn",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Tên người dùng và mật khẩu của bạn trong mỗi trang web hoặc dịch vụ bạn sử dụng",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "type": "truefalse",
+        "text": "Bạn đang biên soạn một nghiên cứu. Bạn cần thêm tài liệu tham khảo cho bài viết của mình. Với mỗi trường hợp, hãy chọn Có nếu bạn phải thêm nguồn tham khảo hoặc Không nếu không cần thiết.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Bạn sử dụng ý tưởng từ một bài báo",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Nội dung bạn viết hoàn toàn mới mẻ và riêng biệt",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Bạn sao chép đoạn văn từ một trang web",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Bạn diễn đạt lại nội dung dùng từ một bài viết trên tạp chí",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "type": "truefalse",
+        "text": "Bạn hãy chọn “Đúng” hoặc “Sai” với các công cụ có thể bảo vệ quyền riêng tư kỹ thuật số  của mình?",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Cập nhật trình duyệt sáu tháng một lần sẽ giúp xóa sạch dấu chân kỹ thuật số của bạn",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Nếu bạn sử dụng bộ lọc web, sẽ không thể truy vết từ những nhận xét trực tuyến ẩn danh mà bạn đăng tải",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Các nhà tuyển dụng tiềm năng có thể tìm kiếm hình ảnh và thông điệp được các ứng viên dưới 18 tuổi đăng tải trên mạng xã hội",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Những công ty mà bạn chia sẻ dữ liệu cá nhân để đổi lấy quyền dùng ứng dụng và dịch vụ không được phép cung cấp dữ liệu cho bất kỳ ai",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "type": "truefalse",
+        "text": "Bạn đang thực hiện một dự án nghiên cứu và cần xác minh liệu một nguồn thông tin có thuộc phạm vi công cộng hay không. Với mỗi câu phát biểu, hãy chọn Đúng nếu đó là lý do khiến một tác phẩm bản quyền có thể rơi vào phạm vi công cộng và Sai nếu không phải.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Bản quyền đã hết hạn",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Chủ sở hữu bản quyền không thực hiện quy trình gia hạn bản quyền",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Chủ sở hữu bản quyền lựa chọn chuyển tác phẩm sang phạm vi công cộng",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "type": "multiple",
+        "text": "Một số lợi ích của ẩn danh trực tuyến là gì? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Nó cho phép mọi người sống thật và trung thực mà không sợ bị trả thù hoặc xấu hổ",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Nó cho phép mọi người bắt nạt trên mạng mà không chịu trách nhiệm",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Nó cho phép mọi người đánh giá người khác mà không bị ảnh hưởng",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Nó cho phép thảo luận và bày tỏ về những ý tưởng không phổ biến",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "type": "truefalse",
+        "text": "Bạn cần thêm một tác phẩm nghệ thuật vào bài trình chiếu mà bạn đang làm cho lớp học của mình. Bạn Không có thời gian để xin giấy phép sử dụng tác phẩm nghệ thuật. Với mỗi câu phát biểu, hãy chọn Có nếu bạn có thể sử dụng tác phẩm nghệ thuật một cách hợp pháp mà không cần phải xin giấy phép hoặc chọn Không nếu bạn không.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Tác giả là người quen của bạn",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Các tác phẩm nghệ thuật được bản quyền bảo vệ",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Chủ sở hữu bản quyền đã chuyển tác phẩm nghệ thuật sang phạm vi công cộng",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "type": "multiple",
+        "text": "Đâu là hai tác động tiêu cực của việc đăng tải ảnh meme hoặc bình luận xúc phạm lên mạng xã hội? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Hình ảnh hoặc bình luận đó sẽ tồn tại mãi ngay cả khi đã qua sự kiện tạo cảm hứng cho bạn đăng tải",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Hình ảnh hoặc bình luận đó thể hiện sự thông minh và kỹ năng nghệ thuật số của bạn",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Khi xem ảnh, những người khác nhau có thể suy diễn hình ảnh meme theo những cách khác nhau",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Bạn có thể dễ dàng xác định một nhóm người có tín ngưỡng cụ thể",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "type": "truefalse",
+        "text": "Bạn đang nghiên cứu thông tin trong một tài liệu dài. Với mỗi câu phát biểu, hãy chọn Có nếu bạn có thể sử dụng tính năng tìm kiếm để hoàn thành công việc hoặc chọn Không nếu không thể.",
+        "optionsOfTrueFalseType": ["Có", "Không"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Xác định một từ khóa hoặc cụm từ trong tài liệu",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Thay đổi định dạng của tất cả các trích dẫn trong tài liệu của bạn",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Xác định các trang có tài liệu tham khảo của một tác giả cụ thể",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "type": "multiple",
+        "text": "Bạn cần đưa tài liệu gốc vào mục tài liệu tham khảo trong bài viết của bạn. Đâu là hai lý do bạn nên đưa tài liệu gốc vào ? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Điều này giúp người đọc tìm thấy nguồn thông tin ban đầu.",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Điều này thể hiện sự tôn trọng đối với các tác giả nghiên cứu mà bạn đang tham khảo",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Điều này thể hiện bài nghiên cứu là tác phẩm gốc của bạn.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Điều này cung cấp khoản thanh toán tài chính cho những người thực hiện nghiên cứu.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "type": "single",
+        "text": "Một bạn nam trong lớp đăng hình của bạn được dán lên một con lợn trên mxh. Bạn nên làm gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Nói với bạn nam rằng bạn tò mò và muốn biết lý do tại sao cậu ấy đăng.",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Coi bài đăng là một lời chỉ trích gián tiếp về cân nặng của bạn và thực hiện chế độ ăn kiêng.",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Đăng lại hình của bạn nam đó lên một miếng thịt xông khói để xem bạn đó làm gì tiếp theo.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Trả lời bài đăng ban đầu bằng một bình luận trung lập để bạn nam biết rằng bạn đã xem bài đăng và không trả đũa. ",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "type": "single",
+        "text": "Bản quyền cung cấp cho tác giả quyền hợp pháp độc quyền đối với _______ Chủ sở hữu có quyền kiểm soát người in, phân tích, phê bình tác phẩm của họ",
+        "options": [
+          { "id": 1, "value": "Sự sáng tạo (Creation)", "isCorrect": true },
+          { "id": 2, "value": "Quyền sở hữu (Ownership) ", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 19,
+        "type": "multiple",
+        "text": "Nội dung nào đúng với miền công cộng (Public Domain) (chọn 3)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Nó được bảo vệ bởi luật sở hữu trí tuệ",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Nó thuộc sở hữu của công chúng chứ không phải cá nhân hay công ty nào",
+            "isCorrect": true
+          },
+          { "id": 3, "value": "Nó là miễn phí sử dụng", "isCorrect": true },
+          {
+            "id": 4,
+            "value": "Nó có thể được mua để sở hữu sau 50 năm",
+            "isCorrect": false
+          },
+          {
+            "id": 5,
+            "value": "Nó tự động trở thành miền công cộng 50-100 năm sau khi tác giả qua đời.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "type": "truefalse",
+        "text": "Chọn 'Đúng' hoặc 'Sai' với các phát biểu về tác phẩm bản quyền:",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Bản quyền tồn tại ngay sau khi tác phẩm được tạo ra",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Luật bản quyền bảo vệ quyền sao chép tác phẩm có bản quyền",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Luật bản quyền chỉ bảo vệ các tác phẩm nghệ thuật, chẳng hạn như tranh vẽ và tác phẩm điêu khắc",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "type": "truefalse",
+        "text": "Chọn 'Đúng' hoặc 'Sai' với mục đích sử dụng tác phẩm công cộng (Public Domain):",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Trưng bày một áp phích trong đêm chiếu phim miễn phí tại trường",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Cho một bài thơ vào danh mục tác phẩm gốc của bạn",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Biểu diễn một tác phẩm kịch cho phụ huynh tại chương trình",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Trình bày hình ảnh cho các học sinh khác trong bài thuyết trình",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "type": "truefalse",
+        "text": "Với các câu về giấy phép sáng tạo, hãy chọn Đúng Sai phù hợp",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Bạn có thể sử dụng hình ảnh miễn phí",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Bạn có thể sử dụng hình ảnh vô điều kiện",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Nếu sử dụng hình ảnh, bạn phải trích dẫn nguồn của hình ảnh đó",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "type": "multiple",
+        "text": "Người dùng có thể thực hiện theo các bước nào để xác định tính hợp lệ của thông tin trực tuyến hay theo cách khác? (Chọn 3)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Xác định thông tin đến từ đâu.",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Xác định tác giả và thẩm quyền của họ về chủ đề thông tin.",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Xác định xem tác giả có viết những cuốn sách nổi tiếng hay không",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Xác định xem thông tin đã được cập nhật mới nhất hay chưa.",
+            "isCorrect": true
+          },
+          {
+            "id": 5,
+            "value": "Làm mất uy tín của tác giả mà bạn bè của người dùng không tin tưởng.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "type": "multiple",
+        "text": "Bạn đang thực hiện một nghiên cứu trực tuyến. Bạn cần phải điều chỉnh cài đặt tìm kiếm để nhận được kết quả phù hợp hơn với đối tượng nghiên cứu. Đâu là hai kỹ thuật nên sử dụng? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Tìm kiếm các từ gốc và loại trừ hậu tố.",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tìm kiếm các thuật ngữ chung chung.",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Đặt các cụm từ tìm kiếm quan trọng nhất trong dấu ngoặc vuông.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Đặt các cụm từ tìm kiếm dài trong dấu ngoặc kép",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "type": "truefalse",
+        "text": "Bạn đang tìm thông tin về trang web. Với mỗi mô tả trang web, hãy chọn Có nếu trang web có liên quan, Không nếu không phải.",
+        "optionsOfTrueFalseType": ["Có", "Không"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Một bài báo trên tạp chí lá cải viết về khu vườn của những người nổi tiếng",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Một bài viết hướng dẫn do trường đại học danh tiếng xuất bản",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Một trang web được tài trợ cho một cửa hàng trang trí có bán hạt giống.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "type": "single",
+        "text": "Bạn tìm thấy một bài báo chứa thông tin liên quan đến chủ đề nghiên cứu. Bạn có thể tìm kiếm thông tin nào bằng cách sử dụng tính năng tìm kiếm của trình duyệt.",
+        "options": [
+          {
+            "id": 1,
+            "value": "Số lần bài báo đề cập đến một chủ đề cụ thể.",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Danh sách các chủ đề phụ liên quan đến chủ đề nghiên cứu chính của bạn.",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Bình luận liên quan đến các trang mạng xã hội.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Đáp án chọn một Chủ đề hỏi cụ thể liên quan đến chủ đề bài viết.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "type": "single",
+        "text": "Có thể sử dụng toán tử nào để tìm kiếm các từ đồng nghĩa?",
+        "options": [
+          { "id": 1, "value": "Dấu ?", "isCorrect": false },
+          { "id": 2, "value": "Dấu *", "isCorrect": false },
+          { "id": 3, "value": "AND", "isCorrect": false },
+          { "id": 4, "value": "Dấu ~", "isCorrect": true }
+        ]
+      },
+      {
+        "id": 28,
+        "type": "truefalse",
+        "text": "Bạn cần tìm kiếm thông tin, hãy chọn Có nếu trang web đáp ứng được, Không nếu ngược lại",
+        "optionsOfTrueFalseType": ["Có", "Không"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Trang web có lỗi sai chính tả.",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Nội dung trang web được viết một cách khách quan.",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Trang web bao gồm một danh sách các tài liệu tham khảo.",
+            "isCorrect": true
+          }
+        ]
+      },
       {
         "id": 29,
-        "value": "Bạn phải đăng ký bản quyền tại cơ quan bản quyền để bảo vệ bản quyền",
-        "isCorrect": true
+        "type": "single",
+        "text": "Bạn đang đưa ra đề xuất, sửa chữa và nhận xét về bài nghiên cứu của bạn học. Bạn đang thực hiện quy trình gì?",
+        "options": [
+          { "id": 1, "value": "Xác minh dữ liệu.", "isCorrect": false },
+          { "id": 2, "value": "Quy kết.", "isCorrect": false },
+          { "id": 3, "value": "Bình duyệt.", "isCorrect": true },
+          { "id": 4, "value": "Đồng tác giả.", "isCorrect": false }
+        ]
       },
       {
         "id": 30,
-        "value": "Luật bản quyền bảo vệ quyền sao chép tác phẩm có bản quyền",
-        "isCorrect": true
+        "type": "single",
+        "text": "Bạn cần tạo một bản sao chính xác của hệ điều hành Windows trên máy tính để phòng khi hệ thống gặp sự cố. Bạn nên làm gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Thiết lập trình sao lưu (Windows backup).",
+            "isCorrect": true
+          },
+          { "id": 2, "value": "Bật lịch sử tập tin.", "isCorrect": false },
+          { "id": 3, "value": "Tạo hình ảnh hệ thống.", "isCorrect": false },
+          { "id": 4, "value": "Tạo một đĩa sửa hệ thống.", "isCorrect": false }
+        ]
       },
       {
         "id": 31,
-        "value": "Luật bản quyền chỉ bảo vệ các tác phẩm nghệ thuật, chẳng hạn như tranh vẽ và tác phẩm điêu khắc",
-        "isCorrect": false
-      }
-    ],
-    "explanation": "Chỉ khi tác phẩm đã được đưa vào phạm vi công cộng thì mới có thể sử dụng hợp pháp mà không cần giấy phép."
-  },
-  {
-    "id": 8,
-    "type": "truefalse",
-    "text": "Đối với mỗi câu phát biểu sau về các loại hoạt động trên các nền tảng mạng xã hội, hãy chọn Có nếu hoạt động đó có thể thực hiện trên hầu hết các mạng xã hội, chọn Không nếu có thể không được thực hiện trên hầu hết các nền tảng mạng xã hội",
-    "optionsOfTrueFalseType": ["Đúng", "Sai"],
-    "statements": [
+        "type": "truefalse",
+        "text": "Với mỗi câu phát biểu về quy tắc tạo bài trình chiếu cơ bản, hãy chọn Đúng hoặc Sai.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Bạn nên giảm thiểu nội dung văn bản trong bài trình chiếu",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Bạn chỉ có thể tạo bài trình chiếu Microsoft PowerPoint trên máy tính chạy Windows",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Bạn có thể truy cập các bài thiết trình Apple Keynote từ máy tính chạy Windows qua iCloud",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Bạn nên để màu văn bản và màu nền của bài trình chiếu không quá tương phản",
+            "isCorrect": false
+          }
+        ]
+      },
       {
         "id": 32,
-        "value": "Giả danh tính của một người dùng thật",
-        "isCorrect": false
+        "type": "single",
+        "text": "Chính tả và ngữ pháp (Spelling and Grammar) kém khiến một người trông giống ________ và những người khác sẽ không coi trọng chúng",
+        "options": [
+          {
+            "id": 1,
+            "value": "Am hiểu công nghệ (Tech savvy)",
+            "isCorrect": false
+          },
+          { "id": 2, "value": "Không chuyên nghiệp", "isCorrect": true },
+          { "id": 3, "value": "Chuyên nghiệp", "isCorrect": false },
+          { "id": 4, "value": "Chịu trách nhiệm", "isCorrect": false }
+        ]
       },
       {
         "id": 33,
-        "value": "Đăng tải bình luận tiêu cực về sản phẩm và dịch vụ",
-        "isCorrect": true
+        "type": "multiple",
+        "text": "Khi tham khảo một cuốn sách, những yếu tố nào phải có trong phần trích dẫn( Citation)? (Chọn 3) ",
+        "options": [
+          { "id": 1, "value": "Tên sách ( Book title)", "isCorrect": true },
+          {
+            "id": 2,
+            "value": "Ngày xuất bản (Publication date)",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Tên Tác giả (Author's name)",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Tên nhà xuất bản (Publisher’ name)",
+            "isCorrect": false
+          },
+          {
+            "id": 5,
+            "value": "Ngày bản quyền (Copyright date)",
+            "isCorrect": false
+          },
+          { "id": 6, "value": "Số chương (Chapter number)", "isCorrect": false }
+        ]
       },
       {
         "id": 34,
-        "value": "Đăng tải nội dung do chính mình tạo ra",
-        "isCorrect": true
+        "type": "single",
+        "text": "Bạn tên là Sam Grey. Bạn đang cập nhật dự án của trường và muốn lưu một phiên bản mới. Bạn cần đặt tên cho tập tin sao cho trong đó phải bao gồm tên tác giả, dễ đọc và hỗ trợ khả năng sử dụng trên web cũng như khả năng tương thích với nhiều nền tảng. Bạn nên sử dụng tên tập tin như thể nào?",
+        "options": [
+          { "id": 1, "value": "SamGreyv3.docx", "isCorrect": false },
+          { "id": 2, "value": "SamGreyProject1v3.docx", "isCorrect": true },
+          {
+            "id": 3,
+            "value": "Samgreyprojectoneversionthree15/04/2025.docx",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Sam Grey Project1-version3.docx",
+            "isCorrect": false
+          }
+        ]
       },
       {
         "id": 35,
-        "value": "Chia sẻ tác phẩm thuộc quyền sở hữu trí tuệ của người khác",
-        "isCorrect": false
-      }
-    ],
-    "explanation": "Một số hoạt động có thể bị hạn chế hoặc cấm trên các nền tảng mạng xã hội, chẳng hạn như giả danh tính và chia sẻ nội dung vi phạm bản quyền."
-  },
-  {
-    "id": 9,
-    "type": "match",
-    "text": "Nối các lựa chọn với nhau?",
-    "pairs": [
-      
-      {
-        "left": { "id":36, "value": "Giao tiếp không đồng bộ" },
-        "right": { "id": 37, "value": "A thì viết câu chuyện, còn B thi vẽ tranh. A và B thường xuyên trao đổi gửi tin nhắn qua email để trao đổi câu hỏi và cập nhật qua lại" },
-        "isCorrect": true
+        "type": "multiple",
+        "text": "Giáo viên hướng dẫn bạn chỉnh sửa bài nghiên cứu của một người bạn cùng lớp. Đâu là hai công cụ bạn nên sử dụng? (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "Chế độ thiết kế", "isCorrect": false },
+          { "id": 2, "value": "Nhận xét", "isCorrect": true },
+          { "id": 3, "value": "Ghi chú nối kết", "isCorrect": false },
+          { "id": 4, "value": "Trình soát chính tả", "isCorrect": true }
+        ]
       },
       {
-        "left": { "id":38, "value": "Giao tiếp đồng bộ" },
-        "right": { "id": 39, "value": "A và B trò chuyện video với nhau để thảo luận trực tiếp về chủ đề" },
-        "isCorrect": true
+        "id": 36,
+        "type": "single",
+        "text": "Bạn nhập một công thức nấu ăn vào tài liệu Microsoft Word dưới dạng một đoạn văn và chuyển đổi đoạn văn đó thành một danh sách đánh số như trong hình 1. Bạn cần tách đoạn văn thành từng mục danh sách đánh số như trong hình 2. Bạn sử dụng phím hoặc tổ hợp phím nào ở cuối mỗi câu?",
+        "imageUrl": "/assets/question/OT2_q36.png",
+        "options": [
+          { "id": 1, "value": "Shift +Enter", "isCorrect": false },
+          { "id": 2, "value": "Shift +Tab", "isCorrect": false },
+          { "id": 3, "value": "Tab", "isCorrect": false },
+          { "id": 4, "value": "Enter", "isCorrect": true }
+        ]
       },
       {
-        "left": { "id":40, "value": "Đồng tác giả" },
-        "right": { "id": 41, "value": "A và B cùng đăng tải tác phẩm truyện tranh lên mạng xã hội và gắn thẻ nhau để đăng tải cùng nội dung" },
-        "isCorrect": true
+        "id": 37,
+        "type": "multiple",
+        "text": "Máy chủ lưu trữ đám mây sử dụng những loại phòng thủ nào để bảo vệ dữ liệu của người dùng? (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "Malwar", "isCorrect": false },
+          { "id": 2, "value": "Firewalls (Tường lửa)", "isCorrect": true },
+          { "id": 3, "value": "Safety Nets", "isCorrect": false },
+          { "id": 4, "value": "Encryption (Mã hóa)", "isCorrect": true }
+        ]
       },
       {
-        "left": { "id": 42, "value": "Lặp lại" },
-        "right": { "id": 43, "value": "" },
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "id": 10,
-    "type": "single",
-    "text": "Chấn thương nào bạn có thể gặp do sử dụng máy tính và thiết bị trong thời gian dài?",
-    "options": [
-      { "id": 44, "value": "Tăng đau lưng", "isCorrect": true },
-      { "id": 45, "value": "Tăng săn chắc cơ bắp", "isCorrect": false },
-      { "id": 46, "value": "Tăng thị lực", "isCorrect": false },
-      { "id": 47, "value": "Tăng khả năng đi lại", "isCorrect": false }
-    ]
-  },
-  {
-    "id": 11,
-    "type": "single",
-    "text": "Dạng 1: Bạn đang tham gia làm bài tập nhóm và có 1 người bạn trong nhóm tự ý sửa đổi nội dung mà không thảo luận với nhóm. Mình nên làm gì trong tình huống này?",
-    "options": [
-      { "id": 48, "value": "Thu hồi quyền chỉnh sửa nội dung với người đó", "isCorrect": false },
-      { "id": 49, "value": "Xóa nội dung đã sửa đổi", "isCorrect": false },
-      { "id": 50, "value": "Tiếp tục làm phần nội dung của mình", "isCorrect": false },
-      { "id": 51, "value": "Họp nhóm để bàn lại cách làm việc", "isCorrect": true }
-    ]
-  },
-  {
-    "id": 12,
-    "type": "single",
-    "text": "Dạng 2: Một bạn tự ý chỉnh sửa tài liệu của nhóm, thì các bạn làm gì (Câu này phân tích và xử lý tình huống theo hướng tích cực)?",
-    "options": [
-      { "id": 52, "value": "Thảo luận với nhóm về cách chỉnh sửa", "isCorrect": true },
-      { "id": 53, "value": "Tước quyền chỉnh sửa của bạn", "isCorrect": false },
-      { "id": 54, "value": "Kệ bạn và làm việc của mình", "isCorrect": false },
-      { "id": 55, "value": "Xóa chỉnh sửa của bạn đó và quay về ban đầu", "isCorrect": false }
-    ]
-  },
-  {
-    "id": 13,
-    "type": "single",
-    "text": "Dạng 1: Bạn thấy một bài báo xuất hiện trên tạp chí. Yếu tố nào là quan trọng nhất để đánh giá độ uy tín (hay một từ ngữ diễn tả tương đương)?",
-    "options": [
-      { "id": 56, "value": "Số lượt thích và tương tác (hoặc đánh giá gì đó)", "isCorrect": false },
-      { "id": 57, "value": "Độ dài và nội dung được cập nhật", "isCorrect": false },
-      { "id": 58, "value": "Số hình ảnh nhắc tới nội dung đó (đại loại như vậy)", "isCorrect": false },
-      { "id": 59, "value": "Danh tiếng và độ nổi tiếng của tờ báo (Nói chung nói tới danh tiếng tờ báo!)", "isCorrect": true }
-    ]
-  },
-  {
-    "id": 15,
-    "type": "single",
-    "text": "Dạng 2: Đề bài: Làm cách nào để nhận biết bài đăng trên mạng xã hội là uy tín?",
-    "options": [
-      { "id": 60, "value": "Lượt thích", "isCorrect": false },
-      { "id": 61, "value": "Lượt xem", "isCorrect": false },
-      { "id": 62, "value": "Tổ chức đăng bài /(nói chung là xem cái nhóm cái cty đó có uy tính không – VD: VTV3)", "isCorrect": true },
-      { "id": 63, "value": "Người đăng bài là người nổi tiếng", "isCorrect": false }
-    ]
-  },
-  {
-    "id": 16,
-    "type": "single",
-    "text": "Dạng 3: Đề bài:Xác minh bài đăng có uy tín không dựa vào?",
-    "options": [
-      { "id": 64, "value": "Độ dài bài viết", "isCorrect": false },
-      { "id": 65, "value": "Số lượng hình ảnh có trong bài viết", "isCorrect": false },
-      { "id": 66, "value": "Số lượt xem và thích của bài viết", "isCorrect": false },
-      { "id": 67, "value": "Danh tiếng của tổ chức", "isCorrect": true }
-    ]
-  },
-  {
-    "id": 17,
-    "type": "single",
-    "text": "Dạng 4: Đề bài: Làm cách nào để kiểm tra thông tin trên web là đúng sự thật?",
-    "options": [
-      { "id": 68, "value": "Lượt thích", "isCorrect": false },
-      { "id": 69, "value": "Lượt xem", "isCorrect": false },
-      { "id": 70, "value": "Kiểm tra url, ngày truy cập,…", "isCorrect": true },
-      { "id": 71, "value": "Người đăng bài là người nổi tiếng", "isCorrect": false }
-    ]
-  },
-  {
-    "id": 18,
-    "type": "single",
-    "text": "Bộ nhớ nào của thiết bị máy tính dùng để lưu trữ dữ liệu tạm thời?",
-    "options": [
-      { "id": 72, "value": "SSD", "isCorrect": false },
-      { "id": 73, "value": "RAM", "isCorrect": true },
-      { "id": 74, "value": "HDD", "isCorrect": false },
-      { "id": 75, "value": "USB Flash Driver", "isCorrect": false }
-    ]
-  },
-  {
-    "id": 19,
-    "type": "single",
-    "text": "Mia chia sẻ lại bài đăng của người bạn và không muốn mọi người bàn tán về nội dung đó. Mia nên làm gì?",
-    "options": [
-      { "id": 76, "value": "Tùy chỉnh cài đặt quyền riêng tư (để hạn chế ai có thể xem)", "isCorrect": true },
-      { "id": 77, "value": "Chỉ gửi cho bạn bè và mong họ giữ bí mật không chia sẻ cho ai", "isCorrect": false },
-      { "id": 78, "value": "Công khai cho tất cả mọi người cùng xem", "isCorrect": false },
-      { "id": 79, "value": "Không chia sẻ thông tin số điện thoại và địa chỉ trong phần giới thiệu của nền tảng mạng xã hội", "isCorrect": false }
-    ]
-  },
-  {
-    "id": 20,
-    "type": "single",
-    "text": "Tiêu chuẩn để được một mật khẩu mạnh?",
-    "options": [
-      { "id": 80, "value": "Số", "isCorrect": false },
-      { "id": 81, "value": "Tên bạn", "isCorrect": false },
-      { "id": 82, "value": "Một số mật khẩu dễ nhớ như “123456”, hoặc (pa$$word)", "isCorrect": false },
-      { "id": 83, "value": "Bao gồm ký hiệu,số, chữ viết hoa", "isCorrect": true }
-    ]
-  },
-  {
-    "id": 21,
-    "type": "single",
-    "text": "Đâu là nội dung đúng nhất khi nói về giấy phép CC (Creative Commons)?",
-    "options": [
-      { "id": 84, "value": "Giấy phép CC là nơi mọi người chia sẽ nguồn miễn phí và phải thỏa một số điều kiện.", "isCorrect": true },
-      { "id": 85, "value": "Giấy phép CC là nơi thương mại hóa.", "isCorrect": false },
-      { "id": 86, "value": "Giấy phép CC thuộc tổ chức của một công ty.", "isCorrect": false },
-      { "id": 87, "value": "Giấy phép CC cho phép nhà sáng tạo từ bỏ quyền đối với sản phẩm…", "isCorrect": false }
-    ]
-  },
-  {
-    "id": 22,
-    "type": "single",
-    "text": "Cô Juviiian thích chụp ảnh và đâu là giải pháp tốt nhất để lưu trữ dữ liệu, để cô juvilian xóa hình ảnh trong thư mục mỗi ngày?",
-    "options": [
-      { "id": 88, "value": "Sử dụng dịch vụ lưu trữ đám mây (cloud storage)", "isCorrect": true },
-      { "id": 89, "value": "Sử dụng USB", "isCorrect": false },
-      { "id": 90, "value": "Gửi ảnh qua email giáo viên", "isCorrect": false },
-      { "id": 91, "value": "Chỉ xoá những ảnh bạn không muốn sử dụng", "isCorrect": false }
-    ]
-  },
-  {
-    "id": 23,
-    "type": "truefalse",
-    "text": "Đối với mỗi câu phát biểu sau, câu nào là có khả năng lừa đảo khi mở email. Dấu hiệu nào sau đây là tín nhắn lừa đảo – chọn Đúng/Sai?",
-    "optionsOfTrueFalseType": ["Đúng", "Sai"],
-    "statements": [
-      {
-        "id": 92,
-        "value": "Nội dung có lời lẽ đe dọa",
-        "isCorrect": true
+        "id": 38,
+        "type": "truefalse",
+        "text": "Bạn cần xác định quy ước đặt tên tập tin nhất quán cho hệ thống quản lý tập tin dùng chung để có thể hỗ trợ nhiều ứng dụng phần mề và hệ điều hành. Với mỗi câu phát biểu, hãy chọn Có nếu quy ước đặt tên giúp thực hiện được mục tiêu này hoặc Không nếu không thể.",
+        "optionsOfTrueFalseType": ["Có", "Không"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Chèn khoảng cách giữa các từ",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Sử dụng tên tập tin dài, chi tiết",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Đối với chuỗi tên tập tin bao gồm ngày tháng, hãy sử dụng định dạng MMDDYY",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "KHÔNG sử dụng ký tự đặc biệt ( ~ ! @ # $ % ^& * () ` ; < > ? , [] {} ’  ”và |",
+            "isCorrect": true
+          }
+        ]
       },
       {
-        "id": 93, 
-        "value": "Nội dung có lời chào chung chung",
-        "isCorrect": false
+        "id": 39,
+        "type": "multiple",
+        "text": "Những khía cạnh quan trọng của nghi thức giao tiếp bằng văn bản là gì (Chọn 3)",
+        "options": [
+          { "id": 1, "value": "Đúng giờ (Timelines)", "isCorrect": false },
+          { "id": 2, "value": "Chính tả (Spelling)", "isCorrect": true },
+          {
+            "id": 3,
+            "value": "Từ viết tắt (Abbreviations)",
+            "isCorrect": false
+          },
+          { "id": 4, "value": "Sự tôn trọng (Respect)", "isCorrect": true },
+          { "id": 5, "value": "Ngữ pháp (Grammar)", "isCorrect": true }
+        ]
       },
       {
-        "id": 94,
-        "value": "Nội dung yêu cầu cung cấp thông tin cá nhân",
-        "isCorrect": true
+        "id": 40,
+        "type": "single",
+        "text": "Tham khảo hình ảnh bên dưới. Người dùng có thể tìm thấy các tuỳ chọn để kết hợp các tài liệu trong nhóm nào dưới tab Review?",
+        "imageUrl": "/assets/question/OT2_q40.png",
+        "options": [
+          { "id": 1, "value": "Changes", "isCorrect": false },
+          { "id": 2, "value": "Tracking", "isCorrect": false },
+          { "id": 3, "value": "Proofing", "isCorrect": false },
+          { "id": 4, "value": "Compare", "isCorrect": true }
+        ]
+      },
+      {
+        "id": 41,
+        "type": "truefalse",
+        "text": "Lựa chọn từng thuật ngữ cộng tác với mô tả tương ứng.",
+        "optionsOfTrueFalseType": ["Chỉnh sửa", "Đồng tác giả"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Tạo năm trang trình chiếu cho bài trình chiếu PowerPoint nhóm được lưu trên OneDrive",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Chụp ảnh và chèn ảnh đó vào bài trình chiếu Google trang trình chiếu do bạn cùng lớp của bạn tạo nên",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Soát lỗi tài liệu Google cho một người bạn cùng lớp",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Sử dụng công cụ kiểm tra chính tả & ngữ pháp để sửa lỗi trong tài liệu Word Online của bạn cùng lớp",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "type": "multiple",
+        "text": "Những khía cạnh quan trọng của nghi thức giao tiếp bằng văn bản là gì (Chọn 2)",
+        "imageUrl": "/assets/question/OT2_q42.PNG",
+        "options": [
+          {
+            "id": 1,
+            "value": "Hình 2 – Khổ ngang (Landscape)",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Hình 1- Khổ dọc (Portrait)",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Hình 1 – Khổ ngang (Landscape)",
+            "isCorrect": true
+          },
+          { "id": 4, "value": "Hình 2 – Khổ dọc (Portrait)", "isCorrect": true }
+        ]
+      },
+      {
+        "id": 43,
+        "type": "truefalse",
+        "text": "Với mỗi câu phát biểu về cách thức in tài liệu, hãy chọn Đúng hoặc Sai.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "In hai mặt (Duplex)",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Bạn có thể thay đổi lề của tài liệu trong phần cài đặt in",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Bạn chỉ có thể thay đổi khổ giấy từ tùy chọn thiết lập trang",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Để duy trì định dạng của tập tin khi phân phối tài liệu theo hình thức điện từ, hãy in tài liệu thành tập tin PDF",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 44,
+        "type": "single",
+        "text": "Bạn chụp ảnh ký yếu cho trường bạn điện thoại. Bạn chụp hơn 50 bức ảnh mỗi ngày.Bạn cần sử dụng phương pháp nhanh nhất và đáng tin cậy nhất để sao lưu các bức ảnh và xóa chúng khỏi điện thoại mỗi ngày. Bạn nên làm gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Đồng bộ hóa điện thoại của bạn với dịch vụ lưu trữ đám mây",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Gửi ảnh qua email cho giáo viên của bạn",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Chỉ xóa những ảnh bạn không muốn sử dụng",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Tải ảnh xuống ổ flash của USB",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 45,
+        "type": "single",
+        "text": "Một bản sao carbon (CC) được gửi ______ có nghĩa là người nhận hoặc những người nhận ở dòng To sẽ thấy rằng một bản sao đã được gửi và nó đã được gửi cho ai.",
+        "options": [
+          { "id": 1, "value": "Riêng tư (Privately)", "isCorrect": false },
+          { "id": 2, "value": "Tĩnh lặng (Statically)", "isCorrect": false },
+          { "id": 3, "value": "Công khai (Publicly)", "isCorrect": true },
+          { "id": 4, "value": "Cố ý (Intentionally)", "isCorrect": false }
+        ]
       }
     ]
   }

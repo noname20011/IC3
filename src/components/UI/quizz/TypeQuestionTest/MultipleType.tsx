@@ -4,18 +4,20 @@ import { MultipleChoiceEntity } from "../../../../types/questions";
 interface MultipleTypeProps {
   q: MultipleChoiceEntity;
   value?: MultipleAnswer;
-  onChange: (v: Set<number>) => void;
+  onChange: (v: Array<number>) => void;
 }
 const MultipleType = (props: MultipleTypeProps) => {
   const { q, value, onChange } = props;
-  const sel = value ?? new Set();
+  
+  
+  const sel = value ?? [];
   
   const toggle = (id: number) => {
-    const next = new Set(sel);
-    if (next.has(id)) {
-      next.delete(id);
+    const next = Array.from(sel);
+    if (next.includes(id)) {
+      next.splice(next.indexOf(id), 1);
     } else {
-      next.add(id);
+      next.push(id);
     }
     onChange(next);
   };
@@ -26,7 +28,8 @@ const MultipleType = (props: MultipleTypeProps) => {
         Select all that apply
       </p>
       {q.options.map((opt, i) => {
-        const checked = sel.has(opt.id);
+  
+        const checked = sel?.includes(opt.id);
         return (
           <button
             key={opt.id}

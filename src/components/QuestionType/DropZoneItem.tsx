@@ -40,7 +40,7 @@ const DropZoneItem = (props: DropPropItem) => {
 
       {/* RIGHT */}
       {getRight(left!)?.value.trim() !== "" ? <div
-        className={`m-[6px] w-2/3 px-10 py-7 bg-[#2a2418] text-white rounded-tr-sm rounded-br-sm border-[#3a3020] border-[2px] [mask:radial-gradient(circle_25px_at_left_center,transparent_100%,black_100%)] z-10 overflow-hidden relative before:content-[''] before:absolute before:top-1/2 before:-translate-y-1/2 before:border-[2px] before:border-[#3a3020] before:-left-[1.81rem] before:z-2 before:rounded-full before:p-[1.58rem] before:[clip-path:inset(0_0_0_50%)] before:bg-[#2a2418] ${right ? "ml-[-21px]" : null}`}
+        className={`m-[6px] w-2/3 px-10 py-7 bg-[#2a2418] text-[#e0dcd4] rounded-tr-sm rounded-br-sm border-[#3a3020] border-[2px] [mask:radial-gradient(circle_25px_at_left_center,transparent_100%,black_100%)] z-10 overflow-hidden relative before:content-[''] before:absolute before:top-1/2 before:-translate-y-1/2 before:border-[2px] before:border-[#3a3020] before:-left-[1.81rem] before:z-2 before:rounded-full before:p-[1.58rem] before:[clip-path:inset(0_0_0_50%)] before:bg-[#2a2418] ${right ? "ml-[-21px]" : null}`}
       >
         {getRight(left!)?.value}
       </div> : null}

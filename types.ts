@@ -33,6 +33,7 @@ export interface LeaderboardEntry {
   id: string;
   name: string;
   score: number;
+  time: number;
   school: string;
   class: string;
   rank: number;

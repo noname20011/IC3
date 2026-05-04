@@ -1,10 +1,5 @@
-import { useEffect, useState } from "react";
-import {
-  AlertCircle,
-  AlignLeft,
-  Flag,
-  X,
-} from "lucide-react";
+import { use, useEffect, useState } from "react";
+import { AlertCircle, AlignLeft, Flag, X } from "lucide-react";
 import {
   DragMatchType,
   HotSpotType,
@@ -38,21 +33,21 @@ import QuestionListDrawer from "../components/UI/quizz/QuestionListDrawer";
 import HeaderNavQuestion from "../components/UI/quizz/HeaderNavQuestion";
 import TestReviewScreen from "../components/UI/Review/TestViewScreen";
 import { useCustomContext } from "../hooks/use-context";
-import { s } from "framer-motion/client";
+import { s, u } from "framer-motion/client";
 import PopUp from "../components/core/popups/PopUp";
+import { useParams } from "react-router-dom";
+import { Button } from "@/components/core/buttons/MainButton";
 // ─── Question type definitions ────────────────────────────────────────────────
-
-const questions = questionsData as QuestionTypeEntity[];
 
 function scoreQuestion(
   q: QuestionTypeEntity,
   answers: AnswerMap,
 ): QuestionScore {
   const a = (answers as Record<number, unknown>)[q.id];
-  const base = { questionId: q.id, max: q.points || 0  };
+  const base = { questionId: q.id, max: q.points || 0 };
 
   if (a === undefined || a === null)
-    return { ...base, earned: 0, isCorrect: false, isPartial: false,  };
+    return { ...base, earned: 0, isCorrect: false, isPartial: false };
 
   if (q.type === "single") {
     // const correct = (a as number) === q.correctAnswer;
@@ -104,7 +99,7 @@ function scoreQuestion(
     const user = a as number[];
     let correct = 0;
     const correctOrder = [...(q as SortEntity).options].sort(
-      (a, b) => (a.orderIndex!) - (b.orderIndex!),
+      (a, b) => a.orderIndex! - b.orderIndex!,
     );
     correctOrder.forEach((_, index) => {
       if (user && user[index] === _.id) correct++;
@@ -127,9 +122,9 @@ function scoreQuestion(
     let correct = 0;
     for (const pair of (q as MatchEntity).pairs) {
       if (user?.some((u) => u[pair.left.value] === pair.right.value)) {
-      correct++;
+        correct++;
+      }
     }
-  }
 
     const earned = Math.round(
       (correct / (q as MatchEntity).pairs.length) * (q.points ?? 0),
@@ -164,27 +159,37 @@ export default function Quiz() {
   const saved = JSON.parse(localStorage.getItem("quiz_state") || "{}");
 
   const [current, setCurrent] = useState<number>(saved.current || 0);
-  const [flagged, setFlagged] = useState<Set<number>>(new Set(saved.flagged || []));
+  const [flagged, setFlagged] = useState<Set<number>>(
+    new Set(saved.flagged || []),
+  );
   const [submitted, setSubmitted] = useState(false);
   const [reviewing, setReviewing] = useState(false);
   const [answers, setAnswers] = useState<AnswerMap>(saved.answers || {});
-  const { showList, setShowList } = useCustomContext();
+  const { showList, setShowList, setCompleteQuiz } = useCustomContext();
+
+  const [zoomOutImage, setZoomOutImage] = useState(false);
+
+  // Get questions data by partId
+  const { partId } = useParams();
+  const questions: QuestionTypeEntity[] = questionsData.find(
+    (q) => q.partId === Number(partId),
+  )?.questions as QuestionTypeEntity[];
 
   const q = questions[current];
   const totalPoints = questions.reduce((s, q) => s + (q.points ?? 0), 0);
   const answered = Object.keys(answers).length;
   const isFlagged = flagged.has(q.id);
 
-useEffect(() => {
-  localStorage.setItem(
-    "quiz_state",
-    JSON.stringify({
-      answers,
-      flagged: Array.from(flagged),
-      current,
-    })
-  );
-}, [answers, flagged, current]);
+  useEffect(() => {
+    localStorage.setItem(
+      "quiz_state",
+      JSON.stringify({
+        answers,
+        flagged: Array.from(flagged),
+        current,
+      }),
+    );
+  }, [answers, flagged, current]);
 
   const toggleFlag = () => {
     setFlagged((prev) => {
@@ -198,7 +203,17 @@ useEffect(() => {
     setAnswers((prev) => ({ ...prev, [id]: val }));
   };
 
+  const { timeCountDown, timeDoTest } = useCustomContext();
   
+  useEffect(() => {
+    const id = setTimeout(() => {
+      if (timeCountDown === 0) {
+        localStorage.setItem("timedDoTest", String(timeDoTest - timeCountDown));
+        setSubmitted(true);
+      }}, 2000);
+    return () => clearTimeout(id);
+  }, [timeCountDown]);
+
   // ─── Test Review Screen ────────────────────────────────────────────────────────
   if (submitted && reviewing) {
     return (
@@ -213,10 +228,9 @@ useEffect(() => {
 
   return (
     <div className="flex min-h-screen bg-[#13100d]">
-
-      <main className="flex-1 min-w-0 flex flex-col overflow-hidden">
+      <main className="flex-1 min-w-0 flex flex-col">
         {/* ── Sticky header ── */}
-        <header className="sticky top-0 z-10 bg-[#13100d]/95 backdrop-blur-md border-b border-[#2a231a]">
+        <header className="sticky top-16 z-10 bg-[#13100d]/95 backdrop-blur-md border-b border-[#2a231a]">
           {/* ── Sticky bottom navigation ── */}
           <HeaderNavQuestion
             questions={questions}
@@ -226,6 +240,7 @@ useEffect(() => {
             submitted={submitted}
             setSubmitted={setSubmitted}
             answers={answers}
+            timedDoTest={timeDoTest - timeCountDown}
           />
         </header>
         {/* ── Question body (scrollable) ── */}
@@ -283,27 +298,49 @@ useEffect(() => {
 
             {/* Question text */}
             <div className="mb-6 p-5 bg-[#1a1510] border border-[#2e2418] rounded-2xl">
-              <p className="text-base sm:text-lg font-semibold text-white leading-relaxed">
+              <p className="text-base sm:text-lg font-semibold text-[#b1ada4] leading-relaxed">
                 {q.text}
               </p>
+              {q.imageUrl && <div className="flex items-end gap-4">
+                  <img src={q.imageUrl} alt="Question" className="mt-4 rounded-lg max-h-28 object-contain w-auto"/>
+                <Button className="inline-block text-[#fafafa] bg-devotion-gold text-sm"
+                  onClick={() => setZoomOutImage(true)}
+                >
+                  Zoom out image
+                </Button>
+                {zoomOutImage && (
+                  <PopUp
+                    showPopup={zoomOutImage}
+                    setShowPopup={setZoomOutImage}
+                    className="p-0 md:space-y-0 lg:max-w-3xl"
+                  >
+                    <img
+                      src={q.imageUrl}
+                      alt="Question"
+                      className="rounded-lg max-h-[180vh] object-contain"
+                    />
+                  </PopUp>
+                )}
+              </div> 
+              }
             </div>
 
             {/* Question body */}
-            {q.type === "single" && (
+            {q.type.toLowerCase() === "single" && (
               <SingleType
                 question={q as SingleChoiceEntity}
                 value={(answers as Record<number, number>)[q.id]}
                 onChange={(v) => setAnswer(q.id, v)}
               />
             )}
-            {q.type === "multiple" && (
+            {q.type.toLowerCase() === "multiple" && (
               <MultipleType
                 q={q as MultipleChoiceEntity}
                 value={answers[q.id] as MultipleAnswer}
                 onChange={(v) => setAnswer(q.id, v)}
               />
             )}
-            {q.type === "truefalse" && (
+            {q.type.toLowerCase() === "truefalse" && (
               <TrueFalseType
                 q={q as TrueFalseEntity}
                 value={
@@ -314,21 +351,21 @@ useEffect(() => {
                 onChange={(v) => setAnswer(q.id, v)}
               />
             )}
-            {q.type === "reorder" && (
+            {q.type.toLowerCase() === "reorder" && (
               <ReorderType
                 q={q as SortEntity}
                 value={answers[q.id] as ReorderAnswer}
                 onChange={(v) => setAnswer(q.id, v)}
               />
             )}
-            {q.type === "match" && (
+            {q.type.toLowerCase() === "match" && (
               <DragMatchType
                 q={q as MatchEntity}
                 value={answers[q.id] as MatchAnswer}
                 onChange={(v) => setAnswer(q.id, v)}
               />
             )}
-            {q.type === "hotspot" && (
+            {q.type.toLowerCase() === "hotspot" && (
               <HotSpotType
                 q={q as HotSpotEntity}
                 value={
@@ -356,55 +393,65 @@ useEffect(() => {
         onNavigate={(i) => setCurrent(i)}
       />
 
-    {/* PopUp submit Test */}
-    {submitted && <PopUp showPopup={submitted} setShowPopup={setSubmitted}>
-      <div className="flex">
-        <main className="flex-1 flex items-center justify-center p-4">
-          <div className="max-w-md w-full text-center">
-            {/* Icon */}
-            <div className="w-20 h-20 flex items-center justify-center mx-auto mb-6">
-              <AlertCircle size={80} className="text-[#c8a46e] font-light" />
-            </div>
+      {/* PopUp submit Test */}
+      {submitted && (
+        <PopUp showPopup={submitted} setShowPopup={setSubmitted}>
+          <div className="flex">
+            <main className="flex-1 flex items-center justify-center p-4">
+              <div className="max-w-md w-full text-center">
+                {/* Icon */}
+                <div className="w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                  <AlertCircle
+                    size={80}
+                    className="text-[#c8a46e] font-light"
+                  />
+                </div>
 
-            <h2 className="text-2xl font-bold text-white mb-1">
-              Are you sure you wanna submit?
-            </h2>
-            <p className="text-sm text-[#6b5e4a] mb-7">
-              {answered} of {questions.length} questions answered
-            </p>
-
-            {/* 3 stat cards */}
-            <div className="grid grid-cols-3 gap-3 mb-8">
-              <div className="bg-[#1a1510] border border-[#2e2418] rounded-xl p-4">
-                <p className="text-2xl font-bold text-white">{answered}</p>
-                <p className="text-xs text-[#6b5e4a] mt-1">Answered</p>
-              </div>
-              <div className="bg-[#1a1510] border border-[#2e2418] rounded-xl p-4">
-                <p className="text-2xl font-bold text-white">{flagged.size}</p>
-                <p className="text-xs text-[#6b5e4a] mt-1">Flagged</p>
-              </div>
-              <div className="bg-[#1a1510] border border-[#2e2418] rounded-xl p-4">
-                <p className="text-2xl font-bold text-[#c8a46e]">
-                  {questions.length - answered}
+                <h2 className="text-2xl font-bold text-white mb-1">
+                  Are sure you wanna submit?
+                </h2>
+                <p className="text-sm text-[#6b5e4a] mb-7">
+                  {answered} of {questions.length} questions answered
                 </p>
-                <p className="text-xs text-[#6b5e4a] mt-1">Unanswered</p>
-              </div>
-            </div>
 
-            {/* Actions */}
-            <div className="flex flex-col gap-3">
-              <button
-                onClick={() => setReviewing(true)}
-                className="w-full flex items-center justify-center gap-2 px-6 py-3.5 bg-[#c8a46e] text-lg  font-semibold text-[#13100d] rounded-xl hover:bg-[#d4b47e] transition-all shadow-lg shadow-[#c8a46e]/20"
-              >
-                <AlignLeft size={16} />
-                Submit
-              </button>
-            </div>
+                {/* 3 stat cards */}
+                <div className="grid grid-cols-3 gap-3 mb-8">
+                  <div className="bg-[#1a1510] border border-[#2e2418] rounded-xl p-4">
+                    <p className="text-2xl font-bold text-white">{answered}</p>
+                    <p className="text-xs text-[#6b5e4a] mt-1">Answered</p>
+                  </div>
+                  <div className="bg-[#1a1510] border border-[#2e2418] rounded-xl p-4">
+                    <p className="text-2xl font-bold text-white">
+                      {flagged.size}
+                    </p>
+                    <p className="text-xs text-[#6b5e4a] mt-1">Flagged</p>
+                  </div>
+                  <div className="bg-[#1a1510] border border-[#2e2418] rounded-xl p-4">
+                    <p className="text-2xl font-bold text-[#c8a46e]">
+                      {questions.length - answered}
+                    </p>
+                    <p className="text-xs text-[#6b5e4a] mt-1">Unanswered</p>
+                  </div>
+                </div>
+
+                {/* Actions */}
+                <div className="flex flex-col gap-3">
+                  <button
+                    onClick={() => {
+                      setReviewing(true)
+                      setCompleteQuiz(true);
+                    }}
+                    className="w-full flex items-center justify-center gap-2 px-6 py-3.5 bg-[#c8a46e] text-lg  font-semibold text-[#13100d] rounded-xl hover:bg-[#d4b47e] transition-all shadow-lg shadow-[#c8a46e]/20"
+                  >
+                    <AlignLeft size={16} />
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </main>
           </div>
-        </main>
-      </div>
-    </PopUp>}
+        </PopUp>
+      )}
     </div>
   );
 }
