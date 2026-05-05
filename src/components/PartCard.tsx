@@ -54,7 +54,7 @@ export default function PartCard(props: PartCardProps) {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-2 text-slate-400 text-sm">
             <Clock size={16} className="text-devotion-gold/60" />
-            <span>{part?.duration || 45} phút</span>
+            <span>{part.duration && Math.floor(part.duration / 60) || 45} phút</span>
           </div>
           <div className="flex items-center gap-2 text-slate-400 text-sm">
             <BookOpen size={16} className="text-devotion-gold/60" />

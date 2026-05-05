@@ -244,7 +244,7 @@ export default function Quiz() {
           />
         </header>
         {/* ── Question body (scrollable) ── */}
-        <div className="flex-1 overflow-y-auto">
+        <div id="question" className="flex-1 overflow-y-auto pt-6">
           <div className="px-6 lg:px-8 py-6 max-w-4xl mx-auto w-full">
             {/* Question header */}
             <div className="flex items-start justify-between gap-4 mb-6">
@@ -312,12 +312,12 @@ export default function Quiz() {
                   <PopUp
                     showPopup={zoomOutImage}
                     setShowPopup={setZoomOutImage}
-                    className="p-0 md:space-y-0 lg:max-w-3xl"
+                    className="!p-0 md:!p-0 lg:!p-0 !space-y-0 md:!space-y-0 lg:!max-w-3xl"
                   >
                     <img
                       src={q.imageUrl}
                       alt="Question"
-                      className="rounded-lg max-h-[180vh] object-contain"
+                      className="rounded-lg max-h-[180vh] w-full object-contain"
                     />
                   </PopUp>
                 )}
