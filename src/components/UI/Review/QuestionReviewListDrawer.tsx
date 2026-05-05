@@ -174,15 +174,15 @@ const { correctCount, inCorrectCount } = useMemo(() => {
         <div className="px-5 py-4 border-t border-[#2a231a] flex gap-2">
           <span className="flex items-center gap-x-2 text-[10px] font-light shrink-0">
             <div className="p-2 bg-[#549956] rounded-md"></div>
-            Correct answer
+            Correct
           </span>
           <span className="flex items-center gap-x-2 text-[10px] font-light shrink-0">
             <div className="p-2 bg-[#ff0000]/60 rounded-md"></div>
-            Incorrect answer
+            Incorrect
           </span>
           <span className="flex items-center gap-x-2 text-[10px] font-light shrink-0">
             <div className="p-2 bg-[#c8a46e] rounded-md"></div>
-            Activating answer
+            Activating
           </span>
         </div>
       </div>

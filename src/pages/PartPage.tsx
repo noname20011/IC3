@@ -103,7 +103,7 @@ export default function PartsPage() {
         ))}
       </div>
       {showPopup && (
-        <PopUp showPopup={showPopup} setShowPopup={setShowPopup}>
+        <PopUp showPopup={showPopup} setShowPopup={setShowPopup} className="max-h-[85vh]">
           <div className="text-center space-x-2">
             <h3 className="text-2xl  md:font-display font-bold">
               Thông tin thí sinh
@@ -127,7 +127,7 @@ export default function PartsPage() {
                   type="text"
                   required
                   placeholder="Nhập họ và tên của bạn"
-                  className="w-full bg-white/5 border border-white/10 rounded-2xl py-3 pl-12 pr-4 focus:outline-none focus:border-devotion-gold/50 transition-colors"
+                  className="w-full bg-white/5 border border-white/10 rounded-2xl xl:py-3 py-2 pl-12 pr-4 focus:outline-none focus:border-devotion-gold/50 transition-colors"
                   onChange={(e) => setFormData({...formData, studentName: e.target.value})}
                 />
               </div>
@@ -146,7 +146,7 @@ export default function PartsPage() {
                   type="text"
                   required
                   placeholder="Nhập lớp của bạn"
-                  className="w-full bg-white/5 border border-white/10 rounded-2xl py-3 pl-12 pr-4 focus:outline-none focus:border-devotion-gold/50 transition-colors"
+                  className="w-full bg-white/5 border border-white/10 rounded-2xl xl:py-3 py-2 pl-12 pr-4 focus:outline-none focus:border-devotion-gold/50 transition-colors"
                   onChange={(e) => setFormData({...formData, studentClass: e.target.value})}
                 />
               </div>
@@ -161,7 +161,7 @@ export default function PartsPage() {
                 <button
                   type="button"
                   onClick={() => setIsSelectOpen(!isSelectOpen)}
-                  className="w-full bg-white/5 border border-white/10 pl-12 pr-4 rounded-xl py-3 px-4 flex items-center justify-between text-left focus:outline-none focus:border-devotion-gold/50 transition-colors"
+                  className="w-full bg-white/5 border border-white/10 pl-12 pr-4 rounded-xl xl:py-3 py-2 px-4 flex items-center justify-between text-left focus:outline-none focus:border-devotion-gold/50 transition-colors"
                 >
                   <SchoolIcon
                     className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500"
@@ -189,7 +189,7 @@ export default function PartsPage() {
                       exit={{ opacity: 0, y: -10 }}
                       className="absolute z-50 w-full mt-2 bg-background border border-white/10 rounded-xl shadow-2xl max-h-[200px]"
                     >
-                      <div className="max-h-52 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent">
+                      <div className="max-h-32 xl:max-h-52 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent">
                         {MOCK_SCHOOLS.map((school, index) => (
                           <button
                             key={school.id}
@@ -199,7 +199,7 @@ export default function PartsPage() {
                               setIsSelectOpen(false);
                             }}
                             className={cn(
-                              "w-full px-4 py-3 text-left flex items-center justify-between transition-colors",
+                              "w-full px-4 py-3 md:py-2 text-left flex items-center justify-between transition-colors",
                               formData.schoolId === school.id
                                 ? "bg-devotion-gold/20 text-devotion-gold"
                                 : "text-slate-300 hover:bg-devotion-gold/10",
@@ -233,7 +233,7 @@ export default function PartsPage() {
                   type={showPassword ? "text" : "password"}
                   placeholder="••••••••"
                   required
-                  className="w-full bg-white/5 border border-white/10 rounded-2xl py-3 pl-12 pr-4 focus:outline-none focus:border-devotion-gold/50 transition-colors"
+                  className="w-full bg-white/5 border border-white/10 rounded-2xl xl:py-3 py-2 pl-12 pr-4 focus:outline-none focus:border-devotion-gold/50 transition-colors"
                   onChange={(e) => setFormData({...formData, password: e.target.value})}
                 />
                 {/* Icon toggle */}
@@ -246,7 +246,7 @@ export default function PartsPage() {
                 </button>
               </div>
             </div>
-            <button className="w-full py-4 bg-devotion-gold text-devotion-bg rounded-2xl font-bold mt-8 hover:bg-amber-400 transition-colors">
+            <button className="w-full lg:py-4 py-3 bg-devotion-gold text-devotion-bg rounded-2xl font-bold lg:mt-8 mt-4  hover:bg-amber-400 transition-colors">
               Bắt đầu làm bài
             </button>
           </form>

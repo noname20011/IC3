@@ -230,7 +230,7 @@ export default function Quiz() {
     <div className="flex min-h-screen bg-[#13100d]">
       <main className="flex-1 min-w-0 flex flex-col">
         {/* ── Sticky header ── */}
-        <header className="sticky top-16 z-10 bg-[#13100d]/95 backdrop-blur-md border-b border-[#2a231a]">
+        <header className="sticky top-16 z-[11] bg-[#13100d]/95 backdrop-blur-md border-b border-[#2a231a]">
           {/* ── Sticky bottom navigation ── */}
           <HeaderNavQuestion
             questions={questions}

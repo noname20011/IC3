@@ -1,3 +1,5 @@
+import { keyframes } from 'motion';
+
 export default {content:['./index.html','./src/**/*.{js,jsx,ts,tsx}'],theme:{extend:{}},plugins:[]};
 module.exports = {
   content: [
@@ -79,9 +81,15 @@ module.exports = {
       backgroundImage: {
         'devotion-gradient': "radial-gradient(circle at 50% -20%, rgba(234, 179, 8, 0.15), transparent 50%), radial-gradient(circle at 0% 0%, rgba(168, 85, 247, 0.1), transparent 40%)",
       },
-
+      keyframes: {
+        shimmer: {
+          '0%': { left: '-100%' },
+          '100%': { left: '150%' },
+        },
+      },
       animation: {
         'spin-slow': 'spin 10s linear infinite',
+        shimmer: 'shimmer 3.5s ease-out infinite',
       },
     },
   },
