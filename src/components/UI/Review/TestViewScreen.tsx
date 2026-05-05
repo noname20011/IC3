@@ -193,9 +193,9 @@ const TestReviewScreen = ({
 
   return (
     <div className="flex min-h-screen bg-[#13100d] relative">
-      <main className="flex-1 min-h-screen px-4 lg:px-8 py-6 max-w-6xl mx-auto grid items-start grid-cols-1 lg:grid-cols-6 xl:grid-cols-5 gap-6">
+      <main className="flex-1 min-h-screen px-4 lg:px-8 py-6 max-w-6xl mx-auto grid items-start grid-cols-1 md:grid-cols-6 xl:grid-cols-5 gap-6">
 
-        <div className="lg:col-span-4 col-span-1">
+        <div className="md:col-span-4 col-span-1">
           {/* Legend */}
           <div className="flex items-center gap-4 mb-6 flex-wrap">
             <div className="flex items-center gap-1.5">
@@ -343,17 +343,17 @@ const TestReviewScreen = ({
         
         
       {/* Button */}
-      <Button className="bg-devotion-gold/80 border text-white w-9/12 rounded-xl py-4 
-      block md:hidden fixed bottom-4 left-10 right-10 mx-auto h-14 overflow-y-auto" 
-      onClick={() => 
-        {
-          navigate("/leaderboard"); 
-          localStorage.clear();
-        }} >
+      <Button className="bg-[#161515] hover:bg-devotion-gold/90 border text-white w-10/12 rounded-xl py-4 
+      block md:hidden fixed bottom-4 left-10 right-10 mx-auto overflow-hidden z-20" 
+      onClick={() => scrollToAnchorWithOffset("view-score")} >
         {/* glow animation */}
         <span className="absolute inset-0 bg-white/20 blur-xl opacity-0 hover:opacity-100 transition" />
 
-        <span className="relative z-10">Go to Leaderboard →</span>
+        <span className="relative z-10">View Score →</span>
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute top-0 left-[-100%] h-full w-[40%] bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-[-20deg] animate-shimmer">
+          </div>
+        </div>
       </Button>
 
     </div>

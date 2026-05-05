@@ -5,7 +5,7 @@ import { MultipleAnswer } from "../../../../types/answer";
 interface MultiTypeReviewProps {
   question: MultipleChoiceEntity;
   correctSet: Set<number>;
-  userIdxs: MultipleAnswer;
+  userIdxs: MultipleAnswer | Set<number>;
 }
 const MultiTypeReview = (props: MultiTypeReviewProps) => {
   const { question, correctSet, userIdxs } = props;
@@ -14,7 +14,7 @@ const MultiTypeReview = (props: MultiTypeReviewProps) => {
     <div className="flex flex-col gap-2 mt-3">
       {question.options.map((opt, i) => {
         const isCorrect = correctSet?.has(opt.id);
-        const isSelected = userIdxs?.has(opt.id);
+        const isSelected = new Set(userIdxs)?.has(opt.id);
         const isWrong = isSelected && !isCorrect;
         const isMissed = !isSelected && isCorrect;
         return (

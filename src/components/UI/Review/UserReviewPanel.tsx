@@ -19,7 +19,7 @@ export default function UserReviewPanel({
   const navigate = useNavigate();
 
   return (
-    <div className="w-full md:w-[320px] rounded-2xl p-5 bg-gradient-to-b from-[#1a1510] to-[#181818] border border-white/10 shadow-xl relative">
+    <div id="view-score" className="w-full md:w-[320px] rounded-2xl p-5 bg-gradient-to-b from-[#1a1510] to-[#181818] border border-white/10 shadow-xl relative">
       {/* Avatar + Info */}
       <div className="flex items-center gap-3">
         <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-white font-bold">
@@ -75,14 +75,21 @@ export default function UserReviewPanel({
         <div className="flex justify-between mt-4 text-lg">
           <span
             className={
-              points < totalScore / 2 ? "scale-[2]" : "opacity-40 scale-150"
+              points < totalScore / 3 ? "scale-[2]" : "opacity-40 scale-150"
+            }
+          >
+            🤡
+          </span>
+          <span
+            className={
+              points >= totalScore / 3 && points < totalScore * 2 / 3 ? "scale-[2]" : "opacity-40 scale-150"
             }
           >
             😢
           </span>
           <span
             className={
-              points >= totalScore / 2 && points < totalScore
+              points >= totalScore * 2 / 3 && points < totalScore
                 ? "scale-[2]"
                 : "opacity-40 scale-150"
             }
@@ -102,7 +109,7 @@ export default function UserReviewPanel({
       {/* Button */}
 
       <Button
-        className="hover:bg-devotion-gold/90 bg-transparent border text-white mt-6 w-full relative overflow-hidden rounded-xl py-4 hidden md:block"
+        className="hover:bg-devotion-gold/90 bg-transparent border text-white mt-6 w-full relative overflow-hidden rounded-xl py-4 block"
         onClick={() => {
           navigate("/leaderboard");
           localStorage.clear();
@@ -112,6 +119,10 @@ export default function UserReviewPanel({
         <span className="absolute inset-0 bg-white/20 blur-xl opacity-0 hover:opacity-100 transition" />
 
         <span className="relative z-10">Go to Leaderboard →</span>
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute top-0 left-[-100%] h-full w-[40%] bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-[-20deg] animate-shimmer">
+          </div>
+        </div>
       </Button>
     </div>
   );
