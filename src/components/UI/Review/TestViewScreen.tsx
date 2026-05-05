@@ -1,4 +1,6 @@
-import { ChevronLeft, Circle, Flag, LayoutList, X } from "lucide-react";
+import { Button } from "@/components/core/buttons/MainButton";
+import { Circle, Flag, X } from "lucide-react";
+import { useCustomContext } from "../../../hooks/use-context";
 import {
   AnswerMap,
   MatchAnswer,
@@ -16,12 +18,9 @@ import {
 } from "../../../types/questions";
 import { AnswerListReview, QuestionScore } from "../../../types/questionScore";
 import ReviewQuestionBody from "../quizz/ReviewQuestionBody";
-import { useState } from "react";
 import QuestionAnswerListDrawer from "./QuestionReviewListDrawer";
-import { useCustomContext } from "../../../hooks/use-context";
 import UserReviewPanel from "./UserReviewPanel";
-import { Button } from "@/components/core/buttons/MainButton";
-import { useNavigate } from "react-router";
+import scrollToAnchorWithOffset from "@/utils/scrollToAnchorElement";
 
 interface TestViewScreenProps {
   questions: QuestionTypeEntity[];
@@ -163,7 +162,6 @@ const TestReviewScreen = ({
 }: TestViewScreenProps) => {
   // get saved state from localStorage
   const userData = JSON.parse(localStorage.getItem("student") || "{}");
-  const navigate = useNavigate();
   const {showList, setShowList } = useCustomContext();
   const answerListReview: AnswerListReview[] =
     questions
@@ -174,22 +172,6 @@ const TestReviewScreen = ({
       }));
 
   const scores = questions.map((q) => scoreQuestion(q, answers));
-
-
-  // scroll to question when click drawer list 
-  const scrollToAnchorWithOffset = (id: string, offset = 100) => {
-    
-  const el = document.getElementById(id);
-  if (!el) return;
-  
-  // Get element's top position relative to the document
-  const y = el.getBoundingClientRect().top + window.pageYOffset - offset;
-  
-  window.scrollTo({
-    top: y,
-    behavior: 'smooth',
-  });
-}
 
   return (
     <div className="flex min-h-screen bg-[#13100d] relative">
@@ -320,18 +302,17 @@ const TestReviewScreen = ({
                   <div className="px-5 pb-5">
                     <ReviewQuestionBody q={q} answers={answers} />
                   </div>
-
-                  {/* Question List Drawer */}
-                  {showList && 
-                  <QuestionAnswerListDrawer
-                    open={showList}
-                    onClose={() => setShowList(false)}
-                    questions={answerListReview}
-                    scrollToAnchorWithOffset={scrollToAnchorWithOffset}
-                  />}
                 </div>
               );
             })}
+            {/* Question List Drawer */}
+            {showList && 
+              <QuestionAnswerListDrawer
+                open={showList}
+                onClose={() => setShowList(false)}
+                questions={answerListReview}
+                scrollToAnchorWithOffset={scrollToAnchorWithOffset}
+            />}
           </div>
 
           <div className="h-10" />
