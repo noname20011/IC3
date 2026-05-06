@@ -27,7 +27,7 @@ Format Question Data
     "id": 6,
     "type": "truefalse",
     "text": "",
-    "optionsOfTrueFalseType": ["Có", "Không"],
+    "optionsOfTrueFalseType": ["Đúng", "Sai"],
     "statements": [
       {
         "id": 1,
@@ -62,48 +62,50 @@ Format Question Data
     "type": "match",
     "text": "Nối ngôn ngữ với framework",
     "pairs": [
-      
       {
-        "id": 1,
-        "left": { "id": 1, "value": "JavaScript" },
-        "right": { "id": 4, "value": "React" },
+        "left": { "value": "" },
+        "right": { "value": "" },
         "isCorrect": true
       },
       {
-        "id": 2,
-        "left": { "id": 2, "value": "Python" },
-        "right": { "id": 5, "value": "Django" },
+        "left": { "value": "" },
+        "right": { "value": "" },
         "isCorrect": true
       },
       {
-        "id": 3,
-        "left": { "id": 3, "value": "Java" },
-        "right": { "id": 6, "value": "Spring" },
+        "left": { "value": "" },
+        "right": { "value": "" },
         "isCorrect": true
       }
     ]
   },
   {
-    "id": 5,
+    "id": 24,
     "type": "hotspot",
-    "text": "Chọn logo React trong ảnh",
-    "image": "/images/logos.png",
+    "text": "Đâu là ba thiết bị nhập khi được kết nối với máy tính không có màn hình cảm ứng? (Chọn 3)",
+    "imageUrl": "/assets/question/OT1_q8.png",
+    "totalRequiredHotSpot": 3,
     "hotSpots": [
       {
-        "label": "react",
-        "x": "50px",
-        "y": "20px",
-        "w": "80px",
-        "h": "80px",
-        "isCorrect": true
+        "label": "headset",
+        "top": 4.27,
+        "left": 4.82,
+        "width": 23.23,
+        "height": 40.14
       },
       {
-        "label": "vue",
-        "x": "150px",
-        "y": "20px",
-        "w": "80px",
-        "h": "80px",
-        "isCorrect": false
+        "label": "mouse",
+        "top": 5.06,
+        "left": 40,
+        "width": 21.98,
+        "height": 37.39
+      },
+      {
+        "label": "keyboard",
+        "top": 53.44,
+        "left": 34.17,
+        "width": 32,
+        "height": 36.47
       }
     ]
   }

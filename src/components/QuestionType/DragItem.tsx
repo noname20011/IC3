@@ -11,10 +11,10 @@ const DragItem = (props: SortPropItem) => {
   const { answer, usedRight, dragging } = props;
 
   const { attributes, listeners, setNodeRef, transform, isDragging } = useDraggable({
-    id: answer?.value,
+    id: answer?.value!,
   });
   
-  const used = usedRight && usedRight.includes(answer?.value);
+  const used = usedRight && usedRight.includes(answer?.value!);
   return (
     <div
       ref={setNodeRef}

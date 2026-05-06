@@ -1,9 +1,8 @@
-import { convertTime } from "../../../utils/convertTime";
-import { LeaderboardEntry } from "../../../../types";
 import { SchoolIcon, Star, UserPlus2 } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect } from "react";
-import graduate from "../../../assets/graduate.png";
+import { LeaderboardEntry } from "../../../../types";
+import { convertTime } from "../../../utils/convertTime";
 
 interface dataSlide {
   title: string;
@@ -99,7 +98,7 @@ const LeaderboardCard = (props: LeaderboardCard) => {
                           />
                           <div className="w-32 h-32 rounded-full border-2 border-devotion-gold relative z-10 bg-devotion-bg shadow-[0_0_50px_rgba(234,179,8,0.25)]">
                             <img
-                              src={graduate}
+                              src="/assets/graduate.png"
                               alt={slide.user.name}
                               className="w-full h-full rounded-full object-cover bg-white"
                               referrerPolicy="no-referrer"

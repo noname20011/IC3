@@ -41,7 +41,7 @@ const MultipleType = (props: MultipleTypeProps) => {
             }`}
           >
             <div
-              className={`w-5 h-5 rounded-md border-2 flex items-center justify-center shrink-0 transition-all ${
+              className={`w-4 h-4 rounded border-2 flex items-center justify-center shrink-0 ${
                 checked
                   ? "border-[#c8a46e] bg-[#c8a46e]"
                   : "border-[#4a3d2e] group-hover:border-[#6b5e4a]"

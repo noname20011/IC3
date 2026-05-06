@@ -525,6 +525,33 @@
             "isCorrect": true
           }
         ]
+      },
+      {
+        "id": 24,
+        "type": "single",
+        "text": "Virus máy tính là gì?",
+        "options": [
+          {
+            "id": 84,
+            "value": "Một phần mềm ngụy trang gây hại cho máy tính của bạn",
+            "isCorrect": false
+          },
+          {
+            "id": 85,
+            "value": "Một phần mềm can thiệp trực tiếp vào máy tính và lấy các thông tin quan trọng",
+            "isCorrect": true
+          },
+          {
+            "id": 86,
+            "value": "Một phần mềm đánh cắp dữ liệu của nạn nhân truyền trên mạng",
+            "isCorrect": false
+          },
+          {
+            "id": 87,
+            "value": "Một phần mềm xâm nhập vào hệ thống và âm thầm theo dõi mà bạn không biết",
+            "isCorrect": false
+          }
+        ]
       }
     ]
   },
@@ -1521,6 +1548,2457 @@
           { "id": 2, "value": "Tĩnh lặng (Statically)", "isCorrect": false },
           { "id": 3, "value": "Công khai (Publicly)", "isCorrect": true },
           { "id": 4, "value": "Cố ý (Intentionally)", "isCorrect": false }
+        ]
+      }
+    ]
+  },
+  {
+    "levelId": "l1",
+    "partId": 2,
+    "questions": [
+      {
+        "id": 1,
+        "type": "single",
+        "text": "Bạn cần lưu danh sách các trang Web để có thể dễ dàng quay trở lại vào lần sau. Bạn nên sử dụng tính năng nào của trình duyệt Web?",
+        "options": [
+          { "id": 1, "value": "Duyệt đa trang một lúc", "isCorrect": false },
+          {
+            "id": 2,
+            "value": "Lịch sử hoặc Dòng thời gian",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Mục yêu thích hoặc Dấu trang",
+            "isCorrect": true
+          },
+          { "id": 4, "value": "Hộp địa chỉ", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 2,
+        "type": "single",
+        "text": "Lịch sử duyệt web và các trang Web được đánh dấu trang cung cấp cho hacker một bản đồ của tất cả các trang Web mà người dùng truy cập. Cùng với các trang Web thường xuyên truy cập, hacker có thể sử dụng gì để truy cập vào tài khoản nếu mật khẩu được lưu vào thiết bị bị tấn công?",
+        "options": [
+          { "id": 1, "value": "Settings", "isCorrect": false },
+          { "id": 2, "value": "Cookies", "isCorrect": true },
+          { "id": 3, "value": "History", "isCorrect": false },
+          { "id": 4, "value": "Cutouts", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 3,
+        "type": "single",
+        "text": "Một trong những giáo viên của bạn nói rằng bạn nên thay đổi cài đặt trình duyệt của mình để duyệt Web ở chế độ riêng tư. Vậy lợi ích của việc duyệt Web ở chế độ riêng tư là gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Không thể nhìn thấy các gói được gửi/nhận qua mạng trường học của bạn. ",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Tên của bạn được giữ kín. ",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Đăng nhập máy tính và mật khẩu của bạn bị vô hiệu hóa.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Không có lịch sử, cookie, mật khẩu hoặc tệp tạm thời nào được ghi lại trên máy tính.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "type": "single",
+        "text": "Bạn hãy cho biết, duyệt web riêng tư đảm bảo điều gì sau đây?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Lịch sử của người dùng không được lưu trữ",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Mật khẩu không cần thay đổi",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Có nhiều dung lượng lưu trữ hơn trên máy tính",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Thông tin tài khoản được lưu",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "type": "truefalse",
+        "text": "Xác định đúng chức năng của các thiết bị sau:",
+        "optionsOfTrueFalseType": ["Nhập", "Xuất"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Keyboard",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Scanner",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Webcam",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Microphone",
+            "isCorrect": true
+          },
+          {
+            "id": 5,
+            "value": "Printer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "type": "single",
+        "text": "Người dùng có thể tắt tính năng lưu trữ mật khẩu trực tuyến ở đâu?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Trong cài đặt trình duyệt của họ",
+            "isCorrect": true
+          },
+          { "id": 2, "value": "Trong lịch sử của họ", "isCorrect": false },
+          {
+            "id": 3,
+            "value": "Trong cài đặt máy tính của họ ",
+            "isCorrect": false
+          },
+          { "id": 4, "value": "Trong hộp thư đến", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 7,
+        "type": "multiple",
+        "text": "Khi nào người dùng nên cân nhắc việc thay đổi mật khẩu của họ? (Chọn 3)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Phần mềm độc hại đang chạy trên máy tính của họ",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Họ đã được thông báo rằng có quyền truy cập trái phép vào tài khoản của họ",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Khi họ muốn đóng tài khoản của mình",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Họ đã cập nhật mật khẩu của họ gần đây",
+            "isCorrect": false
+          },
+          {
+            "id": 5,
+            "value": "Họ đã không thay đổi mật khẩu của họ trong một thời gian dài",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "type": "hotspot",
+        "text": "Đâu là ba thiết bị nhập khi được kết nối với máy tính không có màn hình cảm ứng? (Chọn 3)",
+        "imageUrl": "/assets/question/OT1_q8.png",
+        "totalRequiredHotSpot": 3,
+        "hotSpots": [
+          {
+            "label": "headset",
+            "top": 4.27,
+            "left": 4.82,
+            "width": 23.23,
+            "height": 40.14
+          },
+          {
+            "label": "mouse",
+            "top": 5.06,
+            "left": 40,
+            "width": 21.98,
+            "height": 37.39
+          },
+          {
+            "label": "keyboard",
+            "top": 53.44,
+            "left": 34.17,
+            "width": 32,
+            "height": 36.47
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "type": "multiple",
+        "text": "Đâu là hai hành động bạn có thể thực hiện để giúp duy trì quyền riêng tư kỹ thuật số của bản thân? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Chỉ sử dụng Email trường học của bạn để gửi thông tin cá nhân",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Tắt GPS trên thiết bị của bạn khi không sử dụng thường xuyên",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Định cấu hình cài đặt trình duyệt web của bạn để chặn Cookie",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Lưu trữ tài liệu cá nhân của bạn trên vị trí lưu trữ đám mây",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "type": "multiple",
+        "text": "Bạn cần đảm bảo an toàn cho mật khẩu của mình. Đâu là ba nguyên tắc bạn cần tuân thủ? (Chọn 3)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Sử dụng mật khẩu dựa trên thông tin riêng tư cá nhân.",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Sử dụng mật khẩu khác nhau cho mỗi tài khoản",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Sử dụng mật khẩu phức tạp và ghi vào một cuốn sổ mà bạn luôn mang theo bên mình.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Sử dụng mật khẩu dài nhất hoặc cụm mật khẩu được hệ thống mật khẩu cho phép.",
+            "isCorrect": true
+          },
+          {
+            "id": 5,
+            "value": "Sử dụng các từ có thể tìm thấy trong từ điển của một ngôn ngữ khác với ngôn ngữ chính của bạn.",
+            "isCorrect": false
+          },
+          {
+            "id": 6,
+            "value": "Sử dụng xác thực đa yếu tố, nếu có.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "type": "single",
+        "text": "Đâu là lợi ích của việc duyệt Web 'ở chế độ riêng tư' hoặc 'ẩn danh'?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Cookie sẽ không báo cáo thông tin về bạn cho bên thứ ba",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Những người khác sẽ không biết được các hoạt động duyệt web của bạn dù sử dụng cùng một thiết bị",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Trình duyệt web của bạn chặn quảng cáo",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Không thể sử dụng vân tay kỹ thuật số để theo dõi các hoạt động trên trình duyệt của bạn",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "type": "match",
+        "text": "Ghép từng bộ phận phần cứng của máy tính với hình ảnh tương ứng:",
+        "pairs": [
+          {
+            "left": { "id": 1, "value": "Bộ xử lý trung tâm (CPU)" },
+            "right": {
+              "id": 4,
+              "imageUrl": "/assets/question/OT1_q12_CPU.png"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "id": 2, "value": "Ổ đĩa cứng" },
+            "right": {
+              "id": 3,
+              "imageUrl": "/assets/question/OT1_q12_HDD.png"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "id": 5, "value": "Ổ cứng thể rắn" },
+            "right": {
+              "id": 6,
+              "imageUrl": "/assets/question/OT1_q12_SSD.png"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "id": 7, "value": "Bo mạch chủ" },
+            "right": {
+              "id": 8,
+              "imageUrl": "/assets/question/OT1_q12_MB.png"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "type": "truefalse",
+        "text": "Bạn cần xác định các tính năng tiêu chuẩn của thanh tác vụ trong Hệ điều hành Windows. Với mỗi câu phát biểu, hãy chọn Có nếu có thể thực hiện hành động từ thanh tác vụ hoặc chọn Không nếu không thể.",
+        "optionsOfTrueFalseType": ["Có", "Không"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Khởi động trình quản lý tác vụ",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Điều chỉnh âm lượng đầu ra âm thanh",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Hiển thị cài đặt kết nối mạng",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Thu nhỏ tất cả các chương trình đang mở hiển thị",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "type": "multiple",
+        "text": "Làm cách nào để người dùng có thể bảo vệ mật khẩu của mình một cách tốt nhất?",
+        "options": [
+          { "id": 1, "value": "Giữ bí mật mật khẩu", "isCorrect": true },
+          {
+            "id": 2,
+            "value": "Sử dụng số thứ tự trong mật khẩu",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Thay đổi mật khẩu thường xuyên",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Sử dụng cùng một mật khẩu cho tất cả các tài khoản",
+            "isCorrect": false
+          },
+          {
+            "id": 5,
+            "value": "Tạo mật khẩu mới cho mọi tài khoản",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "type": "match",
+        "text": "Ghép từng loại cáp với tên gọi tương ứng:",
+        "pairs": [
+          {
+            "left": { "value": "Lightning" },
+            "right": { "imageUrl": "/assets/question/OT1_q14_IP.PNG" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "USB" },
+            "right": { "imageUrl": "/assets/question/OT1_q14_USB.PNG" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Micro USB" },
+            "right": { "imageUrl": "/assets/question/OT1_q14_mcUSB.PNG" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "USB-C (Type C)" },
+            "right": {
+              "imageUrl": "/assets/question/OT1_q14_USB-C.PNG"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "type": "multiple",
+        "text": "Bạn cần tạo một mật khẩu mạnh. Đâu là ba nguyên tắc bạn cần tuân thủ? (Chọn 3)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Bao gồm các số dễ nhớ như ngày sinh và số điện thoại",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Bao gồm thông tin cá nhân như tên người trong gia đình hoặc tên vật nuôi",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Bao gồm các chữ cái, chữ số và ký hiệu",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Bao gồm họ hoặc tên của bạn",
+            "isCorrect": false
+          },
+          { "id": 5, "value": "Sử dụng tám ký tự trở lên", "isCorrect": true },
+          {
+            "id": 6,
+            "value": "Bao gồm chữ viết hoa và chữ viết thường",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "type": "truefalse",
+        "text": "Bạn cần xác định các chức năng do Hệ điều hành của máy tính quản lý. Với mỗi tác vụ dưới đây, hãy chọn Đúng nếu đó là tác vụ do hệ điều hành quản lý và chọn Sai nếu không phải.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Chỉnh sửa tập tin văn bản",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Tìm kiếm trên Internet",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Cấp phát tài nguyên phần cứng",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Giao tiếp với các thiết bị ngoại vi",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "type": "match",
+        "text": "Bạn cần xác định mục đích của các công cụ trình duyệt web phổ biến. Để trả lời, hãy di chuyển từng công cụ từ danh sách ở bên phải sang hành động tương ứng ở bên trái.",
+        "pairs": [
+          {
+            "left": { "value": "Address box" },
+            "right": { "value": "Hiển thị URL của trang web hiện tại" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "History" },
+            "right": {
+              "value": "Liệt kê các trang web bạn đã truy cập gần đây"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Refresh button" },
+            "right": { "value": "Tải lại trang web hiện tại" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Back button" },
+            "right": {
+              "value": "Hiển thị lại một trang web đã 'truy cập trước đó'"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "type": "match",
+        "text": "Quan sát hình ảnh sau để xác định các loại cổng kết nối. Ghép với tên loại cổng kết nối tương ứng:",
+        "pairs": [
+          {
+            "left": { "value": "Audio Port" },
+            "right": { "imageUrl": "/assets/question/OT1_q19_AUDIO.PNG" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Display Port (Cổng VGA)" },
+            "right": { "imageUrl": "/assets/question/OT1_q19_DISPLAY.PNG" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Ethernet" },
+            "right": { "imageUrl": "/assets/question/OT1_q19_ETHERNET.PNG" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "HDMI" },
+            "right": {
+              "imageUrl": "/assets/question/OT1_q19_HDMI.PNG"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "USB" },
+            "right": {
+              "imageUrl": "/assets/question/OT1_q19_USB.PNG"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "type": "single",
+        "text": "Máy tính để bàn sử dụng phần cứng nào để lưu trữ dữ liệu lâu dài?",
+        "options": [
+          { "id": 1, "value": "Ổ đĩa flash USB", "isCorrect": false },
+          { "id": 2, "value": "Bo mạch chủ", "isCorrect": false },
+          { "id": 3, "value": "Ổ đĩa cứng", "isCorrect": true },
+          { "id": 4, "value": "Bộ xử lý trung tâm (CPU)", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 21,
+        "type": "multiple",
+        "text": "Bạn dự định mua một thiết bị máy tính cầm tay. Thiết bị phải có khả năng chạy bằng pin và phải được trang bị bàn phím vật lý tích hợp. Đâu là hai thiết bị đáp ứng được những yêu cầu trên? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Máy tính xách tay chạy Windows",
+            "isCorrect": true
+          },
+          { "id": 2, "value": "Máy tính để bàn Mac", "isCorrect": false },
+          {
+            "id": 3,
+            "value": "Điện thoại thông minh chạy Android",
+            "isCorrect": false
+          },
+          { "id": 4, "value": "Chromebook", "isCorrect": true },
+          {
+            "id": 5,
+            "value": "Máy tính đa năng chạy Windows",
+            "isCorrect": false
+          },
+          { "id": 6, "value": "Máy tính bảng chạy Android", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 22,
+        "type": "truefalse",
+        "text": "Với mỗi Hệ điều hành, bạn hãy chọn công ty phát triển tương ứng:",
+        "optionsOfTrueFalseType": ["Microsoft", "Google"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Android",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Chrome OS",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Windows",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "type": "multiple",
+        "text": "Điều nào đúng với hệ điều hành Linux? (Chọn 3)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Người dùng có thể sửa đổi phần mềm thông qua mã nguồn của chương trình",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Có thể chạy trên mọi phần cứng",
+            "isCorrect": true
+          },
+          { "id": 3, "value": "Có tính bảo mật cao", "isCorrect": true },
+          {
+            "id": 4,
+            "value": "Không thể được sử dụng trên bất cứ thứ gì ngoại trừ các thiết bị di động",
+            "isCorrect": false
+          },
+          { "id": 5, "value": "Độc quyền", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 24,
+        "type": "truefalse",
+        "text": "Với mỗi loại phần mềm, hãy xác định xem đó là Phần mềm Ứng dụng hay Phần mềm Hệ thống.",
+        "optionsOfTrueFalseType": ["Phần mềm Ứng dụng", "Phần mềm Hệ thống"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Trình duyệt web",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Bộ phát đa phương tiện",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Trình điều khiển card đồ họa",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Trình quản lý phân vùng ổ đĩa",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "type": "truefalse",
+        "text": "Với mỗi câu phát biểu về sự khác biệt giữa mạng có dây và không dây, hãy chọn Đúng hoặc Sai.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Kết nối wifi được mã hóa an toàn hơn so với kết nối ethernet",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Kết nối wifi thường ít xảy ra độ trễ khi truyền dữ liệu hơn so với kết nối ethernet",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Kết nối ethernet thường cung cấp tốc độ kết nối mạng nhanh hơn kết nối wifi",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "type": "single",
+        "text": "Thiết bị nào chuyển đổi dữ liệu từ kỹ thuật số (Digital) sang tương tự (Analog) và ngược lại để truyền tín hiệu qua mạng?",
+        "options": [
+          { "id": 1, "value": "Network Adapter", "isCorrect": false },
+          { "id": 2, "value": "Ethernet Cable", "isCorrect": false },
+          { "id": 3, "value": "Router", "isCorrect": false },
+          { "id": 4, "value": "Modem", "isCorrect": true }
+        ]
+      },
+      {
+        "id": 27,
+        "type": "single",
+        "text": "Loại cáp nào có thể truyền dữ liệu lên đến 480 megabit/giây?",
+        "options": [
+          { "id": 1, "value": "USB-C", "isCorrect": false },
+          { "id": 2, "value": "Lightning connector", "isCorrect": true },
+          { "id": 3, "value": "Micro USB", "isCorrect": false },
+          { "id": 4, "value": "USB", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 28,
+        "type": "truefalse",
+        "text": "Với mỗi câu phát biểu về những lợi ích của cơ sở hạ tầng mạng chất lượng, hãy chọn Đúng hoặc Sai.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Đảm bảo rằng học sinh có thể kết nối thông suốt với mạng của nhà trường",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Cho phép học sinh kết nối với phòng máy tính của nhà trường từ mọi nơi",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Hỗ trợ mở rộng hệ thống mạng của nhà trường mà không cần thiết kế lại khi số lượng học sinh tăng lên",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "type": "multiple",
+        "text": "Ba phát biểu nào dưới đây đúng với phần mềm nguồn mở? (Chọn 3)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Nó cho phép người dùng sửa đổi phần mềm để phù hợp với nhu cầu cụ thể của họ",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Giấy phép của nó là trung lập về công nghệ",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Nó an toàn hơn phần mềm độc quyền",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Nó kém an toàn hơn phần mềm độc quyền",
+            "isCorrect": false
+          },
+          {
+            "id": 5,
+            "value": "Nó thân thiện với người dùng hơn phần mềm độc quyền",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "type": "truefalse",
+        "text": "Với mỗi câu phát biểu về sự khác biệt giữa internet và mạng nội bộ, hãy chọn Đúng hoặc Sai.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Internet thuộc quyền sở hữu riêng của các tổ hợp công ty liên doanh",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Kết nối nội bộ an toàn hơn so với kết nối internet",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Mạng nội bộ không giới hạn số lượng người dùng và bất kỳ ai cũng có thể truy cập được",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "type": "multiple",
+        "text": "Ba phát biểu nào dưới đây đúng với phần mềm độc quyền? (Chọn 3)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Nó kém an toàn hơn phần mềm nguồn mở",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Giấy phép của nó là trung lập về công nghệ",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Nó dễ bị phần mềm độc hại tấn công hơn phần mềm nguồn mở",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Nó thân thiện với người dùng hơn phần mềm nguồn mở",
+            "isCorrect": true
+          },
+          {
+            "id": 5,
+            "value": "Nó cho phép người dùng sửa đổi phần mềm để phù hợp với nhu cầu cụ thể của họ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "type": "single",
+        "text": "Đâu là câu phát biểu đúng về các ứng dụng dựa trên môi trường web?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Phiên bản web của ứng dụng dành cho máy tính để bàn sở hữu tất cả các tính năng giống như phiên bản trên máy tính để bàn",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Bạn phải có kết nối internet để sử dụng ứng dụng web",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Trước khi có thể sử dụng ứng dụng web, bạn phải cài đặt ứng dụng đó trên máy tính của mình",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Các ứng dụng web xử lý cục bộ thông tin trên máy tính của bạn",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "type": "truefalse",
+        "text": "Với mỗi câu phát biểu về phần mềm mã nguồn mở, hãy chọn Đúng hoặc Sai:",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Tất cả phần mềm miễn phí đều là phần mềm mã nguồn mở",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Bất kỳ ai cũng có thể kiểm tra, sửa đổi và cải tiến mã nguồn của phần mềm mã nguồn mở",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Bạn phải đồng ý với thỏa thuận cấp phép người dùng cuối trước khi sử dụng phần mềm mã nguồn mở",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "type": "match",
+        "text": "Nối ngôn ngữ với framework",
+        "pairs": [
+          {
+            "left": { "value": "Phần mềm trình chiếu" },
+            "right": {
+              "value": "Hiển thị văn bản, hình ảnh và thông tin đa phương tiện dưới dạng trình chiếu điện tử"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Trình duyệt web (GG Chrome)" },
+            "right": { "value": "Truy cập thông tin trên internet" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Phần mềm xử lý văn bản (Word)" },
+            "right": {
+              "value": "Nhập, chỉnh sửa, định dạng và xuất văn bản ở định dạng tài liệu"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Hệ thống quản lý cơ sở dữ liệu (Database)" },
+            "right": {
+              "value": "Lưu trữ, sắp xếp, điều khiển và điều chỉnh các tập hợp thông tin liên quan"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Ứng dụng bảng tính (Excel)" },
+            "right": {
+              "value": "Sắp xếp, phân tích cũng như lưu trữ dữ liệu số và văn bản, tính toán và hiển thị dữ liệu dưới dạng biểu đồ"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "type": "single",
+        "text": "Loại USB nào có đầu nối có thể đảo ngược khi sử dụng?",
+        "options": [
+          { "id": 1, "value": "Lightning connector", "isCorrect": false },
+          { "id": 2, "value": "USB-C (Type C)", "isCorrect": true },
+          { "id": 3, "value": "Micro USB", "isCorrect": false },
+          { "id": 4, "value": "USB", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 36,
+        "type": "single",
+        "text": "Bạn đang gặp khó khăn khi gửi và nhận thông tin. Làm cách nào bạn có thể xác định xem thiết bị của mình có được kết nối với internet hay không?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Tải xuống ứng dụng Speedtest",
+            "isCorrect": false
+          },
+          { "id": 2, "value": "Hãy thử gửi một tin nhắn", "isCorrect": false },
+          { "id": 3, "value": "Mở trình duyệt", "isCorrect": true },
+          { "id": 4, "value": "Thử lưu một tập tin", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 37,
+        "type": "match",
+        "text": "Ghép từng thiết bị lưu trữ dữ liệu với định nghĩa tương ứng:",
+        "pairs": [
+          {
+            "left": { "value": "Ổ đĩa flash USB" },
+            "right": {
+              "value": "Thiết bị lưu trữ dữ liệu bên ngoài gọn nhẹ, sử dụng bộ nhớ flash"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Ổ cứng thể rắn" },
+            "right": {
+              "value": "Thiết bị lưu trữ dữ liệu bên trong giúp lưu trữ và truy xuất dữ liệu bằng bộ nhớ flash"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Ổ đĩa cứng" },
+            "right": {
+              "value": "Thiết bị lưu trữ dữ liệu cổ điển từ bên trong giúp lưu trữ và truy xuất dữ liệu bằng đĩa từ quay nhanh"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Ổ cứng di động" },
+            "right": {
+              "value": "Thiết bị lưu trữ dữ liệu bên ngoài hoạt động dựa trên kết nối USB với máy tính"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 38,
+        "type": "truefalse",
+        "text": "Bạn cần xác định thông tin nhận dạng cá nhân (PII - Personally Identifiable Information) mà bạn không nên để lộ trên mạng. Với mỗi phát biểu, hãy chọn Có nếu đó là thông tin nhận dạng cá nhân hoặc Không nếu không phải.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Màu mắt",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Ngày sinh",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Nơi sinh",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 39,
+        "type": "truefalse",
+        "text": "Với mỗi câu phát biểu, hãy chọn Đúng nếu đó là ví dụ về bắt nạt trên mạng hoặc Sai nếu không phải.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "A liên tục gửi những tin nhắn ác ý riêng cho B",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "D đăng ảnh riêng tư của E lên mạng mà không có sự cho phép của E",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "F tạo một tài khoản Instagram để đăng tải những tin đồn về các học sinh trong trường",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "C đăng tải một ý kiến gây tranh cãi trên một diễn đàn trực tuyến công khai",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 40,
+        "type": "single",
+        "text": "Cách an toàn để gửi thông tin nhận dạng cá nhân (PII - Personally Identifiable Information) qua email là gì?",
+        "options": [
+          { "id": 1, "value": "Bằng cách mã hóa email", "isCorrect": true },
+          {
+            "id": 2,
+            "value": "Bằng cách giải mã một email",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Bằng cách chỉ gửi email PII cho người thân",
+            "isCorrect": false
+          },
+          { "id": 4, "value": "Không bao giờ gửi email", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 41,
+        "type": "truefalse",
+        "text": "Với mỗi câu phát biểu, hãy chọn Đúng hoặc Sai.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Bạn sẽ bị quy vào tội đạo văn nếu không trích dẫn nguồn đầy đủ",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Trong tác phẩm viết, bạn phải sử dụng phần chú thích cuối trang để trích dẫn nguồn",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Bạn có thể mạo nhận tác phẩm hoặc ý tưởng của người khác làm của riêng mình mà không cần trích dẫn nguồn",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Bạn 'chỉ' phải trích dẫn nguồn khi sử dụng câu văn chính xác như trong tác phẩm gốc của người khác",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "type": "multiple",
+        "text": "Bốn điều nào được coi là thông tin nhận dạng cá nhân PII - Personally Identifiable Information? (Chọn 4)",
+        "options": [
+          { "id": 1, "value": "Địa chỉ gửi thư", "isCorrect": true },
+          { "id": 2, "value": "Địa chỉ IP", "isCorrect": true },
+          { "id": 3, "value": "Số an sinh xã hội", "isCorrect": true },
+          { "id": 4, "value": "Màu tóc", "isCorrect": false },
+          { "id": 5, "value": "Lịch sử quét sinh trắc học", "isCorrect": true },
+          { "id": 6, "value": "Kích thước quần áo", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 43,
+        "type": "truefalse",
+        "text": "Là một người sử dụng máy tính có đạo đức, trách nhiệm của bạn là phải luôn tuân thủ các quy tắc hành xử đúng mực trên mạng. Bạn cần xác định những ví dụ về cách hành xử đúng mực trên mạng trong môi trường làm việc văn phòng. Với mỗi câu phát biểu, hãy chọn Có nếu đó là ví dụ về cách hành xử đúng mực hoặc Không nếu không phải.",
+        "optionsOfTrueFalseType": ["Có", "Không"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Luôn Cc cho đồng nghiệp khi gửi email để giúp họ nắm được thông tin",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Chia sẻ các tập tin lớn từ dịch vụ lưu trữ đám mây hoặc vị trí máy chủ thay vì đính kèm trong email",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Áp dụng các tiêu chuẩn và giá trị trong các tương tác trực tuyến tương tự như khi bạn tương tác trực tiếp",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 44,
+        "type": "truefalse",
+        "text": "Với mỗi câu phát biểu về các phương pháp trích dẫn, hãy chọn Đúng hoặc Sai.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Bạn phải trích dẫn nguồn nếu trích dẫn trực tiếp từ một bài phát biểu",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Bạn phải trích dẫn nguồn nếu tóm tắt bài viết của một người khác",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Bạn phải trích dẫn nguồn nếu diễn đạt lại bài viết của một người khác",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Bạn nên đặt dấu ngoặc kép xung quanh các cụm từ gồm ba từ trở lên được trích dẫn từ bài viết của một người khác",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 45,
+        "type": "multiple",
+        "text": "Đâu là ba yếu tố phải có trong trích dẫn về một cuốn sách đã xuất bản? (Chọn 3)",
+        "options": [
+          { "id": 1, "value": "Ngày truy cập", "isCorrect": true },
+          { "id": 2, "value": "Ngày xuất bản", "isCorrect": false },
+          { "id": 3, "value": "Tình trạng bản quyền", "isCorrect": false },
+          { "id": 4, "value": "Tên sách", "isCorrect": true },
+          { "id": 5, "value": "Tên tác giả", "isCorrect": true },
+          { "id": 6, "value": "Tình trạng thương hiệu", "isCorrect": false }
+        ]
+      }
+    ]
+  },
+  {
+    "levelId": "l1",
+    "partId": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "single",
+        "text": "Ngôn ngữ hòa nhập tránh ______ đối với mọi người bất kể chủng tộc hay giới tính của họ.",
+        "options": [
+          { "id": 1, "value": "Lòng biết ơn (Gratitude)", "isCorrect": false },
+          {
+            "id": 2,
+            "value": "Lòng hiếu khách (Hospitality)",
+            "isCorrect": false
+          },
+          { "id": 3, "value": "Thiên kiến (Bias)", "isCorrect": true },
+          { "id": 4, "value": "Sự tôn trọng (Respect)", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 2,
+        "type": "multiple",
+        "text": "Ba điều nào thể hiện giao tiếp phi ngôn ngữ? (Chọn 3)",
+        "options": [
+          { "id": 1, "value": "Nét mặt", "isCorrect": true },
+          { "id": 2, "value": "Màu tóc", "isCorrect": false },
+          { "id": 3, "value": "Giao tiếp bằng mắt", "isCorrect": true },
+          { "id": 4, "value": "Ngôn ngữ cơ thể", "isCorrect": true },
+          { "id": 5, "value": "Email", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 3,
+        "type": "multiple",
+        "text": "Người dùng được yêu cầu đọc gì khi đăng ký tài khoản trực tuyến? (Chọn 3)",
+        "options": [
+          { "id": 1, "value": "Người dùng đánh giá", "isCorrect": false },
+          { "id": 2, "value": "Thoả thuận người dùng", "isCorrect": true },
+          { "id": 3, "value": "Các nguyên tắt khác", "isCorrect": true },
+          { "id": 4, "value": "Phương châm nền tảng", "isCorrect": false },
+          { "id": 5, "value": "Điều khoản sử dụng", "isCorrect": true }
+        ]
+      },
+      {
+        "id": 4,
+        "type": "truefalse",
+        "text": "Đối với mỗi đăng kí tài khoản trực tuyến (Acceptable Use Policies) để đăng trên mạng xã hội, hãy chọn Đúng nếu tuyên bố đó đúng, chọn Sai nếu tuyên bố đó sai.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Các chính sách sử dụng được chấp nhận trong trường học nói chung sẽ bao gồm các quy tắc về đe dọa trực tuyến.",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Chính sách sử dụng được chấp nhận (Là các quy tắc về những gì bạn có thể và không thể thực hiện trực tuyến bằng máy tính của trường học hoặc cơ quan).",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Chính sách sử dụng được chấp nhận không thể hạn chế bạn bất kỳ thứ gì bạn muốn vì bạn có quyền sửa đổi một lần.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "type": "single",
+        "text": "Bạn sử dụng mạng xã hội để giữ liên lạc với bạn bè và gia đình. Bạn đang có kế hoạch đi du lịch vào tháng tới. Đâu là cách an toàn nhất để bạn tự bảo vệ mình khỏi những tên tội phạm trực tuyến khi đăng thông tin về các hoạt động trong kỳ nghỉ của mình?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Đợi đến khi về nhà mới đăng ảnh về chuyến đi",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Đăng kế hoạch nghỉ trước khi đi để bạn bè của bạn biết rằng bạn không có ở nhà",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Check in trực tuyến tại mỗi điểm đến để gia đình bạn biết được vị trí của bạn",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Đặt bản đồ vị trí trên mạng xã hội 'Công khai'",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "type": "multiple",
+        "text": "Giao tiếp không đồng bộ có thể được sử dụng cho những mục đích nào? (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "Tin nhắn tức thời", "isCorrect": false },
+          { "id": 2, "value": "Trò chuyện Video", "isCorrect": false },
+          { "id": 3, "value": "Chia sẻ màn hình", "isCorrect": false },
+          { "id": 4, "value": "Chỉnh sửa tài liệu", "isCorrect": true },
+          {
+            "id": 5,
+            "value": "Đánh giá ngang hàng (Peer reviewing)",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "type": "multiple",
+        "text": "Khi quyết định giữa việc gửi thông tin qua email hoặc tổ chức một hội nghị, hai câu hỏi cần xem xét là gì? (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "Khán giả sẽ ở đâu?", "isCorrect": false },
+          { "id": 2, "value": "Đối tượng bao nhiêu tuổi?", "isCorrect": false },
+          {
+            "id": 3,
+            "value": "Sẽ có câu hỏi về thông tin được trình bày?",
+            "isCorrect": true
+          },
+          { "id": 4, "value": "Có cần sự hợp tác không?", "isCorrect": true }
+        ]
+      },
+      {
+        "id": 8,
+        "type": "multiple",
+        "text": "Để sử dụng ứng dụng, mạng hoặc dịch vụ, bạn có thể phải đồng ý tuân thủ chính sách sử dụng được chấp nhận. Chính sách sử dụng được chấp nhận đề cập đến hai loại thông tin nào? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Hậu quả của hành vi vi phạm chính sách",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Cách bảo vệ bản quyền dữ liệu mà bạn gửi tới ứng dụng, mạng hoặc dịch vụ",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Hành vi sử dụng ứng dụng, mạng hoặc dịch vụ không được chấp nhận",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Cách kiếm tiền từ thông tin thông qua ứng dụng, mạng hoặc dịch vụ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "type": "truefalse",
+        "text": "Đối với mỗi tuyên bố liên quan đến chính sách sử dụng được chấp nhận (Acceptable Use Policies) để đăng trên mạng xã hội, hãy chọn Đúng nếu tuyên bố đó đúng và Sai nếu tuyên bố đó sai.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Các chính sách sử dụng được chấp nhận cho các trường học và doanh nghiệp thường bao gồm các quy tắc về việc sử dụng các trang mạng xã hội",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Vi phạm chính sách sử dụng được chấp nhận (Acceptable Use Policy) thường dẫn đến việc tài khoản của bạn bị xóa như một hình phạt",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Chính sách sử dụng được chấp nhận dành cho người lớn giống với chính sách dành cho trẻ vị thành niên",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "type": "multiple",
+        "text": "Đâu là ba yếu tố quan trọng của chính sách sử dụng được chấp nhận? (Chọn 3)",
+        "options": [
+          { "id": 1, "value": "Danh mục tham khảo", "isCorrect": false },
+          { "id": 2, "value": "Phần vi phạm trừng phạt", "isCorrect": true },
+          {
+            "id": 3,
+            "value": "Tuyên bố về bản quyền và nhãn hiệu",
+            "isCorrect": false
+          },
+          { "id": 4, "value": "Tuyên bố chính sách", "isCorrect": true },
+          { "id": 5, "value": "Phần định nghĩa", "isCorrect": false },
+          { "id": 6, "value": "Thỏa thuận cấp phép", "isCorrect": true }
+        ]
+      },
+      {
+        "id": 11,
+        "type": "single",
+        "text": "Tham khảo hình ảnh bên dưới. Nếu người dùng chọn tùy chọn Reply, ai sẽ nhận được phản hồi?",
+        "imageUrl": "/assets/question/OT3_q11.png",
+        "options": [
+          { "id": 1, "value": "Ben Walt", "isCorrect": true },
+          { "id": 2, "value": "Ben Walt and Sally Smith", "isCorrect": false },
+          { "id": 3, "value": "Sally Smith", "isCorrect": false },
+          { "id": 4, "value": "UAC Admin", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 12,
+        "type": "single",
+        "text": "Bạn cần hợp tác với các bạn học và chia sẻ nhật ký lớp học. Nền tảng kỹ thuật số nào thích hợp với hoạt động trong lớp học này?",
+        "options": [
+          { "id": 1, "value": "Google tài liệu", "isCorrect": true },
+          { "id": 2, "value": "Twitter", "isCorrect": false },
+          { "id": 3, "value": "Instagram", "isCorrect": false },
+          { "id": 4, "value": "Facebook", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 13,
+        "type": "single",
+        "text": "Mục đích của các chính sách sử dụng được chấp nhận (Acceptable Use Policies) là gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Để xua đuổi những kẻ săn mồi trực tuyến",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Để bảo vệ các doanh nghiệp hoặc tổ chức khỏi việc lạm dụng mạng",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Để ngăn chặn hành vi trộm cắp danh tính",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Để giúp người dùng hiểu các nguyên tắc về tài khoản mạng xã hội",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "type": "single",
+        "text": "Khi bắt đầu năm học, giáo viên khoa học sẽ gửi một email đến tất cả các học sinh trong lớp của bạn. Trong thư có đính kèm một mẫu giấy phép dưới dạng tập tin PDF. Bạn không có quyền truy cập vào máy in và phải gửi biểu mẫu cho cha mẹ của bạn để in. Trong email của giáo viên, bạn nên sử dụng tùy chọn nào dưới đây để gửi biểu mẫu cho phụ huynh của mình?",
+        "options": [
+          { "id": 1, "value": "Follow Up", "isCorrect": false },
+          { "id": 2, "value": "Reply", "isCorrect": false },
+          { "id": 3, "value": "Reply All", "isCorrect": false },
+          { "id": 4, "value": "Forward", "isCorrect": true }
+        ]
+      },
+      {
+        "id": 15,
+        "type": "match",
+        "text": "Bạn cần xác định đúng trường địa chỉ email để sử dụng cho các mục đích cụ thể. Ghép từng trường địa chỉ với mục đích tương ứng.",
+        "pairs": [
+          {
+            "left": { "value": "Reply" },
+            "right": {
+              "value": "Trả lời riêng người gửi thư và không bao gồm những người nhận thư khác"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Cc" },
+            "right": {
+              "value": "Gửi Cc cho nhiều người trong thư và cho phép người nhận nhìn thấy các địa chỉ email khác"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Reply All" },
+            "right": {
+              "value": "Trả lời người gửi thư và tất cả những người nhận thư đã biết khác"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Forward" },
+            "right": {
+              "value": "Gửi thư bạn nhận được từ một người cho người khác"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Bcc" },
+            "right": {
+              "value": "Gửi Cc cho nhiều người trong thư và 'không' cho người nhận nhìn thấy các địa chỉ email khác"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "type": "single",
+        "text": "Cách nào hiệu quả nhất để hỏi đồng nghiệp từ xa một câu hỏi đơn giản với mong muốn họ sẽ trả lời nhanh chóng?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Tin nhắn tức thời (Instant Messaging)",
+            "isCorrect": true
+          },
+          { "id": 2, "value": "Mặt đối mặt (In-person)", "isCorrect": false },
+          { "id": 3, "value": "Bản ghi nhớ", "isCorrect": false },
+          { "id": 4, "value": "E-mail", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 17,
+        "type": "multiple",
+        "text": "Đâu là hai phát biểu đúng nhất về hệ điều hành Android? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Android là hệ điều hành mã nguồn mở",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Android là hệ điều hành dựa trên nền tảng Linux",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Android là hệ điều hành của Microsoft",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Android là hệ điều hành của máy tính",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "type": "single",
+        "text": "Đạo đức máy tính là gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Âm báo do chủ tài khoản được ủy quyền đặt trong một trang web",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Tập hợp các nguyên tắc giúp người dùng xác định đúng sai trong sử dụng công nghệ",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Cookie lưu trữ dữ liệu duyệt web",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Bộ quy tắc ở nơi làm việc hoặc cơ quan khác mà người dùng phải tuân thủ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "type": "single",
+        "text": "Câu nào thể hiện ngôn ngữ bao hàm?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Tôi muốn cảm ơn các sĩ quan cảnh sát cũ đã giữ cho thành phố của chúng ta an toàn.",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Tôi muốn cảm ơn các nữ cảnh sát đã giữ cho thành phố của chúng ta an toàn.",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Tôi muốn cảm ơn các sĩ quan cảnh sát đã giữ cho thành phố của chúng ta an toàn.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Tôi muốn cảm ơn các cảnh sát đã giữ cho thành phố của chúng ta an toàn.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "type": "single",
+        "text": "Bạn đang cộng tác với các học sinh khác trong một dự án khoa học. Nhóm của bạn sẽ gặp nhau để thảo luận về dự án thông qua ứng dụng họp video của nhà trường. Bạn sẽ đóng vai trò là người chủ trì. Bạn cần đảm bảo rằng mọi học sinh đều được thảo luận về dự án mà không bị các học sinh khác làm gián đoạn. Mỗi học sinh phải làm gì để đạt được mục tiêu này?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Tắt tiếng micro của người tham gia cho đến khi bạn gọi họ",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Không rời khỏi camera trong suốt hội thảo",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Đăng nhập sớm để xác minh rằng công nghệ âm thanh và video đều hoạt động",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Giới thiệu tên bản thân khi phát biểu",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "type": "single",
+        "text": "Trong trường hợp nào thì chia sẻ màn hình là tuỳ chọn tốt nhất giải quyết sự cố?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Một cặp vợ chồng muốn nói chuyện trong giời gian rảnh rỗi của họ.",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Sếp cần thông báo cho nhân viên của họ về cuộc họp",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Một người mẹ đang tranh cãi với con gái của mình.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Một kỹ thuật viên CNTT cần thực hiện các bản sửa lỗi cơ bản cho máy tính của nhân viên từ xa.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "type": "multiple",
+        "text": "Ba lợi ích khi cộng tác kỹ thuật số là gì (Chọn 3)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Tăng năng suất của nhân viên.",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Các công ty ít có khả năng duy trì kết nối",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Các công ty có nhiều địa điểm có thể triệu tập thường xuyên hơn.",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Giao tiếp kỹ thuật số tiết kiệm thời gian.",
+            "isCorrect": true
+          },
+          {
+            "id": 5,
+            "value": "Giao tiếp trực tiếp tăng lên.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "type": "single",
+        "text": "Khi giao tiếp trực tuyến trở nên tiêu cực, cách xử lý chuyên nghiệp nhất là gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Yêu cầu những người khác tham gia và đứng về phía mình.",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Đảm bảo rằng các từ cuối cùng là phủ định.",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Tạm dừng các cuộc tranh luận và quay lại cuộc tranh luận sau.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Xoá chính mình khỏi cuộc trò chuyện.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "type": "truefalse",
+        "text": "Với mỗi câu phát biểu, chọn Đúng hoặc sai",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Viết email bằng tất cả các chữ cái viết hoa",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Quảng cáo thứ gì đó trong nhóm Facebook không liên quan.",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Sử dụng dấu câu và định dạng thích hợp",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Tôn trọng bằng cách diễn đạt và bài đăng không đối đầu.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "type": "truefalse",
+        "text": "Với mỗi câu phát biểu hãy chọn Đúng hoặc Sai",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Những người được thừa hưởng chung nền di sản thường có cùng niềm tin và mối ưu tiên.",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Ngôn ngữ trung lập thể hiện những định kiến rập khuôn, kỳ vọng và cả những giới hạn.",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Văn hoá là khái niệm không ngừng thay đổi và không hoàn toàn phản ánh bản sắc của một cá nhân nào đó.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "type": "multiple",
+        "text": "Đâu là hai tình huống giao tiếp thích hợp để sử dụng biểu tượng cảm xúc? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Khi trả lời bài đăng bình thường trên mạng xã hội.",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Khi nhắn tin cho bạn bè hỏi họ đang làm gì.",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Khi viết email trang trọng cho giáo viên hoặc cán bộ quản lý.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Khi gửi đơn khiếu nại đến một doanh nghiệp hoặc biểu mẫu trực tuyến.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "type": "single",
+        "text": "Hai bạn cùng làm báo cáo khoa học. Bạn tạo tài liệu dùng chung và lưu trữ trên đám mây. Hai bạn dự định làm vào những thời điểm khác nhau. Đây là hình thức cộng tác gì?",
+        "options": [
+          { "id": 1, "value": "Ngoại tuyến.", "isCorrect": false },
+          { "id": 2, "value": "Không đồng bộ.", "isCorrect": true },
+          { "id": 3, "value": "Đồng thời.", "isCorrect": false },
+          { "id": 4, "value": "Đồng bộ.", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 28,
+        "type": "multiple",
+        "text": "Trong cuộc họp, hành động nào khiến người khác nghĩ rằng một người đang không quan tâm hoặc bị phân tâm? (Chọn 3)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Hạ cái nhìn một người (giảm giao tiếp ánh mắt)",
+            "isCorrect": true
+          },
+          { "id": 2, "value": "Lo lắng.", "isCorrect": true },
+          {
+            "id": 3,
+            "value": "Loay hoay loanh quanh trong một chiếc ghế.",
+            "isCorrect": true
+          },
+          { "id": 4, "value": "Mỉm cười và gật đầu.", "isCorrect": false },
+          {
+            "id": 5,
+            "value": "Ngồi thẳng lưng, đối mặt với người thuyết trình.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "type": "multiple",
+        "text": "Ba cách để chuẩn bị cho cuộc họp kỹ thuật số chuyên nghiệp? (Chọn 3)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Gửi khiếu nại đến người thuyết trình.",
+            "isCorrect": false
+          },
+          { "id": 2, "value": "Ăn mặc chuyên nghiệp", "isCorrect": true },
+          { "id": 3, "value": "Chuẩn bị thiết bị", "isCorrect": true },
+          { "id": 4, "value": "Đến đúng giờ.", "isCorrect": true },
+          {
+            "id": 5,
+            "value": "Đăng xuất khỏi tài khoản của nền tảng cuộc họp",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "type": "single",
+        "text": "Phần mềm gián điệp là gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Một chương trình được bí mật cài đặt trên hệ thống và thu thập thông tin cá nhân/riêng tư mà không có sự đồng ý hoặc hiểu biết  của người dùng.",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Một chương trình có thể tự sao chép và lây lan sang máy tính khác.",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Một chương trình tự cài đặt trên hệ thống và âm thầm theo dõi thói quen trực tuyến của bạn với mục đích tự động hiển thị/tải xuống quảng cáo.",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Nội dung lừa đảo khiến bạn tiết lộ mã tài khoản và mật khẩu",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "type": "single",
+        "text": "Rủi ro sức khoẻ về tinh thần lớn nhất ở trẻ em khi sử dụng Internet?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Bắt nạt trên mạng (Cyberbullying).",
+            "isCorrect": true
+          },
+          { "id": 2, "value": "Mệt mỏi.", "isCorrect": false },
+          {
+            "id": 3,
+            "value": "Chấn thương do nhắn tin khi đi bộ.",
+            "isCorrect": false
+          },
+          { "id": 4, "value": "Nghiện chơi game.", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 32,
+        "type": "multiple",
+        "text": "Một khi phần mềm độc hại được cài đặt qua Trojan, nó có thể làm gì? (chọn 3)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Mở các trang web không mong muốn.",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Xem người dùng qua webcam của họ.",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Xâm nhập vào máy tính khác.",
+            "isCorrect": true
+          },
+          { "id": 4, "value": "Xoá các tập tin.", "isCorrect": true },
+          {
+            "id": 5,
+            "value": "Bảo vệ máy tính khỏi các loại virus",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "type": "multiple",
+        "text": "Bạn nên sử dụng 2 phương pháp nào để ngăn ngừa các chấn thương liên quan đế máy tính (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Điều chỉnh ghế sao cho bàn chân bạn đặt thẳng trên sàn.",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Nâng cấp card đồ hoạ để giảm tình trạng mỏi mắt.",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Sử dụng bàn phím công thái học để cổ tay được đặt ở vị trí tự nhiên.",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Sử dụng bàn phím silicon để giảm thiểu tác động khi nhấn phím.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "type": "multiple",
+        "text": "Những cách nào để thiết lập máy tính tránh chấn thương (Chọn 4)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Đặt cánh tay góc 90 độ và đảm bảo cổ tay thẳng ghi gõ.",
+            "isCorrect": true
+          },
+          { "id": 2, "value": "Bắt chéo chân khi gõ.", "isCorrect": false },
+          {
+            "id": 3,
+            "value": "Tựa lưng vào ghế khi làm việc.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Đặt ghế sao cho chân đặt thoải mái trên sàn.",
+            "isCorrect": true
+          },
+          {
+            "id": 5,
+            "value": "Đặt màn hình cách tầm mắt khoảng một cánh tay.",
+            "isCorrect": true
+          },
+          {
+            "id": 6,
+            "value": "Nghỉ giải lao khi ngồi trong thời gian dài.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "type": "multiple",
+        "text": "Hai hoạt động trực tuyến phổ biến nào cho biết khả năng bảo mật cá nhân của bạn bằng cách theo dõi điều hướng? (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "Chơi trò chơi trực tuyến.", "isCorrect": false },
+          { "id": 2, "value": "Đăng lên blog.", "isCorrect": false },
+          {
+            "id": 3,
+            "value": "Tải lên ảnh kỳ nghỉ hè năm ngoái.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "“Kiểm tra” vị trí thực của bạn trên các trang mạng xã hội.",
+            "isCorrect": true
+          },
+          {
+            "id": 5,
+            "value": "Đăng thông tin vị trí với một bức ảnh tự sướng bạn vừa chụp.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 36,
+        "type": "multiple",
+        "text": "Bạn cần duy trì bảo mật cho điện thoại. Đâu là ba nguyên tắc cần tuân thủ (Chọn 3)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Tắt wifi và Bluetooth khi không sử dụng.",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Không để thiết bị của bạn ngoài tầm giám sát ở nơi công cộng.",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Sử dụng cáp kết nối USB 3.0 trở lên khi kết nối máy tính.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Tránh sử dụng Wifi công cộng.",
+            "isCorrect": true
+          },
+          {
+            "id": 5,
+            "value": "Chỉ cập nhật Hệ Điều Hành khi bạn cần xài tính năng mới.",
+            "isCorrect": false
+          },
+          {
+            "id": 6,
+            "value": "Luôn sử dụng chống sốc điện khi sạc.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 37,
+        "type": "multiple",
+        "text": "Bạn nên sử dụng hai phương pháp nào để ngăn ngừa các chấn thương liên quan đến máy tính? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Sử dụng chuột có công tắc để điều chỉnh DPI khi cần.",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Sử dụng bàn phím công thái học để cổ tay được đặt tự nhiên.",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Nâng cấp lên card đồ hoạ cao cấp để giảm tình trạng mỏi mắt.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Thường xuyên nghỉ giải lao ngắn bằng cách đi lại xung quanh.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 38,
+        "type": "multiple",
+        "text": "Người dùng tiết lộ thông tin gì cho người khác khi họ đăng vị trí trực tuyến? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Khi một doanh nghiệp địa phương mở ra.",
+            "isCorrect": false
+          },
+          { "id": 2, "value": "Họ không có ở nhà.", "isCorrect": true },
+          {
+            "id": 3,
+            "value": "Nơi mọi người có thể tìm thấy họ.",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Nơi mọi người có thể thấy thú cưng của họ.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 39,
+        "type": "multiple",
+        "text": "Các bên thứ ba làm gì với thông tin được tìm thấy thông qua phần mềm gián điệp? (Chọn 3)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Thay đổi chức năng máy tính.",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Mở các trang web không mong muốn.",
+            "isCorrect": true
+          },
+          { "id": 3, "value": "Tải xuống miễn phí.", "isCorrect": false },
+          {
+            "id": 4,
+            "value": "Bảo vệ thông tin người dùng.",
+            "isCorrect": false
+          },
+          {
+            "id": 5,
+            "value": "Làm đầy máy tính bằng các quảng cáo bật lên.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 40,
+        "type": "multiple",
+        "text": "Bạn nên làm gì để tránh mỏi mắt khi sử dụng màn hình kỹ thuật số? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Đặt màn hình cao hơn tầm mắt một chút.",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Đảm bảo nguồn sáng không chiếu trực tiếp vào mắt bạn.",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Đảm bảo màn hình không quá gần bạn.",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Chiếu trực tiếp nguồn sáng chính vào màn hình.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 41,
+        "type": "single",
+        "text": "Worm máy tính là gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Một chương trình có thể tự sao chép và lây lan sang các máy tính khác",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Một chương trình tự cài đặt trên hệ thống và âm thầm theo dõi thói quen sử dụng máy tính của bạn mà bạn không hề biết",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Một chương trình được thiết kế với vẻ ngoài vô hại nhưng lại cho phép truy cập trái phép vào máy tính của bạn.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Nội dung lừa đảo khiến bạn tiết lộ mã tài khoản và mật khẩu, núp dưới vẻ ngoài hợp pháp",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "type": "single",
+        "text": "Người dùng có thể làm gì để bảo vệ mình khỏi các cuộc tấn công lừa đảo (Phishing)?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Sử dụng cùng một mật khẩu cho tất cả các tài khoản",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Chuyển tiếp tất cả các email không quen thuộc cho một người biết nhiều về công nghệ",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Đăng nhập vào tài khoản trực tiếp từ trang web của nền tảng",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Đăng nhập vào tài khoản bằng liên kết được gửi trong email",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "type": "single",
+        "text": "Chấn thương căng thẳng lặp đi lặp lại phổ biến nhất do sử dụng máy tính và thiết bị là gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Rách dây chằng phụ hướng tâm ",
+            "isCorrect": false
+          },
+          { "id": 2, "value": "Rách dây chằng chéo trước", "isCorrect": false },
+          { "id": 3, "value": "Hội chứng ống cổ tay", "isCorrect": true },
+          { "id": 4, "value": "Gãy xương hông", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 44,
+        "type": "multiple",
+        "text": "Hai cách mà mọi người có thể vô tình xâm phạm bảo mật trực tuyến của họ là gì? (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "Mã hóa email bằng PII", "isCorrect": false },
+          {
+            "id": 2,
+            "value": "Chỉ nhập thông tin vào các trang web an toàn",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Theo dõi những người họ biết ",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Sử dụng wifi công cộng để truy cập ngân hàng và các tài khoản cá nhân khác",
+            "isCorrect": true
+          },
+          { "id": 5, "value": "Điền và đăng", "isCorrect": true }
+        ]
+      },
+      {
+        "id": 45,
+        "type": "multiple",
+        "text": "Bạn nên sử dụng hai phương pháp nào để giảm tình trạng mỏi mắt khi sử dụng màn hình kỹ thuật số? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Đều đặn rời mắt khỏi màn hình và tập trung nhìn vào một vật thể ở xa",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Nghiêng màn hình trực tiếp về phía mắt của bạn",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Điều chỉnh độ phân giải màn hình để đặt kích thước văn bản tạo cảm giác thoải mái cho mắt",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Chiếu trực tiếp nguồn sáng chính trong phòng vào màn hình",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "type": "single",
+        "text": "Theo dõi điều hướng sử dụng ______ để truyền tín hiệu xác định vị trí của thiết bị.",
+        "options": [
+          { "id": 1, "value": "Lực hấp dẫn", "isCorrect": false },
+          { "id": 2, "value": "Vệ tinh", "isCorrect": false },
+          { "id": 3, "value": "Định vị toàn cầu", "isCorrect": true },
+          { "id": 4, "value": "Vòng quay của trái đất", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 47,
+        "type": "multiple",
+        "text": "Bạn sử dụng máy tính công cộng tại thư viện để kiểm tra email và số dư tài khoản ngân hàng của mình. Bạn muốn ngăn ngừa những người sử dụng máy tính sau đó truy cập vào email và tài khoản ngân hàng của bạn. Bạn nên hoàn thành hai tác vụ nào trước khi rời khỏi máy tính? (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "Xóa lịch sử trình duyệt", "isCorrect": false },
+          {
+            "id": 2,
+            "value": "Đóng tất cả các cửa sổ trình duyệt đang mở",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Xóa bộ đệm ẩn và cookie của trình duyệt ",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Đăng xuất khỏi email và các trang web ngân hàng",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 48,
+        "type": "single",
+        "text": "Dịch vụ GPS nào cung cấp cho người dùng vị trí của họ, chỉ đường đến nơi họ sẽ đến và thời gian ước tính của họ dựa trên tốc độ hiện tại của người dùng và điều kiện giao thông trên tuyến đường của họ?",
+        "options": [
+          { "id": 1, "value": "Google Maps", "isCorrect": true },
+          { "id": 2, "value": "Google Planet", "isCorrect": false },
+          { "id": 3, "value": "Google Drive", "isCorrect": false },
+          { "id": 4, "value": "IMAP", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 49,
+        "type": "multiple",
+        "text": "Những cách nào mà người dùng có thể sử dụng theo dõi điều hướng trong cuộc sống hàng ngày của họ? (Chọn 3)",
+        "options": [
+          { "id": 1, "value": "Để gọi cho bạn bè của họ", "isCorrect": false },
+          {
+            "id": 2,
+            "value": "Để theo dõi thiết bị hoặc thành viên gia đình ",
+            "isCorrect": true
+          },
+          { "id": 3, "value": "Đặt đồ ăn và vật dụng", "isCorrect": false },
+          {
+            "id": 4,
+            "value": "Để tìm các doanh nghiệp gần người dùng",
+            "isCorrect": true
+          },
+          { "id": 5, "value": "Để truy cập chỉ đường", "isCorrect": true }
+        ]
+      },
+      {
+        "id": 50,
+        "type": "multiple",
+        "text": "Virus có thể tải vào máy tính bằng những phương pháp nào? (Chọn 3)",
+        "options": [
+          { "id": 1, "value": "Phần mềm lỗi thời", "isCorrect": true },
+          { "id": 2, "value": "Phần mềm chống virus", "isCorrect": false },
+          {
+            "id": 3,
+            "value": "Các trang web không an toàn",
+            "isCorrect": true
+          },
+          { "id": 4, "value": "Phần mềm an toàn", "isCorrect": false },
+          { "id": 5, "value": "Tệp đính kèm email", "isCorrect": true }
+        ]
+      },
+      {
+        "id": 51,
+        "type": "single",
+        "text": "Virus máy tính là gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Một phần mềm ngụy trang gây hại cho máy tính của bạn",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Một chương trình có thể tự sao chép và lây lan sang các máy tính khác",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Một phần mềm đánh cắp dữ liệu của nạn nhân truyền trên mạng",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Một phần mềm xâm nhập vào hệ thống và âm thầm theo dõi mà bạn không biết",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "type": "truefalse",
+        "text": "Với mỗi câu phát biểu, hãy chọn Đúng hoặc Sai:",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Android là một phần mềm mã nguồn mở",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Android là hệ điều hành cho máy tính để bàn",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Android là hệ điều hành được phát triển dựa trên nền tảng Linux",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Android cần phải có cửa hàng Google mới có thể tải được ứng dụng",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 53,
+        "type": "hotspot",
+        "text": "Đâu là 3 thiết bị xuất khi kết nối với máy tính không có màn hình cảm ứng? (Chọn 3)",
+        "imageUrl": "/assets/question/OT1_q8.png",
+        "totalRequiredHotSpot": 3,
+        "hotSpots": [
+          {
+            "label": "headset",
+            "top": 4.27,
+            "left": 4.82,
+            "width": 23.23,
+            "height": 40.14
+          },
+          {
+            "label": "monitor",
+            "top": 4.6,
+            "left": 70.51,
+            "width": 25.32,
+            "height": 38.51
+          },
+          {
+            "label": "print",
+            "top": 48.5,
+            "left": 70.8,
+            "width": 25,
+            "height": 38.7
+          }
+        ]
+      },
+      {
+        "id": 54,
+        "type": "truefalse",
+        "text": "Với mỗi câu phát biểu về sự khác biệt giữa kết nối Intranet và Internet, hãy chọn Đúng hoặc Sai.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Kết nối Intranet (mạng nội bộ) thường an toàn hơn Internet",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Kết nối Intranet ít xảy ra độ trễ hơn Internet",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Tốc độ kết nối Internet luôn nhanh hơn Intranet",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 55,
+        "type": "multiple",
+        "text": "Những lựa chọn nào sau đây có thể bị hacker lợi dụng để thu thập thông tin người dùng? (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "VPN", "isCorrect": false },
+          { "id": 2, "value": "Nhân dạng khuôn mặt", "isCorrect": false },
+          { "id": 3, "value": "Cookie bên thứ nhất", "isCorrect": true },
+          { "id": 4, "value": "Cookie bên thứ ba", "isCorrect": true }
+        ]
+      },
+      {
+        "id": 56,
+        "type": "multiple",
+        "text": "Bạn cần làm việc nhóm với bạn học để ghi lại nhật ký lớp học. Nền tảng trực tuyến nào sau đây có thể giúp bạn làm việc và chia sẻ dễ dàng hơn? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Google Tài liệu (Google Docs)",
+            "isCorrect": true
+          },
+          { "id": 2, "value": "Microsoft Teams", "isCorrect": true },
+          { "id": 3, "value": "Facebook", "isCorrect": false },
+          { "id": 4, "value": "Instagram", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 57,
+        "type": "truefalse",
+        "text": "Giáo viên của bạn tổ chức một chuyến tham quan qua độ ngoài. Tuy nhiên có nhiều bạn không tham gia được, do đó giáo viên quyết định tạo một cuộc họp kỹ thuật số. Bạn tham gia vào cuộc họp này. Chọn Đúng/Sai với mỗi câu phát biểu về tuân thủ tiêu chuẩn kỹ thuật số?",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Kiểm tra micro, camera và phần mềm trước khi bắt đầu buổi họp",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Điều chỉnh camera sao cho khuôn mặt bạn ở giữa màn hình, ngang tầm mắt",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Luôn bật micro trong suốt buổi họp để sẵn sàng phát biểu",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Khi đến lượt phát biểu, hãy chào hỏi, giới thiệu tên và nhìn vào màn hình khi nói chuyện",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 58,
+        "type": "multiple",
+        "text": "Các công ty có thể thu thập thông tin của bạn dựa vào những yếu tố nào sau đây? (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "GPS", "isCorrect": true },
+          { "id": 2, "value": "Cookie", "isCorrect": true },
+          { "id": 3, "value": "VPN", "isCorrect": false },
+          { "id": 4, "value": "Ẩn danh", "isCorrect": false }
         ]
       }
     ]

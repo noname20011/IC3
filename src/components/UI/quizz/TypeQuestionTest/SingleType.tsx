@@ -5,10 +5,9 @@ interface Props {
   value: number; 
   onChange: (i: number) => void
 }
-
 export default function SingleType(props: Props) {
   const { question, value, onChange } = props;
-
+  
   return (
     <div className="flex flex-col gap-3">
       {question.options.map((opt, i) => {

@@ -1,4 +1,4 @@
-import about_me from "../../assets/about_me.png";
+
 
 const AboutMe = () => {
   return (
@@ -8,7 +8,7 @@ const AboutMe = () => {
       {/* Image Section - Male Teacher with IC3 Whiteboard */}
       <div className="w-full md:w-2/5 aspect-[4/5] rounded-3xl overflow-hidden relative group ">
         <img
-          src={about_me}
+          src="/assets/about_me.png"
           alt="Hieuisme - IC3 Teacher"
           className="w-full h-full object-cover transition-transform duration-700 scale-120"
           referrerPolicy="no-referrer"
