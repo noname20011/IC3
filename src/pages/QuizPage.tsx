@@ -24,6 +24,7 @@ import { QuestionScore } from "../types/questionScore";
 import {
   AnswerMap,
   AnswerValue,
+  HotspotAnswer,
   MatchAnswer,
   MultipleAnswer,
   ReorderAnswer,
@@ -176,7 +177,6 @@ export default function Quiz() {
   )?.questions as QuestionTypeEntity[];
 
   const q = questions[current];
-  const totalPoints = questions.reduce((s, q) => s + (q.points ?? 0), 0);
   const answered = Object.keys(answers).length;
   const isFlagged = flagged.has(q.id);
 
@@ -213,6 +213,14 @@ export default function Quiz() {
       }}, 2000);
     return () => clearTimeout(id);
   }, [timeCountDown]);
+
+  useEffect(() => {
+    const id = setTimeout(() => {
+      if (submitted) {
+        setReviewing(true);
+      }}, 2000);
+    return () => clearTimeout(id);
+  }, [submitted]);
 
   // ─── Test Review Screen ────────────────────────────────────────────────────────
   if (submitted && reviewing) {
@@ -301,8 +309,8 @@ export default function Quiz() {
               <p className="text-base sm:text-lg font-semibold text-[#b1ada4] leading-relaxed">
                 {q.text}
               </p>
-              {q.imageUrl && <div className="flex items-end gap-4">
-                  <img src={q.imageUrl} alt="Question" className="mt-4 rounded-lg max-h-28 object-contain w-auto"/>
+              {q.type.toLowerCase()!== 'hotspot' && q.imageUrl && <div className="flex items-end gap-4">
+                  <img src={q.imageUrl} alt="Question" className="mt-4 rounded-lg max-h-28 object-contain w-auto" loading="lazy"/>
                 <Button className="inline-block text-[#fafafa] bg-devotion-gold text-sm"
                   onClick={() => setZoomOutImage(true)}
                 >
@@ -314,11 +322,7 @@ export default function Quiz() {
                     setShowPopup={setZoomOutImage}
                     className="!p-0 md:!p-0 lg:!p-0 !space-y-0 md:!space-y-0 lg:!max-w-3xl"
                   >
-                    <img
-                      src={q.imageUrl}
-                      alt="Question"
-                      className="rounded-lg max-h-[180vh] w-full object-contain"
-                    />
+                    <img src={q.imageUrl} alt="Question" className="rounded-lg max-h-[180vh] w-full object-contain" loading="lazy" />
                   </PopUp>
                 )}
               </div> 
@@ -369,7 +373,7 @@ export default function Quiz() {
               <HotSpotType
                 q={q as HotSpotEntity}
                 value={
-                  (answers as Record<number, { x: number; y: number } | null>)[
+                  (answers as Record<number, HotspotAnswer | null>)[
                     q.id
                   ]
                 }
@@ -408,7 +412,7 @@ export default function Quiz() {
                 </div>
 
                 <h2 className="text-2xl font-bold text-white mb-1">
-                  Are sure you wanna submit?
+                  {timeCountDown === 0 ? "Time Out!" : "Are sure you wanna submit?"}
                 </h2>
                 <p className="text-sm text-[#6b5e4a] mb-7">
                   {answered} of {questions.length} questions answered

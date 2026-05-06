@@ -21,12 +21,15 @@ export default function DragMatch(props: DragMatchProps) {
   const getLeft = (value: string) => leftItems.find((i) => i.value === value)!;
   const getRight = (value: string) =>
     rightItems.find((i) => i.value === value)!;
+  const getImageUrl = (value: string) =>
+    rightItems.find((i) => i.imageUrl === value)!;
 
   
   const [pairs, setPairs] = useState<MatchAnswer>(() => {
-    return value && Object.keys(value).length > 0 ? value : q.pairs.filter((pair) => pair.isCorrect).map((pair) => ({ [pair.right.value]: null }));
+    
+    return value && Object.keys(value).length > 0 ? value : q.pairs.filter((pair) => pair.isCorrect).map((pair) => ({ [pair.right.value ? pair.right.value : pair.right.imageUrl ? pair.right.imageUrl : "" ]: null }));
   });
-
+  
   const handleDragEnd = ({ active, over }: DragEndEvent) => {
     if (!over) return;
     const leftValue = active.id as string;
@@ -84,7 +87,7 @@ export default function DragMatch(props: DragMatchProps) {
               )
               .map((item, index) => (
                 <DragItem
-                  key={item.id}
+                  key={index}
                   answer={item}
                   usedRight={getDraggedItem(index)}
                   dragging={dragging}
@@ -106,6 +109,7 @@ export default function DragMatch(props: DragMatchProps) {
                   pair={pair}
                   getLeft={getLeft}
                   getRight={getRight}
+                  getImageUrl={getImageUrl}
                   usedRight={getDraggedItem(index)}
                   dragging={dragging}
                 />

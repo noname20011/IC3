@@ -3,9 +3,11 @@ import { Circle, Flag, X } from "lucide-react";
 import { useCustomContext } from "../../../hooks/use-context";
 import {
   AnswerMap,
+  HotspotAnswer,
   MatchAnswer,
 } from "../../../types/answer";
 import {
+  HotSpotEntity,
   MatchEntity,
   MultipleChoiceEntity,
   QuestionType,
@@ -21,6 +23,7 @@ import ReviewQuestionBody from "../quizz/ReviewQuestionBody";
 import QuestionAnswerListDrawer from "./QuestionReviewListDrawer";
 import UserReviewPanel from "./UserReviewPanel";
 import scrollToAnchorWithOffset from "@/utils/scrollToAnchorElement";
+import { checkCollision } from "@/components/UI/quizz/ReviewQuestionBody";
 
 interface TestViewScreenProps {
   questions: QuestionTypeEntity[];
@@ -124,7 +127,7 @@ function scoreQuestion(
 
     let correct = 0;
     for (const pair of (q as MatchEntity).pairs) {
-      if (user?.some((u) => u[pair.right.value] === pair.left.value)) {
+      if (user?.some((u) => u[pair.right.value! ||  pair.right.imageUrl!] === pair.left.value)) {
         correct++;
       }
     }
@@ -140,18 +143,22 @@ function scoreQuestion(
     };
   }
   if (q.type === "hotspot") {
-    const user = a as { x: number; y: number };
-    const dx = user.x - 60; // thay logic để lấy user answer đúng từ q.correctAnswer.x
-    const dy = user.y - 60; // // thay logic để user answer đúng từ q.correctAnswer.y
-    const dist = Math.sqrt(dx * dx + dy * dy);
-    const correct = dist <= 150; // threshold radius for correctness
+    const pt = a as HotspotAnswer;
+    const question = q as HotSpotEntity;
+    let  totalCorrect = 0;
+    
+    pt?.forEach(point => {
+      if(checkCollision(point, question.hotSpots)) totalCorrect++;
+      return totalCorrect;
+    });
     return {
       ...base,
-      earned: correct ? q.points : 0,
-      isCorrect: correct,
+      earned: totalCorrect === question.totalRequiredHotSpot ? q.points : 0,
+      isCorrect: totalCorrect === question.totalRequiredHotSpot,
       isPartial: false,
     };
   }
+  
   return { ...base, earned: 0, isCorrect: false, isPartial: false };
 }
 
@@ -291,7 +298,7 @@ const TestReviewScreen = ({
                             fill="currentColor"
                           />
                         </svg>
-                        {sc.earned}/{sc.max}
+                        10/10
                       </div>
                     </div>
                     <p className="text-base font-bold text-[#b1ada4] leading-relaxed">

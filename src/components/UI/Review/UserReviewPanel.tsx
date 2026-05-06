@@ -76,14 +76,14 @@ export default function UserReviewPanel({
         <div className="flex justify-between mt-4 text-lg">
           <span
             className={
-              points < totalScore / 3 ? "scale-[2]" : "opacity-40 scale-150"
+              points < totalScore / 3 ? "scale-[3] mt-1" : "opacity-40 scale-150"
             }
           >
             🤡
           </span>
           <span
             className={
-              points >= totalScore / 3 && points < totalScore * 2 / 3 ? "scale-[2]" : "opacity-40 scale-150"
+              points >= totalScore / 3 && points < totalScore * 2 / 3 ? "scale-[3] mt-1" : "opacity-40 scale-150"
             }
           >
             😭
@@ -91,7 +91,7 @@ export default function UserReviewPanel({
           <span
             className={
               points >= totalScore * 2 / 3 && points < totalScore
-                ? "scale-[2]"
+                ? "scale-[3] mt-1"
                 : "opacity-40 scale-150"
             }
           >
@@ -99,7 +99,7 @@ export default function UserReviewPanel({
           </span>
           <span
             className={
-              points === totalScore ? "scale-[2]" : "opacity-40 scale-150"
+              points === totalScore ? "scale-[3] mt-1" : "opacity-40 scale-150"
             }
           >
             😄

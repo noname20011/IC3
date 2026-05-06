@@ -1,6 +1,7 @@
 export interface Options {
   id: number,
-  value: string,
+  value?: string,
+  imageUrl?: string,
   isCorrect?: boolean,
   orderIndex?: number,
 }
@@ -35,13 +36,13 @@ export interface SortEntity extends BaseQuestion {
 
 export interface HotSpotEntity extends BaseQuestion {
   hint: string,
-  image: string,
+  totalRequiredHotSpot: number,
   hotSpots: {
     label: string,
-    x: string,
-    y: string,
-    w: string,
-    h: string,
+    top: number,
+    left: number,
+    width: number,
+    height: number,
     isCorrect: boolean,
   }[],
 }
@@ -49,8 +50,8 @@ export interface HotSpotEntity extends BaseQuestion {
 export interface MatchEntity extends BaseQuestion {
   pairs: {
     id: number,
-    left: { id: number, value: string },
-    right: { id: number, value: string },
+    left: { id: number, value: string},
+    right: { id: number, value?: string, imageUrl?: string  },
     isCorrect: boolean,
   }[],
 }

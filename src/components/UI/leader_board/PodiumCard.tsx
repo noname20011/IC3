@@ -1,7 +1,4 @@
 import { motion } from "motion/react";
-import laurel_wreath1 from "../../../assets/laurel_wreath/laurel_wreath1.svg";
-import laurel_wreath2 from "../../../assets/laurel_wreath/laurel_wreath2.svg";
-import laurel_wreath3 from "../../../assets/laurel_wreath/laurel_wreath3.svg";
 
 
 /* ─── Avatar circle with initials ─────────────────────────────── */
@@ -37,7 +34,7 @@ const podiumConfig = {
     height: "h-[400px]",
     avatarGradient: "linear-gradient(135deg, #f59e0b, #b45309)",
     zIndex: "z-10",
-    laurelWreathLink: laurel_wreath1,
+    laurelWreathLink: "/assets/laurel_wreath/laurel_wreath1.svg",
     laurelWreathDimension: "w-[130px] md:w-[240px]",
     position: "top-1/2 -translate-y-[95%] left-1/2 -translate-x-1/2"
   },
@@ -48,7 +45,7 @@ const podiumConfig = {
     height: "h-[360px]",
     avatarGradient: "linear-gradient(135deg, #64748b, #334155)",
     zIndex: "z-0",
-    laurelWreathLink: laurel_wreath2,
+    laurelWreathLink: "/assets/laurel_wreath/laurel_wreath1.svg",
     laurelWreathDimension: "w-[100px] md:w-[150px]",
     position: "top-1/2 -translate-y-[90%] left-1/2 -translate-x-1/2"
   },
@@ -59,7 +56,7 @@ const podiumConfig = {
     height: "h-[280px]",
     avatarGradient: "linear-gradient(135deg, #FF7070, #7c2d12)",
     zIndex: "z-0",
-    laurelWreathLink: laurel_wreath3,
+    laurelWreathLink: "/assets/laurel_wreath/laurel_wreath1.svg",
     laurelWreathDimension: "w-[80px] md:w-[110px]",
     position: "top-1/2 -translate-y-[100%] md:-translate-y-[120%] left-1/2 -translate-x-1/2"
   },

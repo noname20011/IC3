@@ -1,6 +1,6 @@
+import { X } from "lucide-react";
 import { MatchAnswer } from "../../../../types/answer";
 import { MatchEntity } from "../../../../types/questions";
-import { X } from "lucide-react";
 
 interface MatchTypeReviewProps {
   question: MatchEntity;
@@ -12,14 +12,16 @@ const MatchTypeReview = (props: MatchTypeReviewProps) => {
   return (
     <div className="flex flex-col gap-2 mt-3">
       {question.pairs.filter(pair => pair.isCorrect).map((pair, i) => {
-        const leftItem = pair.right.value;
-        const userMatch = user?.[i]?.[leftItem];
+        const leftItem = pair.right.value || pair.right.imageUrl;
+        
+        const userMatch = user?.[i]?.[leftItem!];
         const correctMatch = pair.left.value;
         const isCorrect = userMatch === correctMatch;
+        
         return (
           <div
             
-            key={leftItem}
+            key={i}
             className={`flex flex-col gap-2 px-4 py-3 rounded-xl border ${isCorrect ? "bg-emerald-400/6 border-emerald-400/20" : "bg-red-400/5 border-red-400/15"}`}
           >
             {/* Left badge */}
@@ -29,9 +31,10 @@ const MatchTypeReview = (props: MatchTypeReviewProps) => {
             >
               {i + 1}
             </div>
-            <span className="text-sm text-[#7a6b55] min-w-[90px]">
-              {leftItem}
-            </span>
+            {leftItem?.includes("/assets") ?
+            <img src={leftItem} className="max-h-24"/>
+            : <span className="text-sm text-[#7a6b55] min-w-[90px]">{leftItem}</span>
+            }
             </div>
             <div className="flex items-center gap-2">
               <svg

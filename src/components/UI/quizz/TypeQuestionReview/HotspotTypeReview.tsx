@@ -1,48 +1,58 @@
-import { X } from "lucide-react";
+import UserClick from "@/components/core/hotspot/UserClick";
+import { HotspotAnswer } from "@/types/answer";
 import { HotSpotEntity } from "../../../../types/questions";
 
 interface HotspotTypeReviewProps {
   question: HotSpotEntity;
-  userPt?: { x: number; y: number };
+  userPts?: HotspotAnswer;
   isCorrect: boolean;
 }
+
+
 const HotspotTypeReview = (props: HotspotTypeReviewProps) => {
-  const { question, userPt, isCorrect } = props;
+  const { question: q, userPts, isCorrect } = props;
+  
   return (
     <div
-      className="mt-3 space-y-3">
-      <div
-        className={`flex items-center gap-3 px-4 py-3 rounded-xl border ${isCorrect ? "bg-emerald-400/8 border-emerald-400/20" : "bg-red-400/8 border-red-400/20"}`}
-      >
-        {isCorrect ? (
-          <svg width="14" height="11" viewBox="0 0 14 11" fill="none">
-            <path
-              d="M1 5.5L5 9.5L13 1.5"
-              stroke="#34d399"
-              strokeWidth="2.2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        ) : (
-          <X size={13} className="text-red-400" />
-        )}
-        <div>
-          <p
-            className={`text-xs font-semibold ${isCorrect ? "text-emerald-400" : "text-red-400"}`}
+      className={`flex items-center gap-3 rounded-xl overflow-hidden border mt-3 ${isCorrect ? "bg-emerald-400/8 border-emerald-400/20" : "bg-red-400/8 border-red-400/20"}`}
+    >
+      <div className="relative w-fit">
+        <img
+          src={q.imageUrl}
+          style={{
+            display: "block",
+            maxWidth: "100%",
+          }}
+          alt="Exam"
+        />
+        {q.hotSpots.map((point, index) => (
+          <div
+            key={index}
+            style={{
+              position: "absolute",
+              left: `${point.left}%`,
+              top: `${point.top}%`,
+              width: `${point.width}%`,
+              height: `${point.height}%`,
+              background: "rgba(0,0,0,0.6)",
+              zIndex: 10,
+            }}
+          ></div>
+        ))}
+        {(userPts || []).map((point) => (
+          <div
+            key={point.id}
+            style={{
+              position: "absolute",
+              left: `${point.left}%`,
+              top: `${point.top}%`,
+              transform: "translate(-50%, -50%)",
+              zIndex: 12,
+            }}
           >
-            {isCorrect ? "Correct location!" : "Incorrect location"}
-          </p>
-          {userPt && (
-            <p className="text-[10px] text-[#5a4e3a] mt-0.5">
-              Your Click: ({userPt.x}%, {userPt.y}%)
-            </p>
-          )}
-          <p className="text-[10px] text-emerald-400/70 mt-0.5">
-            Correct: q.correctAnswer.label q.correctAnswer.x%,
-            q.correctAnswer.y%
-          </p>
-        </div>
+            <UserClick color="#c8a46e" />
+          </div>
+        ))}
       </div>
     </div>
   );
