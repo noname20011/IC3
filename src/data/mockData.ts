@@ -7,7 +7,7 @@ export const MOCK_LEVELS: QuizLevel[] = [
     description: "Foundational concepts and basic knowledge.",
     parts: [
       { id: 1, name: "Bổ Sung 2", levelId: "l1", description: "Phần ôn tập sổ sung số 2", duration: 2000, questionCount: 22 },
-      { id: 5, name: "Bổ Sung 3", levelId: "l1", description: "Phần ôn tập sổ sung một số câu của các kỳ", duration: 2000, questionCount: 20 },
+      // { id: 5, name: "Bổ Sung 3", levelId: "l1", description: "Phần ôn tập sổ sung một số câu của các kỳ", duration: 2000, questionCount: 20 },
       { id: 2, name: "OT1", levelId: "l1", description: "Ôn tập tổng hợp số 1", duration: 2700, questionCount: 45 },
       { id: 3, name: "OT2", levelId: "l1", description: "Ôn tập tổng hợp số 2", duration: 2700, questionCount: 45 },
       { id: 4, name: "OT3", levelId: "l1", description: "Ôn tập tổng hợp số 3", duration: 2700, questionCount: 58 },
