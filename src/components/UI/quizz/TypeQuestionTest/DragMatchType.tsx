@@ -2,6 +2,9 @@ import { useState } from "react";
 import { MatchEntity } from "../../../../types/questions";
 import { MatchAnswer } from "../../../../types/answer";
 import { DndContext, DragEndEvent, DragStartEvent } from "@dnd-kit/core";
+import {
+  restrictToFirstScrollableAncestor,
+} from "@dnd-kit/modifiers";
 import DragItem from "../../../QuestionType/DragItem";
 import DropZoneItem from "../../../QuestionType/DropZoneItem";
 
@@ -73,8 +76,8 @@ export default function DragMatch(props: DragMatchProps) {
     setDragging(active.id as string);
   
   return (
-    <DndContext onDragEnd={handleDragEnd} onDragStart={handleDragStart}>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <DndContext modifiers={[restrictToFirstScrollableAncestor]} onDragEnd={handleDragEnd} onDragStart={handleDragStart}>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 overflow-x-hidden overflow-y-hidden">
         {/* LEFT */}
         <div className="bg-[#1a1510] border border-[#2e2418] rounded-2xl p-4 col-span-1">
           <p className="text-[10px] font-semibold text-[#6b5e4a] uppercase tracking-widest mb-3">
