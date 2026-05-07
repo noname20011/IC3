@@ -4002,5 +4002,60 @@
         ]
       }
     ]
+  },
+  {
+    "levelId": "l1",
+    "partId": 5,
+    "questions": [
+      {
+      "id": 1,
+      "type": "multiple",
+      "text": "Có ba Hệ điều hành máy tính để bàn chính: Windows, MacOS và Linux. Các hệ điều hành này có chung các chức năng chính là gì? (Chọn 3)",
+      "options": [
+        { "id": 1, "value": "Quản lý các dịch vụ điện thoại và nhắn tin", "isCorrect": false },
+        { "id": 2, "value": "Cung cấp dịch vụ cho phần mềm ứng dụng (RAM, File System, I/O manage)", "isCorrect": true },
+        { "id": 3, "value": "Quản lý tài nguyên, chẳng hạn như CPU, bộ nhớ, ổ đĩa và thiết bị ngoại vi", "isCorrect": true },
+        { "id": 4, "value": "Cung cấp trò chơi điện tử", "isCorrect": false },
+        { "id": 4, "value": "Cung cấp giao diện người dùng", "isCorrect": true },
+        { "id": 6, "value": "Cung cấp bảo mật chống hack 100%", "isCorrect": false }
+      ]
+    },
+    {
+        "id": 20,
+        "type": "match",
+        "text": "Quan sát hình ảnh sau để xác định các loại cổng kết nối. Ghép với tên loại cổng kết nối tương ứng:",
+        "pairs": [
+          {
+            "left": { "value": "Audio Port" },
+            "right": { "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778164672/BT_q25_AUDIO_eyd2on.png" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Display Port (Cổng VGA)" },
+            "right": { "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778164673/BT_q25_DISPLAY_zyajjr.png" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Ethernet" },
+            "right": { "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778164673/BT_q25_ETHERNET_i2w7dy.png" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "HDMI" },
+            "right": {
+              "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778164673/BT_q25_HDMI_jnqnmv.png"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "USB" },
+            "right": {
+              "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778164672/BT_q25_USB_pzjctt.png"
+            },
+            "isCorrect": true
+          }
+        ]
+      }
+    ]
   }
 ]
