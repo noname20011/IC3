@@ -3972,36 +3972,62 @@
     "partId": 5,
     "questions": [
       {
-      "id": 128,
-      "type": "multiple",
-      "text": "Có ba Hệ điều hành máy tính để bàn chính: Windows, MacOS và Linux. Các hệ điều hành này có chung các chức năng chính là gì? (Chọn 3)",
-      "options": [
-        { "id": 1, "value": "Quản lý các dịch vụ điện thoại và nhắn tin", "isCorrect": false },
-        { "id": 2, "value": "Cung cấp dịch vụ cho phần mềm ứng dụng (RAM, File System, I/O manage)", "isCorrect": true },
-        { "id": 3, "value": "Quản lý tài nguyên, chẳng hạn như CPU, bộ nhớ, ổ đĩa và thiết bị ngoại vi", "isCorrect": true },
-        { "id": 4, "value": "Cung cấp trò chơi điện tử", "isCorrect": false },
-        { "id": 5, "value": "Cung cấp giao diện người dùng", "isCorrect": true },
-        { "id": 6, "value": "Cung cấp bảo mật chống hack 100%", "isCorrect": false }
-      ]
-    },
-    {
+        "id": 128,
+        "type": "multiple",
+        "text": "Có ba Hệ điều hành máy tính để bàn chính: Windows, MacOS và Linux. Các hệ điều hành này có chung các chức năng chính là gì? (Chọn 3)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Quản lý các dịch vụ điện thoại và nhắn tin",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Cung cấp dịch vụ cho phần mềm ứng dụng (RAM, File System, I/O manage)",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Quản lý tài nguyên, chẳng hạn như CPU, bộ nhớ, ổ đĩa và thiết bị ngoại vi",
+            "isCorrect": true
+          },
+          { "id": 4, "value": "Cung cấp trò chơi điện tử", "isCorrect": false },
+          {
+            "id": 5,
+            "value": "Cung cấp giao diện người dùng",
+            "isCorrect": true
+          },
+          {
+            "id": 6,
+            "value": "Cung cấp bảo mật chống hack 100%",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
         "id": 175,
         "type": "match",
         "text": "Quan sát hình ảnh sau để xác định các loại cổng kết nối. Ghép với tên loại cổng kết nối tương ứng:",
         "pairs": [
           {
             "left": { "value": "Audio Port" },
-            "right": { "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778164672/BT_q25_AUDIO_eyd2on.png" },
+            "right": {
+              "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778164672/BT_q25_AUDIO_eyd2on.png"
+            },
             "isCorrect": true
           },
           {
             "left": { "value": "Display Port (Cổng VGA)" },
-            "right": { "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778164673/BT_q25_DISPLAY_zyajjr.png" },
+            "right": {
+              "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778164673/BT_q25_DISPLAY_zyajjr.png"
+            },
             "isCorrect": true
           },
           {
             "left": { "value": "Ethernet" },
-            "right": { "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778164673/BT_q25_ETHERNET_i2w7dy.png" },
+            "right": {
+              "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778164673/BT_q25_ETHERNET_i2w7dy.png"
+            },
             "isCorrect": true
           },
           {
@@ -4019,8 +4045,256 @@
             "isCorrect": true
           }
         ]
+      },
+      {
+        "id": 176,
+        "type": "multiple",
+        "text": "Thiết bị nào có thể giúp máy tính kết nối với màn hình (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "PS/2", "isCorrect": false },
+          { "id": 2, "value": "USB-C (Type-C)", "isCorrect": true },
+          { "id": 3, "value": "HDMI", "isCorrect": true },
+          { "id": 4, "value": "Ethernet", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 177,
+        "type": "truefalse",
+        "text": "Đối với mỗi phát biểu về giấy phép CC. Hãy chọn Đúng nếu phát biểu đó đúng, chọn Sai nếu phát biểu sai",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Giấy phép CC cho phép chỉ chia sẻ cho người cụ thể",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Giấy phép CC cho phép mọi người dễ dàng chia sẻ và sử dụng trên web",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Giấy phép CC cho phép những tác phẩm hiến tặng được cho phép vào miền công cộng",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 178,
+        "type": "single",
+        "text": "Dựa vào phần mở rộng của tập tin, cho biết phần mở rộng nào khi tải về có thể thực thi ngay?",
+        "options": [
+          { "id": 1, "value": ".dmg", "isCorrect": false },
+          { "id": 2, "value": ".exe", "isCorrect": true },
+          { "id": 3, "value": ".pgk", "isCorrect": false },
+          { "id": 4, "value": ".dgo", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 179,
+        "type": "reorder",
+        "text": "Sắp xếp theo thứ tự các bước khi tải xuống một chương trình từ nguồn trực tuyến",
+        "options": [
+          {
+            "id": 1,
+            "value": "Đọc và làm theo hướng dẫn, nhấn 'Đồng ý' cài đặt phần mềm",
+            "orderIndex": 3
+          },
+          {
+            "id": 2,
+            "value": "Nhấp đúp chuột để chạy chương trình vừa tải",
+            "orderIndex": 2
+          },
+          {
+            "id": 3,
+            "value": "Khởi động phần mềm để bắt đầu sử dụng",
+            "orderIndex": 4
+          },
+          {
+            "id": 4,
+            "value": "Tải phần mềm/chương trình từ một nguồn trực tuyến uy tín",
+            "orderIndex": 1
+          }
+        ]
+      },
+      {
+        "id": 180,
+        "type": "truefalse",
+        "text": "Các tác động ảnh hưởng tới sức khỏe khi dùng máy tính. Hãy chọn Đúng nếu tác động đó ảnh hưởng, chọn Sai nếu không ảnh hưởng.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Đau đầu thường xuyên",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Đau cổ",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Căng thẳng mặt",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Tăng huyết áp",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 181,
+        "type": "truefalse",
+        "text": "Đối với mỗi phát biểu về các tùy chọn bộ lọc có sẵn trong khu vực công cụ của trình duyệt khi tìm kiếm trên Google, hãy chọn Có nếu tùy chọn đó tồn tại, chọn. Không nếu không có (*)",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Ngôn ngữ (Language)",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Màu sắc (Color)",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Định dạng tệp (File type)",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Thời gian / Ngày đăng tải",
+            "isCorrect": true
+          },
+          {
+            "id": 5,
+            "value": "Thể loại",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 182,
+        "type": "match",
+        "text": "Bạn cần xác định đúng thuật ngữ AI cho từng khái niệm cụ thể. Ghép từng thuật ngữ với khái niệm tương ứng.",
+        "pairs": [
+          {
+            "left": { "value": "Xử lý ngôn ngữ tự nhiên (NLP)" },
+            "right": {
+              "value": "Công nghệ cho phép máy tính hiểu, phản hồi và giao tiếp tự nhiên bằng ngôn ngữ của con người (văn bản hoặc giọng nói)."
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Robot học (Robotics)" },
+            "right": {
+              "value": "Lĩnh vực thiết kế và tạo ra các máy móc, chi tiết có thể thực hiện các nhiệm vụ thay thế con người."
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Máy học (Machine Learning)" },
+            "right": {
+              "value": "Khả năng tự học hỏi từ dữ liệu và kinh nghiệm để tiến bộ hơn mà không cần lập trình chi tiết cho từng trường hợp."
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Mạng nơ-ron" },
+            "right": {
+              "value": "Mô phỏng cách hoạt động của não người để phát hiện các mẫu (patterns) từ dữ liệu phức tạp."
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 184,
+        "type": "single",
+        "text": "Đâu là lý do mang tính xây dựng nhất khi bạn quyết định không tham gia vào các hành vi chơi khăm (Trolling)?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Vì các hệ điều hành như Android hay iOS sẽ tự động khóa tài khoản nếu bạn gõ phím quá nhanh khi tranh luận.",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Để tiết kiệm dung lượng dữ liệu di động và thời lượng pin cho thiết bị của bạn. ",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Để tránh gây thêm mâu thuẫn, giữ gìn môi trường trực tuyến tích cực và giảm thiểu tầm ảnh hưởng của người chơi khăm. ",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Để giúp các thuật toán của Google và Facebook có thể thu thập dữ liệu cá nhân của bạn một cách chính xác hơn.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 185,
+        "type": "single",
+        "text": "Bạn đang có một công thức nấu ăn bao gồm danh sách các nguyên liệu, các bước thực hiện cụ thể và nhiều hình ảnh minh họa cho từng công đoạn. Khi chuẩn bị đăng bài lên mạng xã hội, yếu tố nào sau đây sẽ có ảnh hưởng lớn nhất đến việc đăng bài viết?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Các giới hạn về số lượng từ và số lượng hình ảnh tối đa cho phép trong một bài đăng của nền tảng đó. ",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tốc độ kết nối Wi-Fi tại nhà bếp của bạn khi đang nấu ăn.",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Loại điện thoại (iPhone hay Android) mà bạn đang sử dụng để chụp ảnh món ăn. ",
+            "isCorrect": false
+          },
+          {
+            "id": 5,
+            "value": "Màu sắc của giao diện ứng dụng mạng xã hội có khớp với màu sắc của món ăn hay không.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+    "id": 186,
+    "type": "match",
+    "text": "Bạn cần xác định đúng các thuật ngữ công nghệ để sử dụng cho các mục đích cụ thể. Ghép từng thuật ngữ với mục đích tương ứng.(*)",
+    "pairs": [
+      {
+        "left": { "value": "Deep Learning (Học sâu)" },
+        "right": { "value": "Một nhánh chuyên sâu của Máy học, sử dụng các mạng nơ-ron nhiều lớp để xử lý các dữ liệu cực lớn như hình ảnh, giọng nói" },
+        "isCorrect": true
+      },
+      {
+        "left": { "value": "AI (Trí tuệ nhân tạo)" },
+        "right": { "value": "Khả năng của máy móc trong việc mô phỏng các hoạt động trí tuệ của con người như suy nghĩ, học tập và giải quyết vấn đề" },
+        "isCorrect": true
+      },
+      {
+        "left": { "value": "Chatbot" },
+        "right": { "value": "Một chương trình máy tính được thiết kế để trò chuyện và trả lời câu hỏi của người dùng một cách tự động" },
+        "isCorrect": true
+      },
+      {
+        "left": { "value": "API" },
+        "right": { "value": "Một tập hợp các quy tắc cho phép các phần mềm hoặc ứng dụng khác nhau có thể kết nối và trao đổi dữ liệu với nhau" },
+        "isCorrect": true
       }
+    ]
+  },
     ]
   }
 ]
-
