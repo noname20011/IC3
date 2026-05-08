@@ -57,7 +57,6 @@ export default function PartsPage() {
       return;
     }
     
-
     localStorage.clear();
     const studentInfo = {
       studentName: formData.studentName,

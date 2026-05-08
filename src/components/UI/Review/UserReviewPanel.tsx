@@ -114,6 +114,7 @@ export default function UserReviewPanel({
         onClick={() => {
           navigate("/leaderboard");
           localStorage.clear();
+          sessionStorage.clear();
         }}
       >
         {/* glow animation */}

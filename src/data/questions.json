@@ -560,7 +560,7 @@
     "partId": 3,
     "questions": [
       {
-        "id": 1,
+        "id": 130,
         "type": "single",
         "text": "Đâu là hành động phù hợp để bảo vệ danh tiếng kỹ thuật số của bạn?",
         "options": [
@@ -587,7 +587,7 @@
         ]
       },
       {
-        "id": 2,
+        "id": 131,
         "type": "multiple",
         "text": "Bạn đang thu thập thông tin trực tuyến cho một bài nghiên cứu. Bạn cần thu thập thông tin về từng nguồn để có thể tạo danh sách tham khảo sau này. Đây là 3 thông tin về mỗi trang web mà bạn cần lưu? (Chọn 3)",
         "options": [
@@ -604,7 +604,7 @@
         ]
       },
       {
-        "id": 3,
+        "id": 132,
         "type": "single",
         "text": "Bạn đăng tải một bức ảnh hài hước và đắng xấu hổ của bạn bè lên mạng xã hội. Những thông tin đó sẽ tồn tại trên mạng internet trong vòng bao lâu?",
         "options": [
@@ -623,7 +623,7 @@
         ]
       },
       {
-        "id": 4,
+        "id": 133,
         "type": "multiple",
         "text": "Hai hoạt động nào là ví dụ về bắt nạt trên mạng? (Chọn 2)",
         "options": [
@@ -650,7 +650,7 @@
         ]
       },
       {
-        "id": 5,
+        "id": 134,
         "type": "single",
         "text": "Đe doạ trực tuyến xảy ra khi một người hoặc nhiều người sử dụng từ ngữ hoặc hình ảnh có hại để làm tổn thương, xấu hổ hoặc __________ người khác một cách cố ý, trực tuyến.",
         "options": [
@@ -661,7 +661,7 @@
         ]
       },
       {
-        "id": 6,
+        "id": 135,
         "type": "single",
         "text": "Trời đã về khuya. Bạn cảm thấy khó ngủ và quyết định lướt xem các bài đăng của bạn bè trên mạng xã hội. Một học sinh cùng trường với bạn vừa đăng bài thông báo rằng trường học đã bị phá hoại và giờ học sẽ bị lùi lại hai tiếng vào hôm sau. Bạn cần phải xác định xem liệu thông tin đó có chính xác hay không. Bạn nên làm gì?",
         "options": [
@@ -688,7 +688,7 @@
         ]
       },
       {
-        "id": 7,
+        "id": 136,
         "type": "truefalse",
         "text": "Bạn hãy chọn “Đúng” hoặc “Sai” với các công cụ có thể bảo vệ quyền riêng tư kỹ thuật số  của mình?",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -712,7 +712,7 @@
         "explanation": ""
       },
       {
-        "id": 8,
+        "id": 137,
         "type": "single",
         "text": "Đâu là nhân tố đóng góp chính vào danh tính số của bạn?",
         "options": [
@@ -739,7 +739,7 @@
         ]
       },
       {
-        "id": 9,
+        "id": 138,
         "type": "truefalse",
         "text": "Bạn đang biên soạn một nghiên cứu. Bạn cần thêm tài liệu tham khảo cho bài viết của mình. Với mỗi trường hợp, hãy chọn Có nếu bạn phải thêm nguồn tham khảo hoặc Không nếu không cần thiết.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -767,7 +767,7 @@
         ]
       },
       {
-        "id": 10,
+        "id": 139,
         "type": "truefalse",
         "text": "Bạn hãy chọn “Đúng” hoặc “Sai” với các công cụ có thể bảo vệ quyền riêng tư kỹ thuật số  của mình?",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -795,7 +795,7 @@
         ]
       },
       {
-        "id": 11,
+        "id": 140,
         "type": "truefalse",
         "text": "Bạn đang thực hiện một dự án nghiên cứu và cần xác minh liệu một nguồn thông tin có thuộc phạm vi công cộng hay không. Với mỗi câu phát biểu, hãy chọn Đúng nếu đó là lý do khiến một tác phẩm bản quyền có thể rơi vào phạm vi công cộng và Sai nếu không phải.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -818,7 +818,7 @@
         ]
       },
       {
-        "id": 12,
+        "id": 141,
         "type": "multiple",
         "text": "Một số lợi ích của ẩn danh trực tuyến là gì? (Chọn 2)",
         "options": [
@@ -845,7 +845,7 @@
         ]
       },
       {
-        "id": 13,
+        "id": 142,
         "type": "truefalse",
         "text": "Bạn cần thêm một tác phẩm nghệ thuật vào bài trình chiếu mà bạn đang làm cho lớp học của mình. Bạn Không có thời gian để xin giấy phép sử dụng tác phẩm nghệ thuật. Với mỗi câu phát biểu, hãy chọn Có nếu bạn có thể sử dụng tác phẩm nghệ thuật một cách hợp pháp mà không cần phải xin giấy phép hoặc chọn Không nếu bạn không.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -868,7 +868,7 @@
         ]
       },
       {
-        "id": 14,
+        "id": 143,
         "type": "multiple",
         "text": "Đâu là hai tác động tiêu cực của việc đăng tải ảnh meme hoặc bình luận xúc phạm lên mạng xã hội? (Chọn 2)",
         "options": [
@@ -895,7 +895,7 @@
         ]
       },
       {
-        "id": 15,
+        "id": 144,
         "type": "truefalse",
         "text": "Bạn đang nghiên cứu thông tin trong một tài liệu dài. Với mỗi câu phát biểu, hãy chọn Có nếu bạn có thể sử dụng tính năng tìm kiếm để hoàn thành công việc hoặc chọn Không nếu không thể.",
         "optionsOfTrueFalseType": ["Có", "Không"],
@@ -918,7 +918,7 @@
         ]
       },
       {
-        "id": 16,
+        "id": 145,
         "type": "multiple",
         "text": "Bạn cần đưa tài liệu gốc vào mục tài liệu tham khảo trong bài viết của bạn. Đâu là hai lý do bạn nên đưa tài liệu gốc vào ? (Chọn 2)",
         "options": [
@@ -945,7 +945,7 @@
         ]
       },
       {
-        "id": 17,
+        "id": 146,
         "type": "single",
         "text": "Một bạn nam trong lớp đăng hình của bạn được dán lên một con lợn trên mxh. Bạn nên làm gì?",
         "options": [
@@ -972,7 +972,7 @@
         ]
       },
       {
-        "id": 18,
+        "id": 147,
         "type": "single",
         "text": "Bản quyền cung cấp cho tác giả quyền hợp pháp độc quyền đối với _______ Chủ sở hữu có quyền kiểm soát người in, phân tích, phê bình tác phẩm của họ",
         "options": [
@@ -981,7 +981,7 @@
         ]
       },
       {
-        "id": 19,
+        "id": 148,
         "type": "multiple",
         "text": "Nội dung nào đúng với miền công cộng (Public Domain) (chọn 3)",
         "options": [
@@ -1009,7 +1009,7 @@
         ]
       },
       {
-        "id": 20,
+        "id": 149,
         "type": "truefalse",
         "text": "Chọn 'Đúng' hoặc 'Sai' với các phát biểu về tác phẩm bản quyền:",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -1032,7 +1032,7 @@
         ]
       },
       {
-        "id": 21,
+        "id": 150,
         "type": "truefalse",
         "text": "Chọn 'Đúng' hoặc 'Sai' với mục đích sử dụng tác phẩm công cộng (Public Domain):",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -1060,7 +1060,7 @@
         ]
       },
       {
-        "id": 22,
+        "id": 151,
         "type": "truefalse",
         "text": "Với các câu về giấy phép sáng tạo, hãy chọn Đúng Sai phù hợp",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -1083,7 +1083,7 @@
         ]
       },
       {
-        "id": 23,
+        "id": 152,
         "type": "multiple",
         "text": "Người dùng có thể thực hiện theo các bước nào để xác định tính hợp lệ của thông tin trực tuyến hay theo cách khác? (Chọn 3)",
         "options": [
@@ -1115,7 +1115,7 @@
         ]
       },
       {
-        "id": 24,
+        "id": 153,
         "type": "multiple",
         "text": "Bạn đang thực hiện một nghiên cứu trực tuyến. Bạn cần phải điều chỉnh cài đặt tìm kiếm để nhận được kết quả phù hợp hơn với đối tượng nghiên cứu. Đâu là hai kỹ thuật nên sử dụng? (Chọn 2)",
         "options": [
@@ -1142,7 +1142,7 @@
         ]
       },
       {
-        "id": 25,
+        "id": 154,
         "type": "truefalse",
         "text": "Bạn đang tìm thông tin về trang web. Với mỗi mô tả trang web, hãy chọn Có nếu trang web có liên quan, Không nếu không phải.",
         "optionsOfTrueFalseType": ["Có", "Không"],
@@ -1165,7 +1165,7 @@
         ]
       },
       {
-        "id": 26,
+        "id": 155,
         "type": "single",
         "text": "Bạn tìm thấy một bài báo chứa thông tin liên quan đến chủ đề nghiên cứu. Bạn có thể tìm kiếm thông tin nào bằng cách sử dụng tính năng tìm kiếm của trình duyệt.",
         "options": [
@@ -1192,7 +1192,7 @@
         ]
       },
       {
-        "id": 27,
+        "id": 156,
         "type": "single",
         "text": "Có thể sử dụng toán tử nào để tìm kiếm các từ đồng nghĩa?",
         "options": [
@@ -1203,7 +1203,7 @@
         ]
       },
       {
-        "id": 28,
+        "id": 157,
         "type": "truefalse",
         "text": "Bạn cần tìm kiếm thông tin, hãy chọn Có nếu trang web đáp ứng được, Không nếu ngược lại",
         "optionsOfTrueFalseType": ["Có", "Không"],
@@ -1226,7 +1226,7 @@
         ]
       },
       {
-        "id": 29,
+        "id": 158,
         "type": "single",
         "text": "Bạn đang đưa ra đề xuất, sửa chữa và nhận xét về bài nghiên cứu của bạn học. Bạn đang thực hiện quy trình gì?",
         "options": [
@@ -1237,7 +1237,7 @@
         ]
       },
       {
-        "id": 30,
+        "id": 159,
         "type": "single",
         "text": "Bạn cần tạo một bản sao chính xác của hệ điều hành Windows trên máy tính để phòng khi hệ thống gặp sự cố. Bạn nên làm gì?",
         "options": [
@@ -1252,7 +1252,7 @@
         ]
       },
       {
-        "id": 31,
+        "id": 160,
         "type": "truefalse",
         "text": "Với mỗi câu phát biểu về quy tắc tạo bài trình chiếu cơ bản, hãy chọn Đúng hoặc Sai.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -1280,7 +1280,7 @@
         ]
       },
       {
-        "id": 32,
+        "id": 161,
         "type": "single",
         "text": "Chính tả và ngữ pháp (Spelling and Grammar) kém khiến một người trông giống ________ và những người khác sẽ không coi trọng chúng",
         "options": [
@@ -1295,7 +1295,7 @@
         ]
       },
       {
-        "id": 33,
+        "id": 162,
         "type": "multiple",
         "text": "Khi tham khảo một cuốn sách, những yếu tố nào phải có trong phần trích dẫn( Citation)? (Chọn 3) ",
         "options": [
@@ -1324,7 +1324,7 @@
         ]
       },
       {
-        "id": 34,
+        "id": 163,
         "type": "single",
         "text": "Bạn tên là Sam Grey. Bạn đang cập nhật dự án của trường và muốn lưu một phiên bản mới. Bạn cần đặt tên cho tập tin sao cho trong đó phải bao gồm tên tác giả, dễ đọc và hỗ trợ khả năng sử dụng trên web cũng như khả năng tương thích với nhiều nền tảng. Bạn nên sử dụng tên tập tin như thể nào?",
         "options": [
@@ -1343,7 +1343,7 @@
         ]
       },
       {
-        "id": 35,
+        "id": 164,
         "type": "multiple",
         "text": "Giáo viên hướng dẫn bạn chỉnh sửa bài nghiên cứu của một người bạn cùng lớp. Đâu là hai công cụ bạn nên sử dụng? (Chọn 2)",
         "options": [
@@ -1354,7 +1354,7 @@
         ]
       },
       {
-        "id": 36,
+        "id": 165,
         "type": "single",
         "text": "Bạn nhập một công thức nấu ăn vào tài liệu Microsoft Word dưới dạng một đoạn văn và chuyển đổi đoạn văn đó thành một danh sách đánh số như trong hình 1. Bạn cần tách đoạn văn thành từng mục danh sách đánh số như trong hình 2. Bạn sử dụng phím hoặc tổ hợp phím nào ở cuối mỗi câu?",
         "imageUrl": "/assets/question/OT2_q36.png",
@@ -1366,7 +1366,7 @@
         ]
       },
       {
-        "id": 37,
+        "id": 166,
         "type": "multiple",
         "text": "Máy chủ lưu trữ đám mây sử dụng những loại phòng thủ nào để bảo vệ dữ liệu của người dùng? (Chọn 2)",
         "options": [
@@ -1377,7 +1377,7 @@
         ]
       },
       {
-        "id": 38,
+        "id": 167,
         "type": "truefalse",
         "text": "Bạn cần xác định quy ước đặt tên tập tin nhất quán cho hệ thống quản lý tập tin dùng chung để có thể hỗ trợ nhiều ứng dụng phần mề và hệ điều hành. Với mỗi câu phát biểu, hãy chọn Có nếu quy ước đặt tên giúp thực hiện được mục tiêu này hoặc Không nếu không thể.",
         "optionsOfTrueFalseType": ["Có", "Không"],
@@ -1405,7 +1405,7 @@
         ]
       },
       {
-        "id": 39,
+        "id": 168,
         "type": "multiple",
         "text": "Những khía cạnh quan trọng của nghi thức giao tiếp bằng văn bản là gì (Chọn 3)",
         "options": [
@@ -1421,7 +1421,7 @@
         ]
       },
       {
-        "id": 40,
+        "id": 169,
         "type": "single",
         "text": "Tham khảo hình ảnh bên dưới. Người dùng có thể tìm thấy các tuỳ chọn để kết hợp các tài liệu trong nhóm nào dưới tab Review?",
         "imageUrl": "/assets/question/OT2_q40.png",
@@ -1433,7 +1433,7 @@
         ]
       },
       {
-        "id": 41,
+        "id": 170,
         "type": "truefalse",
         "text": "Lựa chọn từng thuật ngữ cộng tác với mô tả tương ứng.",
         "optionsOfTrueFalseType": ["Chỉnh sửa", "Đồng tác giả"],
@@ -1461,7 +1461,7 @@
         ]
       },
       {
-        "id": 42,
+        "id": 171,
         "type": "multiple",
         "text": "Những khía cạnh quan trọng của nghi thức giao tiếp bằng văn bản là gì (Chọn 2)",
         "imageUrl": "/assets/question/OT2_q42.PNG",
@@ -1485,7 +1485,7 @@
         ]
       },
       {
-        "id": 43,
+        "id": 172,
         "type": "truefalse",
         "text": "Với mỗi câu phát biểu về cách thức in tài liệu, hãy chọn Đúng hoặc Sai.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -1513,7 +1513,7 @@
         ]
       },
       {
-        "id": 44,
+        "id": 173,
         "type": "single",
         "text": "Bạn chụp ảnh ký yếu cho trường bạn điện thoại. Bạn chụp hơn 50 bức ảnh mỗi ngày.Bạn cần sử dụng phương pháp nhanh nhất và đáng tin cậy nhất để sao lưu các bức ảnh và xóa chúng khỏi điện thoại mỗi ngày. Bạn nên làm gì?",
         "options": [
@@ -1540,7 +1540,7 @@
         ]
       },
       {
-        "id": 45,
+        "id": 174,
         "type": "single",
         "text": "Một bản sao carbon (CC) được gửi ______ có nghĩa là người nhận hoặc những người nhận ở dòng To sẽ thấy rằng một bản sao đã được gửi và nó đã được gửi cho ai.",
         "options": [
@@ -1557,7 +1557,7 @@
     "partId": 2,
     "questions": [
       {
-        "id": 1,
+        "id": 25,
         "type": "single",
         "text": "Bạn cần lưu danh sách các trang Web để có thể dễ dàng quay trở lại vào lần sau. Bạn nên sử dụng tính năng nào của trình duyệt Web?",
         "options": [
@@ -1576,7 +1576,7 @@
         ]
       },
       {
-        "id": 2,
+        "id": 26,
         "type": "single",
         "text": "Lịch sử duyệt web và các trang Web được đánh dấu trang cung cấp cho hacker một bản đồ của tất cả các trang Web mà người dùng truy cập. Cùng với các trang Web thường xuyên truy cập, hacker có thể sử dụng gì để truy cập vào tài khoản nếu mật khẩu được lưu vào thiết bị bị tấn công?",
         "options": [
@@ -1587,7 +1587,7 @@
         ]
       },
       {
-        "id": 3,
+        "id": 27,
         "type": "single",
         "text": "Một trong những giáo viên của bạn nói rằng bạn nên thay đổi cài đặt trình duyệt của mình để duyệt Web ở chế độ riêng tư. Vậy lợi ích của việc duyệt Web ở chế độ riêng tư là gì?",
         "options": [
@@ -1614,7 +1614,7 @@
         ]
       },
       {
-        "id": 4,
+        "id": 28,
         "type": "single",
         "text": "Bạn hãy cho biết, duyệt web riêng tư đảm bảo điều gì sau đây?",
         "options": [
@@ -1641,7 +1641,7 @@
         ]
       },
       {
-        "id": 5,
+        "id": 29,
         "type": "truefalse",
         "text": "Xác định đúng chức năng của các thiết bị sau:",
         "optionsOfTrueFalseType": ["Nhập", "Xuất"],
@@ -1674,7 +1674,7 @@
         ]
       },
       {
-        "id": 6,
+        "id": 30,
         "type": "single",
         "text": "Người dùng có thể tắt tính năng lưu trữ mật khẩu trực tuyến ở đâu?",
         "options": [
@@ -1693,7 +1693,7 @@
         ]
       },
       {
-        "id": 7,
+        "id": 31,
         "type": "multiple",
         "text": "Khi nào người dùng nên cân nhắc việc thay đổi mật khẩu của họ? (Chọn 3)",
         "options": [
@@ -1725,7 +1725,7 @@
         ]
       },
       {
-        "id": 8,
+        "id": 32,
         "type": "hotspot",
         "text": "Đâu là ba thiết bị nhập khi được kết nối với máy tính không có màn hình cảm ứng? (Chọn 3)",
         "imageUrl": "/assets/question/OT1_q8.png",
@@ -1755,7 +1755,7 @@
         ]
       },
       {
-        "id": 9,
+        "id": 33,
         "type": "multiple",
         "text": "Đâu là hai hành động bạn có thể thực hiện để giúp duy trì quyền riêng tư kỹ thuật số của bản thân? (Chọn 2)",
         "options": [
@@ -1782,7 +1782,7 @@
         ]
       },
       {
-        "id": 10,
+        "id": 34,
         "type": "multiple",
         "text": "Bạn cần đảm bảo an toàn cho mật khẩu của mình. Đâu là ba nguyên tắc bạn cần tuân thủ? (Chọn 3)",
         "options": [
@@ -1819,7 +1819,7 @@
         ]
       },
       {
-        "id": 11,
+        "id": 35,
         "type": "single",
         "text": "Đâu là lợi ích của việc duyệt Web 'ở chế độ riêng tư' hoặc 'ẩn danh'?",
         "options": [
@@ -1846,7 +1846,7 @@
         ]
       },
       {
-        "id": 12,
+        "id": 36,
         "type": "match",
         "text": "Ghép từng bộ phận phần cứng của máy tính với hình ảnh tương ứng:",
         "pairs": [
@@ -1885,7 +1885,7 @@
         ]
       },
       {
-        "id": 13,
+        "id": 37,
         "type": "truefalse",
         "text": "Bạn cần xác định các tính năng tiêu chuẩn của thanh tác vụ trong Hệ điều hành Windows. Với mỗi câu phát biểu, hãy chọn Có nếu có thể thực hiện hành động từ thanh tác vụ hoặc chọn Không nếu không thể.",
         "optionsOfTrueFalseType": ["Có", "Không"],
@@ -1913,7 +1913,7 @@
         ]
       },
       {
-        "id": 14,
+        "id": 38,
         "type": "multiple",
         "text": "Làm cách nào để người dùng có thể bảo vệ mật khẩu của mình một cách tốt nhất?",
         "options": [
@@ -1941,7 +1941,7 @@
         ]
       },
       {
-        "id": 15,
+        "id": 39,
         "type": "match",
         "text": "Ghép từng loại cáp với tên gọi tương ứng:",
         "pairs": [
@@ -1970,7 +1970,7 @@
         ]
       },
       {
-        "id": 16,
+        "id": 40,
         "type": "multiple",
         "text": "Bạn cần tạo một mật khẩu mạnh. Đâu là ba nguyên tắc bạn cần tuân thủ? (Chọn 3)",
         "options": [
@@ -2003,7 +2003,7 @@
         ]
       },
       {
-        "id": 17,
+        "id": 41,
         "type": "truefalse",
         "text": "Bạn cần xác định các chức năng do Hệ điều hành của máy tính quản lý. Với mỗi tác vụ dưới đây, hãy chọn Đúng nếu đó là tác vụ do hệ điều hành quản lý và chọn Sai nếu không phải.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -2031,7 +2031,7 @@
         ]
       },
       {
-        "id": 18,
+        "id": 42,
         "type": "match",
         "text": "Bạn cần xác định mục đích của các công cụ trình duyệt web phổ biến. Để trả lời, hãy di chuyển từng công cụ từ danh sách ở bên phải sang hành động tương ứng ở bên trái.",
         "pairs": [
@@ -2062,43 +2062,43 @@
         ]
       },
       {
-        "id": 19,
+        "id": 43,
         "type": "match",
         "text": "Quan sát hình ảnh sau để xác định các loại cổng kết nối. Ghép với tên loại cổng kết nối tương ứng:",
         "pairs": [
           {
             "left": { "value": "Audio Port" },
-            "right": { "imageUrl": "/assets/question/OT1_q19_AUDIO.PNG" },
+            "right": { "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778119723/OT1_q19_AUDIO_cwqmbf.png" },
             "isCorrect": true
           },
           {
             "left": { "value": "Display Port (Cổng VGA)" },
-            "right": { "imageUrl": "/assets/question/OT1_q19_DISPLAY.PNG" },
+            "right": { "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778119723/OT1_q19_DISPLAY_qc1xcn.png" },
             "isCorrect": true
           },
           {
             "left": { "value": "Ethernet" },
-            "right": { "imageUrl": "/assets/question/OT1_q19_ETHERNET.PNG" },
+            "right": { "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778119724/OT1_q19_ETHERNET_jxzkhr.png" },
             "isCorrect": true
           },
           {
             "left": { "value": "HDMI" },
             "right": {
-              "imageUrl": "/assets/question/OT1_q19_HDMI.PNG"
+              "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778119724/OT1_q19_HDMI_sjqt3b.png"
             },
             "isCorrect": true
           },
           {
             "left": { "value": "USB" },
             "right": {
-              "imageUrl": "/assets/question/OT1_q19_USB.PNG"
+              "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778119724/OT1_q19_USB_djlynv.png"
             },
             "isCorrect": true
           }
         ]
       },
       {
-        "id": 20,
+        "id": 44,
         "type": "single",
         "text": "Máy tính để bàn sử dụng phần cứng nào để lưu trữ dữ liệu lâu dài?",
         "options": [
@@ -2109,7 +2109,7 @@
         ]
       },
       {
-        "id": 21,
+        "id": 45,
         "type": "multiple",
         "text": "Bạn dự định mua một thiết bị máy tính cầm tay. Thiết bị phải có khả năng chạy bằng pin và phải được trang bị bàn phím vật lý tích hợp. Đâu là hai thiết bị đáp ứng được những yêu cầu trên? (Chọn 2)",
         "options": [
@@ -2134,7 +2134,7 @@
         ]
       },
       {
-        "id": 22,
+        "id": 46,
         "type": "truefalse",
         "text": "Với mỗi Hệ điều hành, bạn hãy chọn công ty phát triển tương ứng:",
         "optionsOfTrueFalseType": ["Microsoft", "Google"],
@@ -2157,7 +2157,7 @@
         ]
       },
       {
-        "id": 23,
+        "id": 47,
         "type": "multiple",
         "text": "Điều nào đúng với hệ điều hành Linux? (Chọn 3)",
         "options": [
@@ -2181,7 +2181,7 @@
         ]
       },
       {
-        "id": 24,
+        "id": 48,
         "type": "truefalse",
         "text": "Với mỗi loại phần mềm, hãy xác định xem đó là Phần mềm Ứng dụng hay Phần mềm Hệ thống.",
         "optionsOfTrueFalseType": ["Phần mềm Ứng dụng", "Phần mềm Hệ thống"],
@@ -2209,7 +2209,7 @@
         ]
       },
       {
-        "id": 25,
+        "id": 49,
         "type": "truefalse",
         "text": "Với mỗi câu phát biểu về sự khác biệt giữa mạng có dây và không dây, hãy chọn Đúng hoặc Sai.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -2232,7 +2232,7 @@
         ]
       },
       {
-        "id": 26,
+        "id": 50,
         "type": "single",
         "text": "Thiết bị nào chuyển đổi dữ liệu từ kỹ thuật số (Digital) sang tương tự (Analog) và ngược lại để truyền tín hiệu qua mạng?",
         "options": [
@@ -2243,7 +2243,7 @@
         ]
       },
       {
-        "id": 27,
+        "id": 51,
         "type": "single",
         "text": "Loại cáp nào có thể truyền dữ liệu lên đến 480 megabit/giây?",
         "options": [
@@ -2254,7 +2254,7 @@
         ]
       },
       {
-        "id": 28,
+        "id": 52,
         "type": "truefalse",
         "text": "Với mỗi câu phát biểu về những lợi ích của cơ sở hạ tầng mạng chất lượng, hãy chọn Đúng hoặc Sai.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -2277,7 +2277,7 @@
         ]
       },
       {
-        "id": 29,
+        "id": 53,
         "type": "multiple",
         "text": "Ba phát biểu nào dưới đây đúng với phần mềm nguồn mở? (Chọn 3)",
         "options": [
@@ -2309,7 +2309,7 @@
         ]
       },
       {
-        "id": 30,
+        "id": 54,
         "type": "truefalse",
         "text": "Với mỗi câu phát biểu về sự khác biệt giữa internet và mạng nội bộ, hãy chọn Đúng hoặc Sai.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -2332,7 +2332,7 @@
         ]
       },
       {
-        "id": 31,
+        "id": 55,
         "type": "multiple",
         "text": "Ba phát biểu nào dưới đây đúng với phần mềm độc quyền? (Chọn 3)",
         "options": [
@@ -2364,7 +2364,7 @@
         ]
       },
       {
-        "id": 32,
+        "id": 56,
         "type": "single",
         "text": "Đâu là câu phát biểu đúng về các ứng dụng dựa trên môi trường web?",
         "options": [
@@ -2391,7 +2391,7 @@
         ]
       },
       {
-        "id": 33,
+        "id": 57,
         "type": "truefalse",
         "text": "Với mỗi câu phát biểu về phần mềm mã nguồn mở, hãy chọn Đúng hoặc Sai:",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -2414,7 +2414,7 @@
         ]
       },
       {
-        "id": 34,
+        "id": 58,
         "type": "match",
         "text": "Nối ngôn ngữ với framework",
         "pairs": [
@@ -2454,7 +2454,7 @@
         ]
       },
       {
-        "id": 35,
+        "id": 59,
         "type": "single",
         "text": "Loại USB nào có đầu nối có thể đảo ngược khi sử dụng?",
         "options": [
@@ -2465,7 +2465,7 @@
         ]
       },
       {
-        "id": 36,
+        "id": 60,
         "type": "single",
         "text": "Bạn đang gặp khó khăn khi gửi và nhận thông tin. Làm cách nào bạn có thể xác định xem thiết bị của mình có được kết nối với internet hay không?",
         "options": [
@@ -2480,7 +2480,7 @@
         ]
       },
       {
-        "id": 37,
+        "id": 61,
         "type": "match",
         "text": "Ghép từng thiết bị lưu trữ dữ liệu với định nghĩa tương ứng:",
         "pairs": [
@@ -2515,7 +2515,7 @@
         ]
       },
       {
-        "id": 38,
+        "id": 62,
         "type": "truefalse",
         "text": "Bạn cần xác định thông tin nhận dạng cá nhân (PII - Personally Identifiable Information) mà bạn không nên để lộ trên mạng. Với mỗi phát biểu, hãy chọn Có nếu đó là thông tin nhận dạng cá nhân hoặc Không nếu không phải.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -2538,7 +2538,7 @@
         ]
       },
       {
-        "id": 39,
+        "id": 63,
         "type": "truefalse",
         "text": "Với mỗi câu phát biểu, hãy chọn Đúng nếu đó là ví dụ về bắt nạt trên mạng hoặc Sai nếu không phải.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -2566,7 +2566,7 @@
         ]
       },
       {
-        "id": 40,
+        "id": 64,
         "type": "single",
         "text": "Cách an toàn để gửi thông tin nhận dạng cá nhân (PII - Personally Identifiable Information) qua email là gì?",
         "options": [
@@ -2585,7 +2585,7 @@
         ]
       },
       {
-        "id": 41,
+        "id": 65,
         "type": "truefalse",
         "text": "Với mỗi câu phát biểu, hãy chọn Đúng hoặc Sai.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -2613,7 +2613,7 @@
         ]
       },
       {
-        "id": 42,
+        "id": 66,
         "type": "multiple",
         "text": "Bốn điều nào được coi là thông tin nhận dạng cá nhân PII - Personally Identifiable Information? (Chọn 4)",
         "options": [
@@ -2626,7 +2626,7 @@
         ]
       },
       {
-        "id": 43,
+        "id": 67,
         "type": "truefalse",
         "text": "Là một người sử dụng máy tính có đạo đức, trách nhiệm của bạn là phải luôn tuân thủ các quy tắc hành xử đúng mực trên mạng. Bạn cần xác định những ví dụ về cách hành xử đúng mực trên mạng trong môi trường làm việc văn phòng. Với mỗi câu phát biểu, hãy chọn Có nếu đó là ví dụ về cách hành xử đúng mực hoặc Không nếu không phải.",
         "optionsOfTrueFalseType": ["Có", "Không"],
@@ -2649,7 +2649,7 @@
         ]
       },
       {
-        "id": 44,
+        "id": 68,
         "type": "truefalse",
         "text": "Với mỗi câu phát biểu về các phương pháp trích dẫn, hãy chọn Đúng hoặc Sai.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -2677,7 +2677,7 @@
         ]
       },
       {
-        "id": 45,
+        "id": 69,
         "type": "multiple",
         "text": "Đâu là ba yếu tố phải có trong trích dẫn về một cuốn sách đã xuất bản? (Chọn 3)",
         "options": [
@@ -2696,7 +2696,7 @@
     "partId": 4,
     "questions": [
       {
-        "id": 1,
+        "id": 70,
         "type": "single",
         "text": "Ngôn ngữ hòa nhập tránh ______ đối với mọi người bất kể chủng tộc hay giới tính của họ.",
         "options": [
@@ -2711,7 +2711,7 @@
         ]
       },
       {
-        "id": 2,
+        "id": 71,
         "type": "multiple",
         "text": "Ba điều nào thể hiện giao tiếp phi ngôn ngữ? (Chọn 3)",
         "options": [
@@ -2723,7 +2723,7 @@
         ]
       },
       {
-        "id": 3,
+        "id": 72,
         "type": "multiple",
         "text": "Người dùng được yêu cầu đọc gì khi đăng ký tài khoản trực tuyến? (Chọn 3)",
         "options": [
@@ -2735,7 +2735,7 @@
         ]
       },
       {
-        "id": 4,
+        "id": 73,
         "type": "truefalse",
         "text": "Đối với mỗi đăng kí tài khoản trực tuyến (Acceptable Use Policies) để đăng trên mạng xã hội, hãy chọn Đúng nếu tuyên bố đó đúng, chọn Sai nếu tuyên bố đó sai.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -2758,7 +2758,7 @@
         ]
       },
       {
-        "id": 5,
+        "id": 74,
         "type": "single",
         "text": "Bạn sử dụng mạng xã hội để giữ liên lạc với bạn bè và gia đình. Bạn đang có kế hoạch đi du lịch vào tháng tới. Đâu là cách an toàn nhất để bạn tự bảo vệ mình khỏi những tên tội phạm trực tuyến khi đăng thông tin về các hoạt động trong kỳ nghỉ của mình?",
         "options": [
@@ -2785,7 +2785,7 @@
         ]
       },
       {
-        "id": 6,
+        "id": 75,
         "type": "multiple",
         "text": "Giao tiếp không đồng bộ có thể được sử dụng cho những mục đích nào? (Chọn 2)",
         "options": [
@@ -2801,7 +2801,7 @@
         ]
       },
       {
-        "id": 7,
+        "id": 76,
         "type": "multiple",
         "text": "Khi quyết định giữa việc gửi thông tin qua email hoặc tổ chức một hội nghị, hai câu hỏi cần xem xét là gì? (Chọn 2)",
         "options": [
@@ -2816,7 +2816,7 @@
         ]
       },
       {
-        "id": 8,
+        "id": 77,
         "type": "multiple",
         "text": "Để sử dụng ứng dụng, mạng hoặc dịch vụ, bạn có thể phải đồng ý tuân thủ chính sách sử dụng được chấp nhận. Chính sách sử dụng được chấp nhận đề cập đến hai loại thông tin nào? (Chọn 2)",
         "options": [
@@ -2843,7 +2843,7 @@
         ]
       },
       {
-        "id": 9,
+        "id": 78,
         "type": "truefalse",
         "text": "Đối với mỗi tuyên bố liên quan đến chính sách sử dụng được chấp nhận (Acceptable Use Policies) để đăng trên mạng xã hội, hãy chọn Đúng nếu tuyên bố đó đúng và Sai nếu tuyên bố đó sai.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -2866,7 +2866,7 @@
         ]
       },
       {
-        "id": 10,
+        "id": 79,
         "type": "multiple",
         "text": "Đâu là ba yếu tố quan trọng của chính sách sử dụng được chấp nhận? (Chọn 3)",
         "options": [
@@ -2883,7 +2883,7 @@
         ]
       },
       {
-        "id": 11,
+        "id": 80,
         "type": "single",
         "text": "Tham khảo hình ảnh bên dưới. Nếu người dùng chọn tùy chọn Reply, ai sẽ nhận được phản hồi?",
         "imageUrl": "/assets/question/OT3_q11.png",
@@ -2895,7 +2895,7 @@
         ]
       },
       {
-        "id": 12,
+        "id": 81,
         "type": "single",
         "text": "Bạn cần hợp tác với các bạn học và chia sẻ nhật ký lớp học. Nền tảng kỹ thuật số nào thích hợp với hoạt động trong lớp học này?",
         "options": [
@@ -2906,7 +2906,7 @@
         ]
       },
       {
-        "id": 13,
+        "id": 82,
         "type": "single",
         "text": "Mục đích của các chính sách sử dụng được chấp nhận (Acceptable Use Policies) là gì?",
         "options": [
@@ -2933,7 +2933,7 @@
         ]
       },
       {
-        "id": 14,
+        "id": 83,
         "type": "single",
         "text": "Khi bắt đầu năm học, giáo viên khoa học sẽ gửi một email đến tất cả các học sinh trong lớp của bạn. Trong thư có đính kèm một mẫu giấy phép dưới dạng tập tin PDF. Bạn không có quyền truy cập vào máy in và phải gửi biểu mẫu cho cha mẹ của bạn để in. Trong email của giáo viên, bạn nên sử dụng tùy chọn nào dưới đây để gửi biểu mẫu cho phụ huynh của mình?",
         "options": [
@@ -2944,7 +2944,7 @@
         ]
       },
       {
-        "id": 15,
+        "id": 84,
         "type": "match",
         "text": "Bạn cần xác định đúng trường địa chỉ email để sử dụng cho các mục đích cụ thể. Ghép từng trường địa chỉ với mục đích tương ứng.",
         "pairs": [
@@ -2986,7 +2986,7 @@
         ]
       },
       {
-        "id": 16,
+        "id": 85,
         "type": "single",
         "text": "Cách nào hiệu quả nhất để hỏi đồng nghiệp từ xa một câu hỏi đơn giản với mong muốn họ sẽ trả lời nhanh chóng?",
         "options": [
@@ -3001,7 +3001,7 @@
         ]
       },
       {
-        "id": 17,
+        "id": 86,
         "type": "multiple",
         "text": "Đâu là hai phát biểu đúng nhất về hệ điều hành Android? (Chọn 2)",
         "options": [
@@ -3028,7 +3028,7 @@
         ]
       },
       {
-        "id": 18,
+        "id": 87,
         "type": "single",
         "text": "Đạo đức máy tính là gì?",
         "options": [
@@ -3055,7 +3055,7 @@
         ]
       },
       {
-        "id": 19,
+        "id": 88,
         "type": "single",
         "text": "Câu nào thể hiện ngôn ngữ bao hàm?",
         "options": [
@@ -3082,7 +3082,7 @@
         ]
       },
       {
-        "id": 20,
+        "id": 89,
         "type": "single",
         "text": "Bạn đang cộng tác với các học sinh khác trong một dự án khoa học. Nhóm của bạn sẽ gặp nhau để thảo luận về dự án thông qua ứng dụng họp video của nhà trường. Bạn sẽ đóng vai trò là người chủ trì. Bạn cần đảm bảo rằng mọi học sinh đều được thảo luận về dự án mà không bị các học sinh khác làm gián đoạn. Mỗi học sinh phải làm gì để đạt được mục tiêu này?",
         "options": [
@@ -3109,7 +3109,7 @@
         ]
       },
       {
-        "id": 21,
+        "id": 90,
         "type": "single",
         "text": "Trong trường hợp nào thì chia sẻ màn hình là tuỳ chọn tốt nhất giải quyết sự cố?",
         "options": [
@@ -3136,7 +3136,7 @@
         ]
       },
       {
-        "id": 22,
+        "id": 91,
         "type": "multiple",
         "text": "Ba lợi ích khi cộng tác kỹ thuật số là gì (Chọn 3)",
         "options": [
@@ -3168,7 +3168,7 @@
         ]
       },
       {
-        "id": 23,
+        "id": 92,
         "type": "single",
         "text": "Khi giao tiếp trực tuyến trở nên tiêu cực, cách xử lý chuyên nghiệp nhất là gì?",
         "options": [
@@ -3195,7 +3195,7 @@
         ]
       },
       {
-        "id": 24,
+        "id": 93,
         "type": "truefalse",
         "text": "Với mỗi câu phát biểu, chọn Đúng hoặc sai",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -3223,7 +3223,7 @@
         ]
       },
       {
-        "id": 25,
+        "id": 94,
         "type": "truefalse",
         "text": "Với mỗi câu phát biểu hãy chọn Đúng hoặc Sai",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -3246,7 +3246,7 @@
         ]
       },
       {
-        "id": 26,
+        "id": 95,
         "type": "multiple",
         "text": "Đâu là hai tình huống giao tiếp thích hợp để sử dụng biểu tượng cảm xúc? (Chọn 2)",
         "options": [
@@ -3273,7 +3273,7 @@
         ]
       },
       {
-        "id": 27,
+        "id": 96,
         "type": "single",
         "text": "Hai bạn cùng làm báo cáo khoa học. Bạn tạo tài liệu dùng chung và lưu trữ trên đám mây. Hai bạn dự định làm vào những thời điểm khác nhau. Đây là hình thức cộng tác gì?",
         "options": [
@@ -3284,7 +3284,7 @@
         ]
       },
       {
-        "id": 28,
+        "id": 97,
         "type": "multiple",
         "text": "Trong cuộc họp, hành động nào khiến người khác nghĩ rằng một người đang không quan tâm hoặc bị phân tâm? (Chọn 3)",
         "options": [
@@ -3308,7 +3308,7 @@
         ]
       },
       {
-        "id": 29,
+        "id": 98,
         "type": "multiple",
         "text": "Ba cách để chuẩn bị cho cuộc họp kỹ thuật số chuyên nghiệp? (Chọn 3)",
         "options": [
@@ -3328,7 +3328,7 @@
         ]
       },
       {
-        "id": 30,
+        "id": 99,
         "type": "single",
         "text": "Phần mềm gián điệp là gì?",
         "options": [
@@ -3355,7 +3355,7 @@
         ]
       },
       {
-        "id": 31,
+        "id": 100,
         "type": "single",
         "text": "Rủi ro sức khoẻ về tinh thần lớn nhất ở trẻ em khi sử dụng Internet?",
         "options": [
@@ -3374,7 +3374,7 @@
         ]
       },
       {
-        "id": 32,
+        "id": 101,
         "type": "multiple",
         "text": "Một khi phần mềm độc hại được cài đặt qua Trojan, nó có thể làm gì? (chọn 3)",
         "options": [
@@ -3402,7 +3402,7 @@
         ]
       },
       {
-        "id": 33,
+        "id": 102,
         "type": "multiple",
         "text": "Bạn nên sử dụng 2 phương pháp nào để ngăn ngừa các chấn thương liên quan đế máy tính (Chọn 2)",
         "options": [
@@ -3429,7 +3429,7 @@
         ]
       },
       {
-        "id": 34,
+        "id": 103,
         "type": "multiple",
         "text": "Những cách nào để thiết lập máy tính tránh chấn thương (Chọn 4)",
         "options": [
@@ -3462,7 +3462,7 @@
         ]
       },
       {
-        "id": 35,
+        "id": 104,
         "type": "multiple",
         "text": "Hai hoạt động trực tuyến phổ biến nào cho biết khả năng bảo mật cá nhân của bạn bằng cách theo dõi điều hướng? (Chọn 2)",
         "options": [
@@ -3486,7 +3486,7 @@
         ]
       },
       {
-        "id": 36,
+        "id": 105,
         "type": "multiple",
         "text": "Bạn cần duy trì bảo mật cho điện thoại. Đâu là ba nguyên tắc cần tuân thủ (Chọn 3)",
         "options": [
@@ -3523,7 +3523,7 @@
         ]
       },
       {
-        "id": 37,
+        "id": 106,
         "type": "multiple",
         "text": "Bạn nên sử dụng hai phương pháp nào để ngăn ngừa các chấn thương liên quan đến máy tính? (Chọn 2)",
         "options": [
@@ -3550,7 +3550,7 @@
         ]
       },
       {
-        "id": 38,
+        "id": 107,
         "type": "multiple",
         "text": "Người dùng tiết lộ thông tin gì cho người khác khi họ đăng vị trí trực tuyến? (Chọn 2)",
         "options": [
@@ -3573,7 +3573,7 @@
         ]
       },
       {
-        "id": 39,
+        "id": 108,
         "type": "multiple",
         "text": "Các bên thứ ba làm gì với thông tin được tìm thấy thông qua phần mềm gián điệp? (Chọn 3)",
         "options": [
@@ -3601,7 +3601,7 @@
         ]
       },
       {
-        "id": 40,
+        "id": 109,
         "type": "multiple",
         "text": "Bạn nên làm gì để tránh mỏi mắt khi sử dụng màn hình kỹ thuật số? (Chọn 2)",
         "options": [
@@ -3628,7 +3628,7 @@
         ]
       },
       {
-        "id": 41,
+        "id": 110,
         "type": "single",
         "text": "Worm máy tính là gì?",
         "options": [
@@ -3655,7 +3655,7 @@
         ]
       },
       {
-        "id": 42,
+        "id": 111,
         "type": "single",
         "text": "Người dùng có thể làm gì để bảo vệ mình khỏi các cuộc tấn công lừa đảo (Phishing)?",
         "options": [
@@ -3682,7 +3682,7 @@
         ]
       },
       {
-        "id": 43,
+        "id": 112,
         "type": "single",
         "text": "Chấn thương căng thẳng lặp đi lặp lại phổ biến nhất do sử dụng máy tính và thiết bị là gì?",
         "options": [
@@ -3697,7 +3697,7 @@
         ]
       },
       {
-        "id": 44,
+        "id": 113,
         "type": "multiple",
         "text": "Hai cách mà mọi người có thể vô tình xâm phạm bảo mật trực tuyến của họ là gì? (Chọn 2)",
         "options": [
@@ -3721,7 +3721,7 @@
         ]
       },
       {
-        "id": 45,
+        "id": 114,
         "type": "multiple",
         "text": "Bạn nên sử dụng hai phương pháp nào để giảm tình trạng mỏi mắt khi sử dụng màn hình kỹ thuật số? (Chọn 2)",
         "options": [
@@ -3748,7 +3748,7 @@
         ]
       },
       {
-        "id": 46,
+        "id": 115,
         "type": "single",
         "text": "Theo dõi điều hướng sử dụng ______ để truyền tín hiệu xác định vị trí của thiết bị.",
         "options": [
@@ -3759,7 +3759,7 @@
         ]
       },
       {
-        "id": 47,
+        "id": 116,
         "type": "multiple",
         "text": "Bạn sử dụng máy tính công cộng tại thư viện để kiểm tra email và số dư tài khoản ngân hàng của mình. Bạn muốn ngăn ngừa những người sử dụng máy tính sau đó truy cập vào email và tài khoản ngân hàng của bạn. Bạn nên hoàn thành hai tác vụ nào trước khi rời khỏi máy tính? (Chọn 2)",
         "options": [
@@ -3782,7 +3782,7 @@
         ]
       },
       {
-        "id": 48,
+        "id": 117,
         "type": "single",
         "text": "Dịch vụ GPS nào cung cấp cho người dùng vị trí của họ, chỉ đường đến nơi họ sẽ đến và thời gian ước tính của họ dựa trên tốc độ hiện tại của người dùng và điều kiện giao thông trên tuyến đường của họ?",
         "options": [
@@ -3793,7 +3793,7 @@
         ]
       },
       {
-        "id": 49,
+        "id": 118,
         "type": "multiple",
         "text": "Những cách nào mà người dùng có thể sử dụng theo dõi điều hướng trong cuộc sống hàng ngày của họ? (Chọn 3)",
         "options": [
@@ -3813,7 +3813,7 @@
         ]
       },
       {
-        "id": 50,
+        "id": 119,
         "type": "multiple",
         "text": "Virus có thể tải vào máy tính bằng những phương pháp nào? (Chọn 3)",
         "options": [
@@ -3829,7 +3829,7 @@
         ]
       },
       {
-        "id": 51,
+        "id": 120,
         "type": "single",
         "text": "Virus máy tính là gì?",
         "options": [
@@ -3856,7 +3856,7 @@
         ]
       },
       {
-        "id": 52,
+        "id": 121,
         "type": "truefalse",
         "text": "Với mỗi câu phát biểu, hãy chọn Đúng hoặc Sai:",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -3884,7 +3884,7 @@
         ]
       },
       {
-        "id": 53,
+        "id": 122,
         "type": "hotspot",
         "text": "Đâu là 3 thiết bị xuất khi kết nối với máy tính không có màn hình cảm ứng? (Chọn 3)",
         "imageUrl": "/assets/question/OT1_q8.png",
@@ -3914,7 +3914,7 @@
         ]
       },
       {
-        "id": 54,
+        "id": 123,
         "type": "truefalse",
         "text": "Với mỗi câu phát biểu về sự khác biệt giữa kết nối Intranet và Internet, hãy chọn Đúng hoặc Sai.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -3937,7 +3937,7 @@
         ]
       },
       {
-        "id": 55,
+        "id": 124,
         "type": "multiple",
         "text": "Những lựa chọn nào sau đây có thể bị hacker lợi dụng để thu thập thông tin người dùng? (Chọn 2)",
         "options": [
@@ -3948,7 +3948,7 @@
         ]
       },
       {
-        "id": 56,
+        "id": 125,
         "type": "multiple",
         "text": "Bạn cần làm việc nhóm với bạn học để ghi lại nhật ký lớp học. Nền tảng trực tuyến nào sau đây có thể giúp bạn làm việc và chia sẻ dễ dàng hơn? (Chọn 2)",
         "options": [
@@ -3963,7 +3963,7 @@
         ]
       },
       {
-        "id": 57,
+        "id": 126,
         "type": "truefalse",
         "text": "Giáo viên của bạn tổ chức một chuyến tham quan qua độ ngoài. Tuy nhiên có nhiều bạn không tham gia được, do đó giáo viên quyết định tạo một cuộc họp kỹ thuật số. Bạn tham gia vào cuộc họp này. Chọn Đúng/Sai với mỗi câu phát biểu về tuân thủ tiêu chuẩn kỹ thuật số?",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
@@ -3991,7 +3991,7 @@
         ]
       },
       {
-        "id": 58,
+        "id": 127,
         "type": "multiple",
         "text": "Các công ty có thể thu thập thông tin của bạn dựa vào những yếu tố nào sau đây? (Chọn 2)",
         "options": [
@@ -4008,7 +4008,7 @@
     "partId": 5,
     "questions": [
       {
-      "id": 1,
+      "id": 128,
       "type": "multiple",
       "text": "Có ba Hệ điều hành máy tính để bàn chính: Windows, MacOS và Linux. Các hệ điều hành này có chung các chức năng chính là gì? (Chọn 3)",
       "options": [
@@ -4016,12 +4016,12 @@
         { "id": 2, "value": "Cung cấp dịch vụ cho phần mềm ứng dụng (RAM, File System, I/O manage)", "isCorrect": true },
         { "id": 3, "value": "Quản lý tài nguyên, chẳng hạn như CPU, bộ nhớ, ổ đĩa và thiết bị ngoại vi", "isCorrect": true },
         { "id": 4, "value": "Cung cấp trò chơi điện tử", "isCorrect": false },
-        { "id": 4, "value": "Cung cấp giao diện người dùng", "isCorrect": true },
+        { "id": 5, "value": "Cung cấp giao diện người dùng", "isCorrect": true },
         { "id": 6, "value": "Cung cấp bảo mật chống hack 100%", "isCorrect": false }
       ]
     },
     {
-        "id": 20,
+        "id": 175,
         "type": "match",
         "text": "Quan sát hình ảnh sau để xác định các loại cổng kết nối. Ghép với tên loại cổng kết nối tương ứng:",
         "pairs": [
@@ -4059,3 +4059,4 @@
     ]
   }
 ]
+
