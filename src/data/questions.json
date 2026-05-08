@@ -2062,42 +2062,6 @@
         ]
       },
       {
-        "id": 43,
-        "type": "match",
-        "text": "Quan sát hình ảnh sau để xác định các loại cổng kết nối. Ghép với tên loại cổng kết nối tương ứng:",
-        "pairs": [
-          {
-            "left": { "value": "Audio Port" },
-            "right": { "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778119723/OT1_q19_AUDIO_cwqmbf.png" },
-            "isCorrect": true
-          },
-          {
-            "left": { "value": "Display Port (Cổng VGA)" },
-            "right": { "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778119723/OT1_q19_DISPLAY_qc1xcn.png" },
-            "isCorrect": true
-          },
-          {
-            "left": { "value": "Ethernet" },
-            "right": { "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778119724/OT1_q19_ETHERNET_jxzkhr.png" },
-            "isCorrect": true
-          },
-          {
-            "left": { "value": "HDMI" },
-            "right": {
-              "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778119724/OT1_q19_HDMI_sjqt3b.png"
-            },
-            "isCorrect": true
-          },
-          {
-            "left": { "value": "USB" },
-            "right": {
-              "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1778119724/OT1_q19_USB_djlynv.png"
-            },
-            "isCorrect": true
-          }
-        ]
-      },
-      {
         "id": 44,
         "type": "single",
         "text": "Máy tính để bàn sử dụng phần cứng nào để lưu trữ dữ liệu lâu dài?",

@@ -2,6 +2,7 @@ import { Button } from "@/components/core/buttons/MainButton";
 import { FormData } from "./TestViewScreen";
 import { useNavigate } from "react-router-dom";
 import { convertTime } from "@/utils/convertTime";
+import { Avatar } from "@/utils/avatarName";
 
 interface UserReviewPanelProps {
   userData: FormData;
@@ -23,7 +24,7 @@ export default function UserReviewPanel({
       {/* Avatar + Info */}
       <div className="flex items-center gap-3">
         <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-white font-bold">
-          NL
+          <Avatar name={userData.studentName}/>
         </div>
 
         <div className="min-w-0">
@@ -120,7 +121,7 @@ export default function UserReviewPanel({
         {/* glow animation */}
         <span className="absolute inset-0 bg-white/20 blur-xl opacity-0 hover:opacity-100 transition" />
 
-        <span className="relative z-10">Go to Leaderboard →</span>
+        <span className="relative z-10">Xem Bảng Xếp Hạng →</span>
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute top-0 left-[-100%] h-full w-[40%] bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-[-20deg] animate-shimmer">
           </div>
