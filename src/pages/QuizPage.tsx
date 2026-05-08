@@ -1,5 +1,10 @@
-import { use, useEffect, useState } from "react";
-import { AlertCircle, AlignLeft, Flag, X } from "lucide-react";
+import { Button } from "@/components/core/buttons/MainButton";
+import { AlertCircle, AlignLeft, Flag } from "lucide-react";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import PopUp from "../components/core/popups/PopUp";
+import HeaderNavQuestion from "../components/UI/quizz/HeaderNavQuestion";
+import QuestionListDrawer from "../components/UI/quizz/QuestionListDrawer";
 import {
   DragMatchType,
   HotSpotType,
@@ -8,19 +13,9 @@ import {
   SingleType,
   TrueFalseType,
 } from "../components/UI/quizz/TypeQuestionTest";
-import {
-  QuestionTypeEntity,
-  HotSpotEntity,
-  MatchEntity,
-  MultipleChoiceEntity,
-  SingleChoiceEntity,
-  SortEntity,
-  TrueFalseEntity,
-  typeLabels,
-  typeColors,
-  QuestionType,
-} from "../types/questions";
-import { QuestionScore } from "../types/questionScore";
+import TestReviewScreen from "../components/UI/Review/TestViewScreen";
+import questionsData from "../data/questions.json";
+import { useCustomContext } from "../hooks/use-context";
 import {
   AnswerMap,
   AnswerValue,
@@ -29,15 +24,19 @@ import {
   MultipleAnswer,
   ReorderAnswer,
 } from "../types/answer";
-import questionsData from "../data/questions.json";
-import QuestionListDrawer from "../components/UI/quizz/QuestionListDrawer";
-import HeaderNavQuestion from "../components/UI/quizz/HeaderNavQuestion";
-import TestReviewScreen from "../components/UI/Review/TestViewScreen";
-import { useCustomContext } from "../hooks/use-context";
-import { s, u } from "framer-motion/client";
-import PopUp from "../components/core/popups/PopUp";
-import { useParams } from "react-router-dom";
-import { Button } from "@/components/core/buttons/MainButton";
+import {
+  HotSpotEntity,
+  MatchEntity,
+  MultipleChoiceEntity,
+  QuestionType,
+  QuestionTypeEntity,
+  SingleChoiceEntity,
+  SortEntity,
+  TrueFalseEntity,
+  typeColors,
+  typeLabels,
+} from "../types/questions";
+import { QuestionScore } from "../types/questionScore";
 // ─── Question type definitions ────────────────────────────────────────────────
 
 function scoreQuestion(
@@ -172,14 +171,15 @@ export default function Quiz() {
 
   // Get questions data by partId
   const { partId } = useParams();
-  const questions: QuestionTypeEntity[] = questionsData.find(
+  
+  const questions: QuestionTypeEntity[] = Number(partId) === 9 ? JSON.parse(sessionStorage.getItem("test") || "[]") : questionsData.find(
     (q) => q.partId === Number(partId),
-  )?.questions as QuestionTypeEntity[];
-
+  )?.questions;
+  
   const q = questions[current];
   const answered = Object.keys(answers).length;
   const isFlagged = flagged.has(q.id);
-
+  
   useEffect(() => {
     localStorage.setItem(
       "quiz_state",

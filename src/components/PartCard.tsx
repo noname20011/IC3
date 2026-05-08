@@ -9,6 +9,9 @@ import {
 import { motion } from "motion/react";
 import { QuizPart } from "../../types";
 import { Button } from "./core/buttons/MainButton";
+import { pickRandom } from "@/utils/shuffleArray";
+import questionsData from "../data/questions.json";
+import { QuestionTypeEntity } from "@/types/questions";
 
 interface PartCardProps {
   part: QuizPart;
@@ -30,6 +33,12 @@ export default function PartCard(props: PartCardProps) {
       transition={{ delay: index * 0.1 }}
       onClick={() => {
         setShowPopup();
+
+        if(part.name.includes("Level 1")) {
+          const allQuestions: any[] = questionsData.map(item => item.questions).flat();
+          const randomQuestions = pickRandom<QuestionTypeEntity>(allQuestions, 45);
+          sessionStorage.setItem("test", JSON.stringify(randomQuestions));
+        }
         setChoosePart(part.id);
       }}
       className="glass-card p-8 group relative overflow-hidden h-full flex flex-col justify-between hover:border-primary/40 group"

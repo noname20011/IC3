@@ -1,21 +1,21 @@
 export interface Options {
   id: number,
-  value?: string,
-  imageUrl?: string,
-  isCorrect?: boolean,
-  orderIndex?: number,
+  value?: string | undefined,
+  imageUrl?: string | undefined,
+  isCorrect?: boolean | undefined,
+  orderIndex?: number | undefined,
 }
 
 interface BaseQuestion {
   id: number,
-  type: string,
+  type: QuestionType,
   text: string,
-  imageUrl?: string,
-  explanation?: string, 
-  difficulty?: string,
-  tags?: string[],
-  points?: number,
-  optionsOfTrueFalseType?: string[],
+  imageUrl?: string | undefined,
+  explanation?: string | undefined, 
+  difficulty?: string | undefined,
+  tags?: string[] | undefined,
+  points?: number | undefined,
+  optionsOfTrueFalseType?: string[] | undefined,
 }
 
 export interface SingleChoiceEntity extends BaseQuestion {
@@ -51,7 +51,7 @@ export interface MatchEntity extends BaseQuestion {
   pairs: {
     id: number,
     left: { id: number, value: string},
-    right: { id: number, value?: string, imageUrl?: string  },
+    right: { id: number, value?: string | undefined, imageUrl?: string | undefined  },
     isCorrect: boolean,
   }[],
 }
