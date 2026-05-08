@@ -1,6 +1,6 @@
-import { ChevronLeft, LayoutList } from "lucide-react";
+import { ChevronLeft, LayoutDashboard, LayoutList } from "lucide-react";
 import { useCustomContext } from "../../hooks/use-context";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
 import { convertTime } from "@/utils/convertTime";
 
@@ -10,6 +10,7 @@ interface HeaderProps {
 }
 const Header = (props: HeaderProps) => {
   const { onBack, locationPath } = props;
+    const navigate = useNavigate();
 
   const [searchParams] = useSearchParams();
   const timeParam = Number(searchParams.get("time")) || 0;
@@ -35,10 +36,10 @@ const Header = (props: HeaderProps) => {
   return (
     <>
       {/* ── Sticky header ── */}
-      <header className="sticky top-0 z-[11] bg-[#13100d]/95 backdrop-blur-md border-b border-[#2a231a]">
+      <header className="sticky top-0 z-[100] bg-[#13100d]/95 backdrop-blur-md border-b border-[#2a231a]">
         {/* Top row */}
         <div className="flex items-center justify-between px-6 lg:px-8 py-3.5">
-          <div className="flex items-center gap-3">
+          {/* <div className="flex items-center gap-3">
             <button
               onClick={onBack}
               className="w-8 h-8 rounded-lg bg-[#1e1810] border border-[#2e2418] flex items-center justify-center hover:bg-[#2a2018] transition-colors"
@@ -52,6 +53,15 @@ const Header = (props: HeaderProps) => {
               <h1 className="text-base font-bold text-white leading-tight">
                 Knowledge Check
               </h1>
+            </div>
+          </div> */}
+          <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate("/")}>
+            <div className="w-10 h-10 glass-card flex items-center justify-center text-devotion-gold">
+              <LayoutDashboard size={24} />
+            </div>
+            <div>
+              <h1 className="font-display font-bold text-xl tracking-tight">QUIZZY</h1>
+              <p className="text-[10px] text-slate-400 uppercase tracking-[0.2em]">Quiz Platform</p>
             </div>
           </div>
 

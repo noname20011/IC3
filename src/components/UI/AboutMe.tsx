@@ -9,7 +9,7 @@ const AboutMe = () => {
       <div className="w-full md:w-2/5 aspect-[4/5] rounded-3xl overflow-hidden relative group ">
         <img
           src="/assets/about_me.png"
-          alt="Hieuisme - IC3 Teacher"
+          alt="Frankie - IC3 Teacher"
           className="w-full h-full object-cover transition-transform duration-700 scale-120"
           referrerPolicy="no-referrer"
         />
@@ -43,7 +43,7 @@ const AboutMe = () => {
               />
             </div>
             <div>
-              <p className="font-black text-lg tracking-tight">Hieuisme</p>
+              <p className="font-black text-lg tracking-tight">Frankie</p>
               <p className="text-xs text-slate-500 uppercase tracking-widest font-bold">
                 Founder & Educator
               </p>
@@ -51,7 +51,7 @@ const AboutMe = () => {
           </div>
 
           <p className="text-slate-300 leading-relaxed text-lg font-medium">
-            I am Hieu, an educator dedicated to bridging the gap between
+            I am Frankie, an educator dedicated to bridging the gap between
             technical mastery and spiritual growth. Through the{" "}
             <span className="text-devotion-gold font-bold">
               IC3 certification
