@@ -35,7 +35,7 @@ const podiumConfig = {
     avatarGradient: "linear-gradient(135deg, #f59e0b, #b45309)",
     zIndex: "z-10",
     laurelWreathLink: "/assets/laurel_wreath/laurel_wreath1.svg",
-    laurelWreathDimension: "w-[130px] md:w-[240px]",
+    laurelWreathDimension: "w-[120px] md:w-[240px]",
     position: "top-1/2 -translate-y-[95%] left-1/2 -translate-x-1/2"
   },
   2: {
@@ -45,8 +45,8 @@ const podiumConfig = {
     height: "h-[360px]",
     avatarGradient: "linear-gradient(135deg, #64748b, #334155)",
     zIndex: "z-0",
-    laurelWreathLink: "/assets/laurel_wreath/laurel_wreath1.svg",
-    laurelWreathDimension: "w-[100px] md:w-[150px]",
+    laurelWreathLink: "/assets/laurel_wreath/laurel_wreath2.svg",
+    laurelWreathDimension: "w-[90px] md:w-[150px]",
     position: "top-1/2 -translate-y-[90%] left-1/2 -translate-x-1/2"
   },
   3: {
@@ -56,7 +56,7 @@ const podiumConfig = {
     height: "h-[280px]",
     avatarGradient: "linear-gradient(135deg, #FF7070, #7c2d12)",
     zIndex: "z-0",
-    laurelWreathLink: "/assets/laurel_wreath/laurel_wreath1.svg",
+    laurelWreathLink: "/assets/laurel_wreath/laurel_wreath3.svg",
     laurelWreathDimension: "w-[80px] md:w-[110px]",
     position: "top-1/2 -translate-y-[100%] md:-translate-y-[120%] left-1/2 -translate-x-1/2"
   },
