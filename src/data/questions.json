@@ -4269,32 +4269,40 @@
         ]
       },
       {
-    "id": 186,
-    "type": "match",
-    "text": "Bạn cần xác định đúng các thuật ngữ công nghệ để sử dụng cho các mục đích cụ thể. Ghép từng thuật ngữ với mục đích tương ứng.(*)",
-    "pairs": [
-      {
-        "left": { "value": "Deep Learning (Học sâu)" },
-        "right": { "value": "Một nhánh chuyên sâu của Máy học, sử dụng các mạng nơ-ron nhiều lớp để xử lý các dữ liệu cực lớn như hình ảnh, giọng nói" },
-        "isCorrect": true
-      },
-      {
-        "left": { "value": "AI (Trí tuệ nhân tạo)" },
-        "right": { "value": "Khả năng của máy móc trong việc mô phỏng các hoạt động trí tuệ của con người như suy nghĩ, học tập và giải quyết vấn đề" },
-        "isCorrect": true
-      },
-      {
-        "left": { "value": "Chatbot" },
-        "right": { "value": "Một chương trình máy tính được thiết kế để trò chuyện và trả lời câu hỏi của người dùng một cách tự động" },
-        "isCorrect": true
-      },
-      {
-        "left": { "value": "API" },
-        "right": { "value": "Một tập hợp các quy tắc cho phép các phần mềm hoặc ứng dụng khác nhau có thể kết nối và trao đổi dữ liệu với nhau" },
-        "isCorrect": true
+        "id": 186,
+        "type": "match",
+        "text": "Bạn cần xác định đúng các thuật ngữ công nghệ để sử dụng cho các mục đích cụ thể. Ghép từng thuật ngữ với mục đích tương ứng.(*)",
+        "pairs": [
+          {
+            "left": { "value": "Deep Learning (Học sâu)" },
+            "right": {
+              "value": "Một nhánh chuyên sâu của Máy học, sử dụng các mạng nơ-ron nhiều lớp để xử lý các dữ liệu cực lớn như hình ảnh, giọng nói"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "AI (Trí tuệ nhân tạo)" },
+            "right": {
+              "value": "Khả năng của máy móc trong việc mô phỏng các hoạt động trí tuệ của con người như suy nghĩ, học tập và giải quyết vấn đề"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Chatbot" },
+            "right": {
+              "value": "Một chương trình máy tính được thiết kế để trò chuyện và trả lời câu hỏi của người dùng một cách tự động"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "API" },
+            "right": {
+              "value": "Một tập hợp các quy tắc cho phép các phần mềm hoặc ứng dụng khác nhau có thể kết nối và trao đổi dữ liệu với nhau"
+            },
+            "isCorrect": true
+          }
+        ]
       }
-    ]
-  },
     ]
   }
 ]
