@@ -31,7 +31,7 @@ const MatchTypeReview = (props: MatchTypeReviewProps) => {
             >
               {i + 1}
             </div>
-            {leftItem?.includes("/assets") ?
+            {leftItem?.includes("cloudinary.com") ?
             <img src={leftItem} className="max-h-24"/>
             : <span className="text-sm text-[#7a6b55] min-w-[90px]">{leftItem}</span>
             }
