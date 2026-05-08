@@ -13,7 +13,7 @@ function Footer() {
               <LayoutDashboard size={24} />
             </div>
             <div>
-              <h1 className="font-display font-bold text-xl tracking-tight">DEVOTION</h1>
+              <h1 className="font-display font-bold text-xl tracking-tight">QUIZZY</h1>
               <p className="text-[10px] text-slate-400 uppercase tracking-[0.2em]">Quiz Platform</p>
             </div>
           </div>
@@ -69,7 +69,7 @@ function Footer() {
 
       <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-[10px] text-slate-500 uppercase tracking-widest font-medium">
-          © 2026 DEVOTION QUIZ PLATFORM. ALL RIGHTS RESERVED.
+          © 2026 QUIZZY PLATFORM. ALL RIGHTS RESERVED.
         </p>
         <div className="flex items-center gap-8">
           <a href="#" className="text-[10px] text-slate-500 uppercase tracking-widest font-medium hover:text-white transition-colors">Privacy Policy</a>

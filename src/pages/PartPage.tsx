@@ -77,13 +77,18 @@ export default function PartsPage() {
       className="space-y-8 max-w-5xl mx-auto px-4 pt-6"
     >
       <header className="space-y-4">
-        <button
-          onClick={() => window.history.back()}
-          className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm"
-        >
-          <ChevronLeft size={16} />
-          Quay lại danh sách bài thi
-        </button>
+        <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate(-1)}>
+            <button
+              className="w-8 h-8 rounded-lg bg-[#1e1810] border border-[#2e2418] flex items-center justify-center hover:bg-[#2a2018] transition-colors"
+            >
+              <ChevronLeft size={15} className="text-[#c8a46e]" />
+            </button>
+            <div>
+              <h1 className="text-base font-bold text-white leading-tight underline">
+                Back Button
+              </h1>
+            </div>
+          </div>
         <div className="space-y-1">
           <h2 className="text-4xl font-display font-bold">Chọn phần thi</h2>
           <p className="text-slate-400">Chọn phần thi để bắt đầu làm bài</p>
