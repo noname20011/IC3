@@ -3,6 +3,7 @@ import { FormData } from "./TestViewScreen";
 import { useNavigate } from "react-router-dom";
 import { convertTime } from "@/utils/convertTime";
 import { Avatar } from "@/utils/avatarName";
+import { ConfettiSideCannons } from "@/components/UI/ConfettieEffect";
 
 interface UserReviewPanelProps {
   userData: FormData;
@@ -24,7 +25,7 @@ export default function UserReviewPanel({
       {/* Avatar + Info */}
       <div className="flex items-center gap-3">
         <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-white font-bold">
-          <Avatar name={userData.studentName}/>
+          {userData?.studentName && <Avatar name={userData.studentName}/>}
         </div>
 
         <div className="min-w-0">
@@ -127,6 +128,8 @@ export default function UserReviewPanel({
           </div>
         </div>
       </Button>
+
+      {points === totalScore && <ConfettiSideCannons/>}
     </div>
   );
 }
