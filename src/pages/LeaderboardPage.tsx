@@ -115,25 +115,25 @@ export default function Leaderboard() {
               Full Leaderboard
             </h3>
             <span className="text-xs text-muted-foreground">
-              {MOCK_LEADERBOARD.length} students
+              {[].length} students
             </span>
           </div>
-          {MOCK_LEADERBOARD.length === 0 ? (
+          {[].length === 0 ? (
             <div className="p-8 text-center text-muted-foreground">
               Loading...
             </div>
-          ) : MOCK_LEADERBOARD.length === 0 ? (
+          ) : [].length === 0 ? (
             <div className="p-12 text-center text-muted-foreground">
               <Trophy className="w-10 h-10 mx-auto mb-3 opacity-40" />
               No results yet
             </div>
           ) : (
             <div className="divide-y divide-border">
-              {MOCK_LEADERBOARD.map((entry, index) => (
+              {[].map((entry: any, index) => (
                 <div
-                  key={entry.id}
+                  key={entry?.id}
                   className={`flex items-center gap-4 px-4 py-3 hover:bg-muted/30 transition-colors ${index < 3 ? "bg-primary/5" : ""}`}
-                  data-testid={`row-leaderboard-${entry.id}`}
+                  data-testid={`row-leaderboard-${entry?.id}`}
                 >
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 ${
@@ -151,25 +151,25 @@ export default function Leaderboard() {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
                       <p className="font-medium text-foreground text-sm truncate">
-                        {entry.name}
+                        {entry?.name}
                       </p>
-                      {entry.class && (
+                      {entry?.class && (
                         <span className="text-xs text-muted-foreground bg-muted px-1.5 py-0.5 rounded flex-shrink-0">
-                          {entry.class}
+                          {entry?.class}
                         </span>
                       )}
                     </div>
                     <p className="text-xs text-muted-foreground truncate">
-                      {entry.school}
+                      {entry?.school}
                     </p>
                   </div>
                   <div className="text-right flex-shrink-0 flex items-baseline gap-4">
                     <Trophy size={11} className="text-[#c8a46e]" />
                     <p className="font-bold text-foreground text-sm">
-                      {entry.score}
+                      {entry?.score}
                     </p>
                     <p className="text-xs text-muted-foreground">
-                      {convertTime(entry.time)}
+                      {convertTime(entry?.time)}
                     </p>
                   </div>
                   <div className="flex items-center gap-1 mr-1">
