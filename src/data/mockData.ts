@@ -6,11 +6,11 @@ export const MOCK_LEVELS: QuizLevel[] = [
     name: "Level 1",
     description: "Foundational concepts and basic knowledge.",
     parts: [
-      { id: 5, name: "Bổ Sung 1", levelId: "l1", description: "Phần ôn tập sổ sung số 1", duration: 2000, questionCount: 12 },
+      // { id: 5, name: "Bổ Sung 1", levelId: "l1", description: "Phần ôn tập sổ sung số 1", duration: 2000, questionCount: 12 },
       { id: 1, name: "Bổ Sung 2", levelId: "l1", description: "Phần ôn tập sổ sung số 2", duration: 2000, questionCount: 22 },
-      { id: 2, name: "OT1", levelId: "l1", description: "Ôn tập tổng hợp số 1", duration: 2700, questionCount: 45 },
-      { id: 3, name: "OT2", levelId: "l1", description: "Ôn tập tổng hợp số 2", duration: 2700, questionCount: 45 },
-      { id: 4, name: "OT3", levelId: "l1", description: "Ôn tập tổng hợp số 3", duration: 2700, questionCount: 58 },
+      // { id: 2, name: "OT1", levelId: "l1", description: "Ôn tập tổng hợp số 1", duration: 2700, questionCount: 45 },
+      // { id: 3, name: "OT2", levelId: "l1", description: "Ôn tập tổng hợp số 2", duration: 2700, questionCount: 45 },
+      // { id: 4, name: "OT3", levelId: "l1", description: "Ôn tập tổng hợp số 3", duration: 2700, questionCount: 58 },
     ],
   },
   {
@@ -54,8 +54,8 @@ export const MOCK_LEADERBOARD: LeaderboardEntry[] = [
   { id: "u1", name: "Tôn Nữ Tú Anh", score: 450, time: 80, school: "THCS Huỳnh Văn Nghệ", class: "6A4", rank: 1, avatar: "https://picsum.photos/seed/u1/100/100" },
   { id: "u2", name: "Nguyễn Linh Anh", score: 450, time: 82, school: "THCS Yên Thế", class: "7A1", rank: 2, avatar: "https://picsum.photos/seed/u2/100/100" },
   { id: "u3", name: "Hồ Quang Tùng", score: 450, time: 82, school: "THCS Huỳnh Văn Nghệ", class: "8A2", rank: 3, avatar: "https://picsum.photos/seed/u3/100/100" },
-  { id: "u4", name: "whitefish664", score: 450, time: 85, school: "THCS Nguyễn Trãi", rank: 4, class: "8/2", avatar: "https://picsum.photos/seed/u4/100/100" },
-  { id: "u5", name: "sadpanda176", score: 450, time: 86, school: "THCS Nguyễn Trãi", rank: 5, class: "8/2", avatar: "https://picsum.photos/seed/u5/100/100" },
-  { id: "u6", name: "silverduck204", score: 450, time: 90, school: "THCS Trần Đại Nghĩa", rank: 6, class: "8/2", avatar: "https://picsum.photos/seed/u6/100/100" },
-  { id: "u7", name: "beautifulmouse112", score: 440, time: 95, school: "THCS Trần Đại Nghĩa", rank: 7, class: "8/2", avatar: "https://picsum.photos/seed/u7/100/100" },
+  // { id: "u4", name: "whitefish664", score: 450, time: 85, school: "THCS Nguyễn Trãi", rank: 4, class: "8/2", avatar: "https://picsum.photos/seed/u4/100/100" },
+  // { id: "u5", name: "sadpanda176", score: 450, time: 86, school: "THCS Nguyễn Trãi", rank: 5, class: "8/2", avatar: "https://picsum.photos/seed/u5/100/100" },
+  // { id: "u6", name: "silverduck204", score: 450, time: 90, school: "THCS Trần Đại Nghĩa", rank: 6, class: "8/2", avatar: "https://picsum.photos/seed/u6/100/100" },
+  // { id: "u7", name: "beautifulmouse112", score: 440, time: 95, school: "THCS Trần Đại Nghĩa", rank: 7, class: "8/2", avatar: "https://picsum.photos/seed/u7/100/100" },
 ];
